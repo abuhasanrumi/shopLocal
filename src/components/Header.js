@@ -5,8 +5,8 @@ import { BsSearch } from 'react-icons/bs'
 const Header = () => {
     return (
         <>
-            <header className="header-top-strip py-3">
-                <div className="container-xxl">
+            <header className="header-top-strip py-2">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col-6">
                             <p className='text-white mb-0'>Free Shipping Over $100 & Free Returns</p>
@@ -18,7 +18,7 @@ const Header = () => {
                 </div>
             </header>
             <header className="header-upper py-3">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="row align-items-center ">
                         <div className="col-2">
                             <h3 className='mb-0'><Link className='text-white'>ShopLocal</Link></h3>
@@ -63,8 +63,8 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <header className="header-bottom py-3">
-                <div className="container-xxl">
+            <header className="header-bottom py-1">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col-12">
                             <div className="menu-bottom d-flex align-items-center gap-30">
