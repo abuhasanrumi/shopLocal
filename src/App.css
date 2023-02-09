@@ -116,10 +116,19 @@ footer:not(:first-child) {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.footer-sub {
+  height: 44px;
+}
+.footer-sub::placeholder {
+  font-size: 13px;
+}
+
 footer .input-group-text {
   background-color: var(--color-232f3e);
   color: white;
-  padding: 8px 17px;
+  padding: 8px 17px !important;
+  letter-spacing: 0.3px;
   font-size: 14px;
+  text-transform: uppercase;
 }
 /* Footer part ends here  */
