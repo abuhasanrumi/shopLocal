@@ -55,6 +55,22 @@ a {
   height: 35px;
 }
 
+.header-upper-text {
+  font-size: 13px;
+}
+
+.header-upper .searchBar,
+.searchBar-icon {
+  height: 36px;
+}
+.header-upper .searchBar::placeholder {
+  font-size: 13px;
+}
+
+.searchBar-text {
+  font-size: 13px;
+}
+
 .header-bottom {
   background-color: var(--color-3b4149);
 }
@@ -90,3 +106,13 @@ a {
   border-bottom: 1px solid var(--color-3b4149);
 }
 /* Header part ends here  */
+
+/* Footer Part  */
+footer {
+  background-color: var(--color-232f3e);
+}
+
+footer:not(:first-child) {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* Footer part ends here  */

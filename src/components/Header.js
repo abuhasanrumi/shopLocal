@@ -21,40 +21,40 @@ const Header = () => {
                 <div className="container-xxl">
                     <div className="row align-items-center ">
                         <div className="col-2">
-                            <h2><Link className='text-white'>ShopLocal</Link></h2>
+                            <h3 className='mb-0'><Link className='text-white'>ShopLocal</Link></h3>
                         </div>
                         <div className="col-5">
-                            <div className="input-group mb-3">
-                                <input type="text" className="form-control py-2" placeholder="Search product here" aria-label="Search product here" aria-describedby="basic-addon2" />
-                                <span className="input-group-text p-3" id="basic-addon2"><BsSearch className='fs-6' /></span>
+                            <div className="input-group">
+                                <input type="text" className="form-control py-1 searchBar" placeholder="Search product here" aria-label="Search product here" aria-describedby="basic-addon2" />
+                                <span className="input-group-text p-3 searchBar-icon" id="basic-addon2"><BsSearch className='fs-6' /></span>
                             </div>
                         </div>
                         <div className="col-5">
-                            <div className="header-upper-links d-flex align-items-center justify-content-between">
+                            <div className="header-upper-links d-flex align-items-center justify-content-end gap-30">
                                 <div>
                                     <Link className='d-flex align-items-center gap-10 text-white'>
                                         <img src="images/compare.svg" alt="" />
-                                        <p className='mb-0'>Compare <br /> Products</p>
+                                        <p className='mb-0 header-upper-text'>Compare <br /> Products</p>
                                     </Link>
                                 </div>
                                 <div>
                                     <Link className='d-flex align-items-center gap-10 text-white'>
                                         <img src="images/wishlist.svg" alt="wishlist" />
-                                        <p className='mb-0'>Favourite <br /> Wishlist</p>
+                                        <p className='mb-0 header-upper-text'>Favourite <br /> Wishlist</p>
                                     </Link>
                                 </div>
                                 <div>
                                     <Link className='d-flex align-items-center gap-10 text-white'>
                                         <img src="images/user.svg" alt="user" />
-                                        <p className='mb-0'>Login <br /> My Account</p>
+                                        <p className='mb-0 header-upper-text'>Login <br /> My Account</p>
                                     </Link>
                                 </div>
                                 <div>
                                     <Link className='d-flex align-items-center gap-10 text-white'>
                                         <img src="images/cart.svg" alt="cart" />
-                                        <div className='d-fles flex-column gap-10'>
-                                            <span className="badge bg-white text-dark">0</span>
-                                            <p className='mb-0'>$500</p>
+                                        <div className='d-flex flex-column gap-10'>
+                                            <span className="badge bg-white text-dark header-upper-text rounded-pill">0</span>
+                                            <p className='mb-0 header-upper-text'>$500</p>
                                         </div>
                                     </Link>
                                 </div>
