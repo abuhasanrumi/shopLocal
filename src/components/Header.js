@@ -23,34 +23,34 @@ const Header = () => {
                         <div className="col-2">
                             <h3 className='mb-0'><Link className='text-white'>ShopLocal</Link></h3>
                         </div>
-                        <div className="col-5">
+                        <div className="col-4">
                             <div className="input-group">
                                 <input type="text" className="form-control py-1 searchBar" placeholder="Search product here" aria-label="Search product here" aria-describedby="basic-addon2" />
                                 <span className="input-group-text p-3 searchBar-icon" id="basic-addon2"><BsSearch className='fs-6' /></span>
                             </div>
                         </div>
-                        <div className="col-5">
-                            <div className="header-upper-links d-flex align-items-center justify-content-end gap-30">
-                                <div>
-                                    <Link className='d-flex align-items-center gap-10 text-white'>
+                        <div className="col-6">
+                            <div className="header-upper-links d-flex align-items-center justify-content-end gap-45">
+                                <div >
+                                    <Link className='d-flex align-items-center text-white gap-10'>
                                         <img src="images/compare.svg" alt="" />
                                         <p className='mb-0 header-upper-text'>Compare <br /> Products</p>
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link className='d-flex align-items-center gap-10 text-white'>
+                                    <Link className='d-flex align-items-center text-white gap-10'>
                                         <img src="images/wishlist.svg" alt="wishlist" />
                                         <p className='mb-0 header-upper-text'>Favourite <br /> Wishlist</p>
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link className='d-flex align-items-center gap-10 text-white'>
+                                    <Link className='d-flex align-items-center text-white gap-10'>
                                         <img src="images/user.svg" alt="user" />
                                         <p className='mb-0 header-upper-text'>Login <br /> My Account</p>
                                     </Link>
                                 </div>
                                 <div>
-                                    <Link className='d-flex align-items-center gap-10 text-white'>
+                                    <Link className='d-flex align-items-center text-white gap-10'>
                                         <img src="images/cart.svg" alt="cart" />
                                         <div className='d-flex flex-column gap-10'>
                                             <span className="badge bg-white text-dark header-upper-text rounded-pill">0</span>
