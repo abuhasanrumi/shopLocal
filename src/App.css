@@ -37,31 +37,34 @@ a {
 .gap-30 {
   gap: 30px;
 }
+
 .gap-45 {
   gap: 45px;
 }
 
 .fs-xsm {
-  font-size: 0.7vw;
+  font-size: calc(10px + 0.2vw);
 }
+
 .fs-sm {
-  font-size: 1vw;
+  font-size: calc(12px + 0.2vw);
 }
+
 .fs-md {
-  font-size: 1.6vw;
+  font-size: calc(13px + 0.5vw);
 }
+
 .fs-lg {
-  font-size: 2.5vw;
+  font-size: calc(18px + 0.5vw);
 }
+
 .fs-xl {
-  font-size: 5vw;
+  font-size: calc(100% + 5vw + 5vh);
 }
 
 .darkButton {
-  margin-top: 10px;
-  font-size: 14px;
+  font-size: calc(10px + 0.2vw);
   color: white;
-  border-radius: 25px;
   line-height: 18px;
   letter-spacing: 0.3px;
   text-transform: uppercase;
@@ -90,10 +93,6 @@ a {
   background-color: var(--color-131921);
 }
 
-.header-upper .input-group-text {
-  background-color: var(--color-febd69);
-}
-
 .header-upper .header-upper-links img {
   width: 35px;
   height: 35px;
@@ -101,6 +100,10 @@ a {
 
 .header-upper-text {
   font-size: 1vw;
+}
+
+.header-upper .input-group-text {
+  background-color: var(--color-febd69);
 }
 
 .header-upper .searchBar,
@@ -148,6 +151,24 @@ a {
   border-bottom: 1px solid var(--color-3b4149);
 }
 /* Header part ends here  */
+
+/* Hidden search bar  */
+.hidden-search {
+  background-color: var(--color-232f3e);
+}
+
+.hidden-search .input-group-text {
+  background-color: var(--color-febd69);
+}
+
+.hidden-search .searchBar,
+.searchBar-icon {
+  height: 36px;
+}
+.hidden-search .searchBar::placeholder {
+  font-size: 13px;
+}
+/* Hidden search bar ends here  */
 
 /* Footer Part  */
 footer {
@@ -199,20 +220,18 @@ footer .input-group-text {
 }
 
 .main-banner-title {
-  /* font-size: 52px; */
   line-height: 34px;
   font-weight: 500;
-  padding: 0;
   text-transform: none;
 }
 
 .main-banner-details {
-  font-size: 16px;
   color: var(--color-131921);
+  font-size: calc(10px + 0.2vw);
 }
 
 .small-banner-content {
-  top: 15%;
+  top: 25%;
   left: 7.5%;
 }
 
@@ -233,7 +252,7 @@ footer .input-group-text {
 }
 
 .small-banner-details {
-  color: var(--color-131921);
+  font-size: calc(10px + 0.2vw);
 }
 
 /* Home page ends here  */

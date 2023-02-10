@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <>
             <footer className="py-5">
-                <div className="container-fluid">
+                <div className="container-xxl">
                     <div className="row align-items-center">
                         <div className="col-5">
                             <div className="footer-top-data d-flex gap-15 align-items-center">
@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
             </footer>
             <footer className="py-5">
-                <div className="container-fluid">
+                <div className="container-xxl">
                     <div className="row">
                         <div className="col-4">
                             <h4 className='text-white mb-4'>Contact Us</h4>
@@ -85,7 +85,7 @@ const Footer = () => {
                 </div>
             </footer>
             <footer className="py-3">
-                <div className="container-fluid">
+                <div className="container-xxl">
                     <div className="row">
                         <div className="col-12">
                             <p className="text-center mb-0 text-white">&copy; {new Date().getFullYear()}; Powered by Abu Hasan Rumi</p>

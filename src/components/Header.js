@@ -6,53 +6,55 @@ const Header = () => {
     return (
         <>
             <header className="header-top-strip py-2">
-                <div className="container-fluid">
+                <div className="container-xxl">
                     <div className="row">
-                        <div className="col-6">
-                            <p className='text-white mb-0'>Free Shipping Over $100 & Free Returns</p>
+                        <div className="col-12 col-md-6 d-none d-md-block">
+                            <p className='text-white mb-0 fs-sm'>Free Shipping Over $100 & Free Returns</p>
                         </div>
-                        <div className="col-6">
-                            <p className='text-end text-white mb-0'>Hotline: <a className='text-white' href="tel:+8801537485726">+880 14234 24234</a></p>
+                        <div className="col-12 col-md-6">
+                            <p className='text-center text-md-end text-white mb-0 fs-sm'>Hotline: <a className='text-white' href="tel:+8801537485726">+880 14234 24234</a></p>
                         </div>
                     </div>
                 </div>
             </header>
-            <header className="header-upper py-3">
-                <div className="container-fluid">
+            <header className="header-upper py-4">
+                <div className="container-xxl">
                     <div className="row align-items-center ">
-                        <div className="col-2">
+                        <div className="col-3">
                             <h3 className='mb-0'><Link className='text-white'>ShopLocal</Link></h3>
                         </div>
                         <div className="col-4">
-                            <div className="input-group">
-                                <input type="text" className="form-control py-1 searchBar" placeholder="Search product here" aria-label="Search product here" aria-describedby="basic-addon2" />
-                                <span className="input-group-text p-3 searchBar-icon" id="basic-addon2"><BsSearch className='fs-6' /></span>
+                            <div className="search-wrapper d-none d-lg-block">
+                                <div className="input-group ">
+                                    <input type="text" className="form-control py-1 searchBar" placeholder="Search product here" aria-label="Search product here" aria-describedby="basic-addon2" />
+                                    <span className="input-group-text p-3 searchBar-icon" id="basic-addon2"><BsSearch className='fs-6' /></span>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-6">
-                            <div className="header-upper-links d-flex align-items-center justify-content-end gap-45">
-                                <div >
+                        <div className="col-5">
+                            <div className="header-upper-links d-flex align-items-center justify-content-end">
+                                <div className="single-icon px-2">
                                     <Link className='d-flex align-items-center text-white gap-10'>
-                                        <img src="images/compare.svg" alt="" />
-                                        <p className='mb-0 header-upper-text'>Compare <br /> Products</p>
+                                        <img className="img-fluid" src="images/compare.svg" alt="" />
+                                        <p className='d-none d-xl-block mb-0 header-upper-text'>Compare <br /> Products</p>
                                     </Link>
                                 </div>
-                                <div>
+                                <div className="single-icon px-2">
                                     <Link className='d-flex align-items-center text-white gap-10'>
-                                        <img src="images/wishlist.svg" alt="wishlist" />
-                                        <p className='mb-0 header-upper-text'>Favourite <br /> Wishlist</p>
+                                        <img className="img-fluid" src="images/wishlist.svg" alt="wishlist" />
+                                        <p className='d-none d-xl-block mb-0 header-upper-text'>Favourite <br /> Wishlist</p>
                                     </Link>
                                 </div>
-                                <div>
+                                <div className="single-icon px-2">
                                     <Link className='d-flex align-items-center text-white gap-10'>
-                                        <img src="images/user.svg" alt="user" />
-                                        <p className='mb-0 header-upper-text'>Login <br /> My Account</p>
+                                        <img className="img-fluid" src="images/user.svg" alt="user" />
+                                        <p className='d-none d-xl-block mb-0 header-upper-text'>Login <br /> My Account</p>
                                     </Link>
                                 </div>
-                                <div>
+                                <div className="single-icon px-2">
                                     <Link className='d-flex align-items-center text-white gap-10'>
-                                        <img src="images/cart.svg" alt="cart" />
-                                        <div className='d-flex flex-column gap-10'>
+                                        <img className="img-fluid" src="images/cart.svg" alt="cart" />
+                                        <div className='d-none d-xl-block d-flex flex-column gap-10'>
                                             <span className="badge bg-white text-dark header-upper-text rounded-pill">0</span>
                                             <p className='mb-0 header-upper-text'>$500</p>
                                         </div>
@@ -63,8 +65,18 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <header className="header-bottom py-1">
-                <div className="container-fluid">
+            <header className="hidden-search py-4 d-lg-none">
+                <div className="row sec-search-wrapper">
+                    <div className="col-8 mx-auto d-xl-none">
+                        <div className="input-group">
+                            <input type="text" className="form-control py-1 searchBar" placeholder="Search product here" aria-label="Search product here" aria-describedby="basic-addon2" />
+                            <span className="input-group-text p-3 searchBar-icon" id="basic-addon2"><BsSearch className='fs-6' /></span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <header className="header-bottom py-1 d-none">
+                <div className="container-xxl">
                     <div className="row">
                         <div className="col-12">
                             <div className="menu-bottom d-flex align-items-center gap-30">
