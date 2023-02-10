@@ -59,7 +59,7 @@ a {
 }
 
 .fs-xl {
-  font-size: calc(100% + 5vw + 5vh);
+  font-size: calc(24px + 0.5vw);
 }
 
 .darkButton {
