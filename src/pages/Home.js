@@ -32,7 +32,7 @@ const Home = () => {
                                 </div>
                                 <div className="col-6 col-md-3 col-lg-6 mb-4">
                                     <div className="small-banner position-relative">
-                                        <img src="images/catbanner-01.jpg" className="img-fluid rounded-3 w-100" alt="small banner" />
+                                        <img src="images/catbanner-02.jpg" className="img-fluid rounded-3 w-100" alt="small banner" />
                                         <div className="small-banner-content position-absolute">
                                             <span className='small-banner-span fs-xsm'>BEST DEALS</span>
                                             <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
@@ -42,7 +42,7 @@ const Home = () => {
                                 </div>
                                 <div className="col-6 col-md-3 col-lg-6 mb-4">
                                     <div className="small-banner position-relative">
-                                        <img src="images/catbanner-01.jpg" className="img-fluid rounded-3 w-100" alt="small banner" />
+                                        <img src="images/catbanner-03.jpg" className="img-fluid rounded-3 w-100" alt="small banner" />
                                         <div className="small-banner-content position-absolute">
                                             <span className='small-banner-span fs-xsm'>BEST DEALS</span>
                                             <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
@@ -52,11 +52,68 @@ const Home = () => {
                                 </div>
                                 <div className="col-6 col-md-3 col-lg-6 mb-4">
                                     <div className="small-banner position-relative">
-                                        <img src="images/catbanner-01.jpg" className="img-fluid rounded-3 w-100" alt="small banner" />
+                                        <img src="images/catbanner-04.jpg" className="img-fluid rounded-3 w-100" alt="small banner" />
                                         <div className="small-banner-content position-absolute">
                                             <span className='small-banner-span fs-xsm'>BEST DEALS</span>
                                             <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
                                             <p className='small-banner-details d-none d-sm-block d-md-none d-lg-block'>From $999.00 <br></br>or $41.62/mo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="home-wrapper-2 py-3">
+                <div className="service-section">
+                    <div className="container-xxl">
+                        <div className="row d-flex justify-content-between align-items-center">
+                            <div className="col-12">
+                                <div className="services d-flex align-items-center justify-content-around justify-md-content-around py-3">
+                                    <div className="single-service">
+                                        <div className="d-flex align-items-center justify-content-between">
+                                            <img src="images/service.png" alt="" className="service-img p-3" />
+                                            <div className="service-details p-3">
+                                                <div className="service-title fs-md py-1">Free Shipping</div>
+                                                <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="single-service">
+                                        <div className="d-flex align-items-center justify-content-between">
+                                            <img src="images/service.png" alt="" className="service-img p-3" />
+                                            <div className="service-details p-3">
+                                                <div className="service-title fs-md py-1">Free Shipping</div>
+                                                <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="single-service d-none d-md-block">
+                                        <div className="d-flex align-items-center justify-content-between">
+                                            <img src="images/service.png" alt="" className="service-img p-3" />
+                                            <div className="service-details p-3">
+                                                <div className="service-title fs-md py-1">Free Shipping</div>
+                                                <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="single-service d-none d-xl-block">
+                                        <div className="d-flex align-items-center justify-content-between">
+                                            <img src="images/service.png" alt="" className="service-img p-3" />
+                                            <div className="service-details p-3">
+                                                <div className="service-title fs-md py-1">Free Shipping</div>
+                                                <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="single-service d-none d-xxl-block">
+                                        <div className="d-flex align-items-center justify-content-between">
+                                            <img src="images/service.png" alt="" className="service-img p-3" />
+                                            <div className="service-details p-3">
+                                                <div className="service-title fs-md py-1">Free Shipping</div>
+                                                <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
