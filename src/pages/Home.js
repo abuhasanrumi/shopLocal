@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee";
+import Blogpost from '../components/Blogpost';
 
 const Home = () => {
     return (
@@ -244,23 +245,36 @@ const Home = () => {
                                             <img src="images/brand-01.png" alt="" />
                                         </div>
                                         <div className="marquee-img mx-4 w-25">
-                                            <img src="images/brand-01.png" alt="" />
+                                            <img src="images/brand-02.png" alt="" />
                                         </div>
                                         <div className="marquee-img mx-4 w-25">
-                                            <img src="images/brand-01.png" alt="" />
+                                            <img src="images/brand-03.png" alt="" />
                                         </div>
                                         <div className="marquee-img mx-4 w-25">
-                                            <img src="images/brand-01.png" alt="" />
+                                            <img src="images/brand-04.png" alt="" />
                                         </div>
                                         <div className="marquee-img mx-4 w-25">
-                                            <img src="images/brand-01.png" alt="" />
+                                            <img src="images/brand-05.png" alt="" />
                                         </div>
                                         <div className="marquee-img mx-4 w-25">
-                                            <img src="images/brand-01.png" alt="" />
+                                            <img src="images/brand-06.png" alt="" />
                                         </div>
                                     </Marquee>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="home-wrapper-5 py-5 gray-bg">
+                <div className="container-xxl">
+                    <div className="blog-wrapper">
+                        <div className="header fs-lg fw-bold mb-4">Blog Section</div>
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+                            <Blogpost />
+                            <Blogpost />
+                            <Blogpost />
+                            <Blogpost />
                         </div>
                     </div>
                 </div>

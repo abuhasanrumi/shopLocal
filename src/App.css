@@ -285,4 +285,10 @@ footer .input-group-text {
 }
 /* home wrapper 3 ends */
 
+/* Blog section starts here  */
+.card-footer {
+  border: none;
+}
+/* Blog section ends here  */
+
 /* Home page ends here  */
