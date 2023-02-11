@@ -65,55 +65,165 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="home-wrapper-2 py-3">
-                <div className="service-section">
-                    <div className="container-xxl">
-                        <div className="row d-flex justify-content-between align-items-center">
-                            <div className="col-12">
-                                <div className="services d-flex align-items-center justify-content-around justify-md-content-around py-3">
-                                    <div className="single-service">
-                                        <div className="d-flex align-items-center justify-content-between">
-                                            <img src="images/service.png" alt="" className="service-img p-3" />
-                                            <div className="service-details p-3">
-                                                <div className="service-title fs-md py-1">Free Shipping</div>
-                                                <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
-                                            </div>
+            <section className="home-wrapper-2 py-4 gray-bg">
+                <div className="container-xxl">
+                    <div className="row d-flex justify-content-between align-items-center">
+                        <div className="col-12">
+                            <div className="services d-flex align-items-center justify-content-around justify-md-content-around py-3">
+                                <div className="single-service">
+                                    <div className="d-flex align-items-center justify-content-between">
+                                        <img src="images/service.png" alt="" className="service-img p-3" />
+                                        <div className="service-details gap-15">
+                                            <div className="service-title fs-md py-1">Free Shipping</div>
+                                            <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
                                         </div>
                                     </div>
-                                    <div className="single-service">
-                                        <div className="d-flex align-items-center justify-content-between">
-                                            <img src="images/service.png" alt="" className="service-img p-3" />
-                                            <div className="service-details p-3">
-                                                <div className="service-title fs-md py-1">Free Shipping</div>
-                                                <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
-                                            </div>
+                                </div>
+                                <div className="single-service">
+                                    <div className="d-flex align-items-center justify-content-between">
+                                        <img src="images/service-02.png" alt="" className="service-img p-3" />
+                                        <div className="service-details gap-15">
+                                            <div className="service-title fs-md py-1">Free Shipping</div>
+                                            <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
                                         </div>
                                     </div>
-                                    <div className="single-service d-none d-md-block">
-                                        <div className="d-flex align-items-center justify-content-between">
-                                            <img src="images/service.png" alt="" className="service-img p-3" />
-                                            <div className="service-details p-3">
-                                                <div className="service-title fs-md py-1">Free Shipping</div>
-                                                <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
-                                            </div>
+                                </div>
+                                <div className="single-service d-none d-md-block">
+                                    <div className="d-flex align-items-center justify-content-between">
+                                        <img src="images/service-03.png" alt="" className="service-img p-3" />
+                                        <div className="service-details gap-15">
+                                            <div className="service-title fs-md py-1">Free Shipping</div>
+                                            <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
                                         </div>
                                     </div>
-                                    <div className="single-service d-none d-xl-block">
-                                        <div className="d-flex align-items-center justify-content-between">
-                                            <img src="images/service.png" alt="" className="service-img p-3" />
-                                            <div className="service-details p-3">
-                                                <div className="service-title fs-md py-1">Free Shipping</div>
-                                                <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
-                                            </div>
+                                </div>
+                                <div className="single-service d-none d-xl-block">
+                                    <div className="d-flex align-items-center justify-content-between">
+                                        <img src="images/service-04.png" alt="" className="service-img p-3" />
+                                        <div className="service-details gap-15">
+                                            <div className="service-title fs-md py-1">Free Shipping</div>
+                                            <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
                                         </div>
                                     </div>
-                                    <div className="single-service d-none d-xxl-block">
-                                        <div className="d-flex align-items-center justify-content-between">
-                                            <img src="images/service.png" alt="" className="service-img p-3" />
-                                            <div className="service-details p-3">
-                                                <div className="service-title fs-md py-1">Free Shipping</div>
-                                                <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
-                                            </div>
+                                </div>
+                                <div className="single-service d-none d-xxl-block">
+                                    <div className="d-flex align-items-center justify-content-between">
+                                        <img src="images/service-05.png" alt="" className="service-img p-3" />
+                                        <div className="service-details gap-15">
+                                            <div className="service-title fs-md py-1">Free Shipping</div>
+                                            <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="home-wrapper-3 py-3 gray-bg">
+                <div className="container-xxl">
+                    <div className="categories bg-white px-5 py-3">
+                        <div class="row">
+                            <div class="col-sm-3 py-3 ps-3 single-card">
+                                <div class="card">
+                                    <div className="single-category d-flex justify-content-between align-items-center">
+                                        <div className="category-details">
+                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
+                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
+                                        </div>
+                                        <div className="category-img">
+                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 py-3 ps-3 single-card">
+                                <div class="card">
+                                    <div className="single-category d-flex justify-content-between align-items-center">
+                                        <div className="category-details">
+                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
+                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
+                                        </div>
+                                        <div className="category-img">
+                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 py-3 ps-3 single-card">
+                                <div class="card">
+                                    <div className="single-category d-flex justify-content-between align-items-center">
+                                        <div className="category-details">
+                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
+                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
+                                        </div>
+                                        <div className="category-img">
+                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 py-3 ps-3 single-card">
+                                <div class="card">
+                                    <div className="single-category d-flex justify-content-between align-items-center">
+                                        <div className="category-details">
+                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
+                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
+                                        </div>
+                                        <div className="category-img">
+                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 py-3 ps-3 single-card">
+                                <div class="card">
+                                    <div className="single-category d-flex justify-content-between align-items-center">
+                                        <div className="category-details">
+                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
+                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
+                                        </div>
+                                        <div className="category-img">
+                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 py-3 ps-3 single-card">
+                                <div class="card">
+                                    <div className="single-category d-flex justify-content-between align-items-center">
+                                        <div className="category-details">
+                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
+                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
+                                        </div>
+                                        <div className="category-img">
+                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 py-3 ps-3 single-card">
+                                <div class="card">
+                                    <div className="single-category d-flex justify-content-between align-items-center">
+                                        <div className="category-details">
+                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
+                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
+                                        </div>
+                                        <div className="category-img">
+                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3 py-3 ps-3 single-card">
+                                <div class="card">
+                                    <div className="single-category d-flex justify-content-between align-items-center">
+                                        <div className="category-details">
+                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
+                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
+                                        </div>
+                                        <div className="category-img">
+                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
                                         </div>
                                     </div>
                                 </div>
