@@ -123,7 +123,7 @@ const Home = () => {
             </section>
             <section className="home-wrapper-3 py-3 gray-bg">
                 <div className="container-xxl">
-                    <div className="categories bg-white px-4 py-3">
+                    <div className="categories bg-white px-4 py-3 br-shadow">
                         <div class="row">
                             <div class="col-sm-3 py-3 ps-3 single-card">
                                 <div class="card">
@@ -234,13 +234,28 @@ const Home = () => {
                 </div>
             </section>
             <section className="home-wrapper-4 py-3 gray-bg">
-                <div className="marquee-wrapper">
-                    <div className="container-xxl">
+                <div className="container-xxl">
+                    <div className="marquee-wrapper bg-white br-shadow">
                         <div className="row">
                             <div className="col-12">
                                 <div className="marquee-inner-wrapper card-wrapper">
-                                    <Marquee className='d-flex'>
-                                        <div className="marquee-img">
+                                    <Marquee className='d-flex' gradient={false} pauseOnHover={true} speed={15}>
+                                        <div className="marquee-img mx-4 w-25">
+                                            <img src="images/brand-01.png" alt="" />
+                                        </div>
+                                        <div className="marquee-img mx-4 w-25">
+                                            <img src="images/brand-01.png" alt="" />
+                                        </div>
+                                        <div className="marquee-img mx-4 w-25">
+                                            <img src="images/brand-01.png" alt="" />
+                                        </div>
+                                        <div className="marquee-img mx-4 w-25">
+                                            <img src="images/brand-01.png" alt="" />
+                                        </div>
+                                        <div className="marquee-img mx-4 w-25">
+                                            <img src="images/brand-01.png" alt="" />
+                                        </div>
+                                        <div className="marquee-img mx-4 w-25">
                                             <img src="images/brand-01.png" alt="" />
                                         </div>
                                     </Marquee>
