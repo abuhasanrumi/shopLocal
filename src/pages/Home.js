@@ -2,8 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Marquee from "react-fast-marquee";
 import Blogpost from '../components/Blogpost';
+import ProductCard from '../components/ProductUtilities/ProductCard';
 
 const Home = () => {
+
     return (
         <>
             <section className="home-wrapper-1 py-3">
@@ -267,6 +269,16 @@ const Home = () => {
                 </div>
             </section>
             <section className="home-wrapper-5 py-5 gray-bg">
+                <div className="container-xxl">
+                    <div className="product-wrapper">
+                        <div className="header fs-lg fw-bold mb-4">Featured Collection</div>
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="home-wrapper-6 py-5 gray-bg">
                 <div className="container-xxl">
                     <div className="blog-wrapper">
                         <div className="header fs-lg fw-bold mb-4">Blog Section</div>
