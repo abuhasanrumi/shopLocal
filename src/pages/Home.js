@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Marquee from "react-fast-marquee";
 
 const Home = () => {
     return (
@@ -122,7 +123,7 @@ const Home = () => {
             </section>
             <section className="home-wrapper-3 py-3 gray-bg">
                 <div className="container-xxl">
-                    <div className="categories bg-white px-5 py-3">
+                    <div className="categories bg-white px-4 py-3">
                         <div class="row">
                             <div class="col-sm-3 py-3 ps-3 single-card">
                                 <div class="card">
@@ -226,6 +227,23 @@ const Home = () => {
                                             <img className='img-fluid' src="images/laptop.jpg" alt="" />
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section className="home-wrapper-4 py-3 gray-bg">
+                <div className="marquee-wrapper">
+                    <div className="container-xxl">
+                        <div className="row">
+                            <div className="col-12">
+                                <div className="marquee-inner-wrapper card-wrapper">
+                                    <Marquee className='d-flex'>
+                                        <div className="marquee-img">
+                                            <img src="images/brand-01.png" alt="" />
+                                        </div>
+                                    </Marquee>
                                 </div>
                             </div>
                         </div>
