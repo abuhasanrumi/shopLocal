@@ -291,4 +291,16 @@ footer .input-group-text {
 }
 /* Blog section ends here  */
 
+/* Featured product section starts  */
+.brand {
+  color: var(--color-bf4800);
+}
+.product-title {
+  line-height: 1.5em;
+  max-height: 3em;
+  overflow: hidden;
+  white-space: pre;
+}
+/* Featured product section ends  */
+
 /* Home page ends here  */

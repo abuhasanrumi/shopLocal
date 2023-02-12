@@ -243,23 +243,26 @@ const Home = () => {
                             <div className="col-12">
                                 <div className="marquee-inner-wrapper card-wrapper">
                                     <Marquee className='d-flex' gradient={false} pauseOnHover={true} speed={15}>
-                                        <div className="marquee-img mx-4 w-25">
+                                        <div className="marquee-img mx-4 img-fluid">
                                             <img src="images/brand-01.png" alt="" />
                                         </div>
-                                        <div className="marquee-img mx-4 w-25">
+                                        <div className="marquee-img mx-4 img-fluid">
                                             <img src="images/brand-02.png" alt="" />
                                         </div>
-                                        <div className="marquee-img mx-4 w-25">
+                                        <div className="marquee-img mx-4 img-fluid">
                                             <img src="images/brand-03.png" alt="" />
                                         </div>
-                                        <div className="marquee-img mx-4 w-25">
+                                        <div className="marquee-img mx-4 img-fluid">
                                             <img src="images/brand-04.png" alt="" />
                                         </div>
-                                        <div className="marquee-img mx-4 w-25">
+                                        <div className="marquee-img mx-4 img-fluid">
                                             <img src="images/brand-05.png" alt="" />
                                         </div>
-                                        <div className="marquee-img mx-4 w-25">
+                                        <div className="marquee-img mx-4 img-fluid">
                                             <img src="images/brand-06.png" alt="" />
+                                        </div>
+                                        <div className="marquee-img mx-4 img-fluid">
+                                            <img src="images/brand-07.png" alt="" />
                                         </div>
                                     </Marquee>
                                 </div>
@@ -272,8 +275,12 @@ const Home = () => {
                 <div className="container-xxl">
                     <div className="product-wrapper">
                         <div className="header fs-lg fw-bold mb-4">Featured Collection</div>
-                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
-
+                        <div class="row row-cols-5 g-4">
+                            <ProductCard />
+                            <ProductCard />
+                            <ProductCard />
+                            <ProductCard />
+                            <ProductCard />
                         </div>
                     </div>
                 </div>
