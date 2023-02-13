@@ -15,7 +15,7 @@ const ProductCard = () => {
                         </Link>
                     </div>
                 </div>
-                <div className="product-details px-3 pb-2">
+                <div className="product-details text-dark px-3 pb-2">
                     <p className="brand fs-xsm">Havels</p>
                     <h5 className="product-title fs-sm">Kids headphones bulk 10 pack multi colored for students</h5>
                     <ReactStars

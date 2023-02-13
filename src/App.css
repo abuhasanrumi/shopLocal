@@ -10,6 +10,7 @@
   --color-232f3e: #232f3e;
   --color-bf4800: #bf4800;
   --color-f5f5f7: #f5f5f7;
+  --color-36b739: #36b739;
 }
 
 body {
@@ -306,7 +307,8 @@ footer .input-group-text {
 .product-card:hover .action-bar {
   right: 4%;
 }
-.product-title {
+.product-title,
+.special-prod-title {
   line-height: 1.5em;
   max-height: 3em;
   overflow: hidden;
@@ -331,5 +333,19 @@ footer .input-group-text {
   display: block;
 }
 /* Featured product section ends  */
+
+/* special product section starts  */
+.time-badge {
+  width: 25px;
+  height: 25px;
+}
+.progress {
+  height: 0.4rem;
+  background-color: #f5f5f7;
+}
+.progress-bar {
+  background-color: var(--color-36b739);
+}
+/* special product section ends */
 
 /* Home page ends here  */
