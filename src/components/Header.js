@@ -21,7 +21,7 @@ const Header = () => {
                 <div className="container-xxl">
                     <div className="row align-items-center ">
                         <div className="col-3">
-                            <h3 className='mb-0'><Link className='text-white'>ShopLocal</Link></h3>
+                            <h3 className='mb-0'><Link to="/" className='text-white'>ShopLocal</Link></h3>
                         </div>
                         <div className="col-4">
                             <div className="search-wrapper d-none d-lg-block">
@@ -75,7 +75,7 @@ const Header = () => {
                     </div>
                 </div>
             </header>
-            <header className="header-bottom py-1 d-none">
+            <header className="header-bottom py-1 d-none d-lg-block">
                 <div className="container-xxl">
                     <div className="row">
                         <div className="col-12">
@@ -96,8 +96,8 @@ const Header = () => {
                                 <div className='menu-links'>
                                     <div className="d-flex align-items-center gap-15">
                                         <NavLink to="/">Home</NavLink>
-                                        <NavLink to="/">Our Store</NavLink>
-                                        <NavLink to="/">Blogs</NavLink>
+                                        <NavLink to="/our-store">Our Store</NavLink>
+                                        <NavLink to="/blogs">Blogs</NavLink>
                                         <NavLink to="/contact">Contact</NavLink>
                                     </div>
                                 </div>
