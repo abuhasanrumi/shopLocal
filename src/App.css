@@ -295,10 +295,25 @@ footer .input-group-text {
 .brand {
   color: var(--color-bf4800);
 }
+.product-card {
+  overflow: hidden;
+}
+.product-card:hover .action-bar {
+  right: 4%;
+}
 .product-title {
   line-height: 1.5em;
   max-height: 3em;
   overflow: hidden;
+}
+.wishlist-icon {
+  top: 3%;
+  right: 4%;
+}
+.action-bar {
+  top: 10%;
+  right: -10%;
+  transition: 0.3s;
 }
 /* Featured product section ends  */
 

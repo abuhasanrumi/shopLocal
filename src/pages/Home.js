@@ -275,7 +275,7 @@ const Home = () => {
                 <div className="container-xxl">
                     <div className="product-wrapper">
                         <div className="header fs-lg fw-bold mb-4">Featured Collection</div>
-                        <div class="row row-cols-5 g-4">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
                             <ProductCard />
                             <ProductCard />
                             <ProductCard />
