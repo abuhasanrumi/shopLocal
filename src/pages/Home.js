@@ -5,6 +5,7 @@ import Blogpost from '../components/Blogpost';
 import ProductCard from '../components/ProductUtilities/ProductCard';
 import SpecialProducts from '../components/ProductUtilities/SpecialProducts';
 import PopularProductCard from '../components/ProductUtilities/PopularProductCard';
+import FamousCard from '../components/FamousCard';
 
 const Home = () => {
 
@@ -20,7 +21,7 @@ const Home = () => {
                                     <span className='main-banner-span fs-xsm'>SUPERCHARGED FOR PROS.</span>
                                     <h4 className='main-banner-title fs-xl py-md-3'>iPad S13+ Pro.</h4>
                                     <p className='main-banner-details fs-sm'>From $999.00 or $41.62/mo.<br></br>for 24 mo. Footnote*</p>
-                                    <Link><button type="button" class="btn darkButton py-1 py-sm-2 px-3 px-sm-4 rounded-pill">Buy Now</button></Link>
+                                    <Link><button type="button" className="btn darkButton py-1 py-sm-2 px-3 px-sm-4 rounded-pill">Buy Now</button></Link>
                                 </div>
                             </div>
                         </div>
@@ -129,9 +130,9 @@ const Home = () => {
             <section className="home-wrapper-3 py-3 gray-bg">
                 <div className="container-xxl">
                     <div className="categories bg-white px-4 py-3 br-shadow">
-                        <div class="row">
-                            <div class="col-sm-3 py-3 ps-3 single-card">
-                                <div class="card">
+                        <div className="row">
+                            <div className="col-sm-3 py-3 ps-3 single-card">
+                                <div className="card">
                                     <div className="single-category d-flex justify-content-between align-items-center">
                                         <div className="category-details">
                                             <div className="category-title fs-sm py-1">Computers & Laptop</div>
@@ -143,8 +144,8 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3 py-3 ps-3 single-card">
-                                <div class="card">
+                            <div className="col-sm-3 py-3 ps-3 single-card">
+                                <div className="card">
                                     <div className="single-category d-flex justify-content-between align-items-center">
                                         <div className="category-details">
                                             <div className="category-title fs-sm py-1">Computers & Laptop</div>
@@ -156,8 +157,8 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3 py-3 ps-3 single-card">
-                                <div class="card">
+                            <div className="col-sm-3 py-3 ps-3 single-card">
+                                <div className="card">
                                     <div className="single-category d-flex justify-content-between align-items-center">
                                         <div className="category-details">
                                             <div className="category-title fs-sm py-1">Computers & Laptop</div>
@@ -169,8 +170,8 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3 py-3 ps-3 single-card">
-                                <div class="card">
+                            <div className="col-sm-3 py-3 ps-3 single-card">
+                                <div className="card">
                                     <div className="single-category d-flex justify-content-between align-items-center">
                                         <div className="category-details">
                                             <div className="category-title fs-sm py-1">Computers & Laptop</div>
@@ -182,8 +183,8 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3 py-3 ps-3 single-card">
-                                <div class="card">
+                            <div className="col-sm-3 py-3 ps-3 single-card">
+                                <div className="card">
                                     <div className="single-category d-flex justify-content-between align-items-center">
                                         <div className="category-details">
                                             <div className="category-title fs-sm py-1">Computers & Laptop</div>
@@ -195,8 +196,8 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3 py-3 ps-3 single-card">
-                                <div class="card">
+                            <div className="col-sm-3 py-3 ps-3 single-card">
+                                <div className="card">
                                     <div className="single-category d-flex justify-content-between align-items-center">
                                         <div className="category-details">
                                             <div className="category-title fs-sm py-1">Computers & Laptop</div>
@@ -208,8 +209,8 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3 py-3 ps-3 single-card">
-                                <div class="card">
+                            <div className="col-sm-3 py-3 ps-3 single-card">
+                                <div className="card">
                                     <div className="single-category d-flex justify-content-between align-items-center">
                                         <div className="category-details">
                                             <div className="category-title fs-sm py-1">Computers & Laptop</div>
@@ -221,8 +222,8 @@ const Home = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-3 py-3 ps-3 single-card">
-                                <div class="card">
+                            <div className="col-sm-3 py-3 ps-3 single-card">
+                                <div className="card">
                                     <div className="single-category d-flex justify-content-between align-items-center">
                                         <div className="category-details">
                                             <div className="category-title fs-sm py-1">Computers & Laptop</div>
@@ -277,7 +278,7 @@ const Home = () => {
                 <div className="container-xxl">
                     <div className="product-wrapper">
                         <div className="header fs-lg fw-bold mb-4">Featured Collection</div>
-                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3">
+                        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3">
                             <ProductCard />
                             <ProductCard />
                             <ProductCard />
@@ -288,11 +289,23 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+            <section className="home-wrapper-6 py-3 gray-bg">
+                <div className="container-xxl">
+                    <div className="famous-wrapper">
+                        <div className="row row-cols-2 row-cols-lg-4 g-3">
+                            <FamousCard />
+                            <FamousCard />
+                            <FamousCard />
+                            <FamousCard />
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section className="home-wrapper-6 py-5 gray-bg">
                 <div className="container-xxl">
                     <div className="product-details-wrapper">
                         <div className="header fs-lg fw-bold mb-4">Special Products</div>
-                        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+                        <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
                             <SpecialProducts />
                             <SpecialProducts />
                             <SpecialProducts />
@@ -319,7 +332,7 @@ const Home = () => {
                 <div className="container-xxl">
                     <div className="blog-wrapper">
                         <div className="header fs-lg fw-bold mb-4">Blog Section</div>
-                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+                        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
                             <Blogpost />
                             <Blogpost />
                             <Blogpost />

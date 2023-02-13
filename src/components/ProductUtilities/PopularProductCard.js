@@ -23,7 +23,7 @@ const PopularProductCard = () => {
                         size={15}
                         activeColor={"#ffc30b"}
                         edit={false}
-                        value="3"
+                        value={3}
                     />
                     <p className="price fs-5 pt-3">$100.00</p>
                 </div>

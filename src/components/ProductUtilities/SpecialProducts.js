@@ -46,7 +46,7 @@ const SpecialProducts = () => {
                                 <div className="progress-bar" role="progressbar" style={{ width: "25%" }} aria-valuenow="25" aria-valuemin="0" area-valuemax="100"></div>
                             </div>
                         </div>
-                        <Link><button type="button" class="btn darkButton py-1 py-sm-2 px-3 px-sm-4 rounded-pill">Option</button></Link>
+                        <Link><button type="button" className="btn darkButton py-1 py-sm-2 px-3 px-sm-4 rounded-pill">Option</button></Link>
                     </div>
 
                 </div>
