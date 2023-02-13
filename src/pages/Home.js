@@ -293,10 +293,10 @@ const Home = () => {
                 <div className="container-xxl">
                     <div className="famous-wrapper">
                         <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
-                            <FamousCard />
-                            <FamousCard />
-                            <FamousCard />
-                            <FamousCard />
+                            <FamousCard color={"dark"} />
+                            <FamousCard color={"white"} />
+                            <FamousCard color={"white"} />
+                            <FamousCard color={"white"} />
                         </div>
                     </div>
                 </div>
