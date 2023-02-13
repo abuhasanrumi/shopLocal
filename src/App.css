@@ -348,4 +348,19 @@ footer .input-group-text {
 }
 /* special product section ends */
 
+/* famous banner starts here  */
+.famous-content {
+  top: 10%;
+  left: 10%;
+}
+
+.famous-title {
+  font-weight: 500;
+}
+
+.famous-wrapper > div:first-child .famous-title {
+  color: white;
+}
+/* famous banner ends here  */
+
 /* Home page ends here  */

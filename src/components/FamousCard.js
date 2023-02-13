@@ -3,12 +3,12 @@ import React from 'react'
 const FamousCard = () => {
     return (
         <div className="col">
-            <div className="famous-product-card position-relative">
-                <img src="images/famous-banner-1" alt="" />
+            <div className="famous-product-card br-shadow position-relative mw-100">
+                <img className='img-fluid rounded' src="images/famous-banner-1.webp" alt="" />
                 <div className="famous-content position-absolute">
-                    <p className="fs-xsm transform-uppercase">Big Screen</p>
-                    <div className="fs-md">Smart Watch Series 7</div>
-                    <p className="fs-sm">From $399 or $16.49/month for 24 month*</p>
+                    <p className="fs-xsm text-uppercase fw-light famous-type mb-0">Big Screen</p>
+                    <div className="fs-md famous-title py-3">Smart Watch Series 7</div>
+                    <p className="fs-sm famous-des fw-light">From $399or $16.62/mo. for 24 mo.*</p>
                 </div>
             </div>
         </div>

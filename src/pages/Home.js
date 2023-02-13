@@ -292,7 +292,7 @@ const Home = () => {
             <section className="home-wrapper-6 py-3 gray-bg">
                 <div className="container-xxl">
                     <div className="famous-wrapper">
-                        <div className="row row-cols-2 row-cols-lg-4 g-3">
+                        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
                             <FamousCard />
                             <FamousCard />
                             <FamousCard />
