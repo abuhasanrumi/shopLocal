@@ -4,6 +4,7 @@ import Marquee from "react-fast-marquee";
 import Blogpost from '../components/Blogpost';
 import ProductCard from '../components/ProductUtilities/ProductCard';
 import SpecialProducts from '../components/ProductUtilities/SpecialProducts';
+import PopularProductCard from '../components/ProductUtilities/PopularProductCard';
 
 const Home = () => {
 
@@ -276,7 +277,8 @@ const Home = () => {
                 <div className="container-xxl">
                     <div className="product-wrapper">
                         <div className="header fs-lg fw-bold mb-4">Featured Collection</div>
-                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4">
+                        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3">
+                            <ProductCard />
                             <ProductCard />
                             <ProductCard />
                             <ProductCard />
@@ -299,6 +301,21 @@ const Home = () => {
                 </div>
             </section>
             <section className="home-wrapper-7 py-5 gray-bg">
+                <div className="container-xxl">
+                    <div className="popular-product-wrapper">
+                        <div className="header fs-lg fw-bold mb-4">Our Featured Products</div>
+                    </div>
+                    <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3">
+                        <PopularProductCard />
+                        <PopularProductCard />
+                        <PopularProductCard />
+                        <PopularProductCard />
+                        <PopularProductCard />
+                        <PopularProductCard />
+                    </div>
+                </div>
+            </section>
+            <section className="home-wrapper-8 py-5 gray-bg">
                 <div className="container-xxl">
                     <div className="blog-wrapper">
                         <div className="header fs-lg fw-bold mb-4">Blog Section</div>
