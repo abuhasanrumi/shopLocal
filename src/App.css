@@ -297,6 +297,11 @@ footer .input-group-text {
 }
 .product-card {
   overflow: hidden;
+  cursor: pointer;
+}
+.product-img {
+  height: 240px;
+  transition: 0.3s ease-in-out;
 }
 .product-card:hover .action-bar {
   right: 4%;
@@ -314,6 +319,16 @@ footer .input-group-text {
   top: 10%;
   right: -10%;
   transition: 0.3s;
+}
+
+.product-card .product-img > img:nth-child(2) {
+  display: none;
+}
+.product-card .product-img:hover > img:first-child {
+  display: none;
+}
+.product-card .product-img:hover > img:nth-child(2) {
+  display: block;
 }
 /* Featured product section ends  */
 

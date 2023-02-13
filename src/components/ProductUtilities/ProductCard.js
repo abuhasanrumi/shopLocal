@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom';
 const ProductCard = () => {
     return (
         <div className="col">
-            <div className="product-card bg-white br-shadow position-relative">
-                <div className="product-img position-relative">
+            <Link className="product-card bg-white br-shadow position-relative">
+                <div className="product-img d-flex align-items-center position-relative">
                     <img className='img-fluid rounded' src="images/watch.jpg" alt="" />
+                    <img className='img-fluid rounded' src="images/watch-2.avif" alt="" />
                     <div className="wishlist-icon position-absolute">
                         <Link>
                             <img src="images/wish.svg" alt="" />
@@ -39,7 +40,7 @@ const ProductCard = () => {
                         </Link>
                     </div>
                 </div>
-            </div>
+            </Link>
         </div>
     )
 }
