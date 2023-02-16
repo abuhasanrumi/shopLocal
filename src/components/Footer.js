@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <>
             <footer className="py-5">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="row align-items-center">
                         <div className="col-12 col-lg-5">
                             <div className="footer-top-data d-flex gap-15 align-items-center justify-content-center pb-4 pb-lg-0">
@@ -14,7 +14,7 @@ const Footer = () => {
                                 <h3 className='mb-0 text-white fw-light'>Sign Up For Newsletter</h3>
                             </div>
                         </div>
-                        <div className="col-10 col-lg-7 mx-auto">
+                        <div className="col-10 col-lg-5 mx-auto">
                             <div className="input-group">
                                 <input type="text" className="form-control py-1 footer-sub" placeholder="Your email address" aria-label="Your email address" aria-describedby="basic-addon2" />
                                 <span className="input-group-text p-2" id="basic-addon2">
@@ -26,7 +26,7 @@ const Footer = () => {
                 </div>
             </footer>
             <footer className="py-5 d-none d-lg-block">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col-4">
                             <h4 className='text-white mb-4'>Contact Us</h4>
@@ -85,7 +85,7 @@ const Footer = () => {
                 </div>
             </footer>
             <footer className="py-3">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col-12">
                             <p className="text-center mb-0 text-white fs-6">&copy; {new Date().getFullYear()}; Powered by Abu Hasan Rumi</p>

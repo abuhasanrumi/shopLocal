@@ -12,7 +12,7 @@ const Home = () => {
     return (
         <>
             <section className="home-wrapper-1 py-3">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col-12 col-lg-6">
                             <div className="main-banner position-relative mb-4">
@@ -73,7 +73,7 @@ const Home = () => {
                 </div>
             </section>
             <section className="home-wrapper-2 py-4 gray-bg">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="row d-flex justify-content-between align-items-center">
                         <div className="col-12">
                             <div className="services d-flex align-items-center justify-content-around justify-md-content-around py-3">
@@ -128,7 +128,7 @@ const Home = () => {
                 </div>
             </section>
             <section className="home-wrapper-3 py-3 gray-bg">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="categories bg-white px-4 py-3 br-shadow">
                         <div className="row">
                             <div className="col-sm-3 py-3 ps-3 single-card">
@@ -240,7 +240,7 @@ const Home = () => {
                 </div>
             </section>
             <section className="home-wrapper-4 py-3 gray-bg">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="marquee-wrapper bg-white br-shadow">
                         <div className="row">
                             <div className="col-12">
@@ -275,7 +275,7 @@ const Home = () => {
                 </div>
             </section>
             <section className="home-wrapper-5 py-5 gray-bg">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="product-wrapper">
                         <div className="header fs-lg fw-bold mb-4">Featured Collection</div>
                         <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3">
@@ -290,7 +290,7 @@ const Home = () => {
                 </div>
             </section>
             <section className="home-wrapper-6 py-3 gray-bg">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="famous-wrapper">
                         <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
                             <FamousCard color={"dark"} />
@@ -302,7 +302,7 @@ const Home = () => {
                 </div>
             </section>
             <section className="home-wrapper-6 py-5 gray-bg">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="product-details-wrapper">
                         <div className="header fs-lg fw-bold mb-4">Special Products</div>
                         <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
@@ -314,7 +314,7 @@ const Home = () => {
                 </div>
             </section>
             <section className="home-wrapper-7 py-5 gray-bg">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="popular-product-wrapper">
                         <div className="header fs-lg fw-bold mb-4">Our Featured Products</div>
                     </div>
@@ -329,7 +329,7 @@ const Home = () => {
                 </div>
             </section>
             <section className="home-wrapper-8 py-5 gray-bg">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="blog-wrapper">
                         <div className="header fs-lg fw-bold mb-4">Blog Section</div>
                         <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">

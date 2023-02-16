@@ -6,7 +6,7 @@ const Header = () => {
     return (
         <>
             <header className="header-top-strip py-2">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col-12 col-md-6 d-none d-md-block">
                             <p className='text-white mb-0 fs-sm'>Free Shipping Over $100 & Free Returns</p>
@@ -18,7 +18,7 @@ const Header = () => {
                 </div>
             </header>
             <header className="header-upper py-4">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="row align-items-center ">
                         <div className="col-3">
                             <h3 className='mb-0'><Link to="/" className='text-white'>ShopLocal</Link></h3>
@@ -76,7 +76,7 @@ const Header = () => {
                 </div>
             </header>
             <header className="header-bottom py-1 d-none d-lg-block">
-                <div className="container-xxl">
+                <div className="container-fluid">
                     <div className="row">
                         <div className="col-12">
                             <div className="menu-bottom d-flex align-items-center gap-30">
