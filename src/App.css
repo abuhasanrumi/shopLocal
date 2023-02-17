@@ -373,5 +373,7 @@ footer .input-group-text {
 /* famous banner ends here  */
 
 /* Our Store  */
-
+.filter-card ul {
+  list-style: none;
+}
 /* Our Store Ends */
