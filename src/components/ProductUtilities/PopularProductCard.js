@@ -17,7 +17,7 @@ const PopularProductCard = () => {
                 </div>
                 <div className="product-details text-dark px-3 pb-2">
                     <p className="brand fs-xsm">Havels</p>
-                    <h5 className="product-title fs-sm">Kids headphones bulk 10 pack multi colored for students</h5>
+                    <h5 className="product-title fs-sm">Kids headphones bulk 10 pack multi colored for student</h5>
                     <ReactStars
                         count={5}
                         size={15}
