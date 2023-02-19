@@ -8,7 +8,7 @@ const ProductCard = () => {
             <Link className="product-card bg-white br-shadow position-relative">
                 <div className="product-img d-flex align-items-center position-relative">
                     <img className='img-fluid rounded' src="images/watch.jpg" alt="" />
-                    <img className='img-fluid rounded' src="images/watch-2.avif" alt="" />
+                    <img className='img-fluid rounded' src="images/watch-2.jpg" alt="" />
                     <div className="wishlist-icon position-absolute">
                         <Link>
                             <img src="images/wish.svg" alt="" />

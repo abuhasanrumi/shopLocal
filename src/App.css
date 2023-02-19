@@ -332,9 +332,10 @@ footer .input-group-text {
 .product-card .product-img:hover > img:nth-child(2) {
   display: block;
 }
+
 /* Featured product section ends  */
 
-/* special product section starts  */
+/* special product section start  */
 .time-badge {
   width: 25px;
   height: 25px;
