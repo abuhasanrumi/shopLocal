@@ -43,7 +43,7 @@ const OurStore = () => {
                                 </div>
                             </div>
                             <div className="filter-card br-shadow mb-4 p-3 bg-white">
-                                <h3 className="filter-title fs-6">Product Tags</h3>
+                                <h3 className="filter-title fs-6">Product Tag</h3>
                             </div>
                             <div className="filter-card br-shadow mb-4 p-3 bg-white">
                                 <h3 className="filter-title fs-6">Random Product</h3>
