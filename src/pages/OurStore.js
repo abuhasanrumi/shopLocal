@@ -37,7 +37,7 @@ const OurStore = () => {
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="" />
                                         <label class="form-check-label text-muted fs-xsm" for="">
-                                            Out of Stock (2)
+                                            Out of Stock (3)
                                         </label>
                                     </div>
                                 </div>
