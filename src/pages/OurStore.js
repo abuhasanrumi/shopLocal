@@ -26,19 +26,21 @@ const OurStore = () => {
                             <div className="filter-card br-shadow mb-4 p-3 bg-white">
                                 <h3 className="filter-title fs-6">Filter By</h3>
                                 <div className="availability py-3">
-                                    <p className="sub-title fw-bold">Availability</p>
+                                    <p className="sub-title mb-1">Availability</p>
 
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="" />
-                                        <label class="form-check-label text-muted fs-xsm" for="">
-                                            In Stock (21)
-                                        </label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="" />
-                                        <label class="form-check-label text-muted fs-xsm" for="">
-                                            Out of Stock (3)
-                                        </label>
+                                    <div>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="checkbox" value="" id="" />
+                                            <label className="form-check-label text-muted fs-xsm" htmlFor="">
+                                                In Stock (21)
+                                            </label>
+                                        </div>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="checkbox" value="" id="" />
+                                            <label className="form-check-label text-muted fs-xsm" htmlFor="">
+                                                Out of Stock (3)
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

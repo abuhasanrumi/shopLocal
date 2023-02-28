@@ -377,4 +377,14 @@ footer .input-group-text {
 .filter-card ul {
   list-style: none;
 }
+
+.filter-card .form-check-input:checked {
+  background-color: var(--color-febd69);
+  border-color: rgba(0, 0, 0, 0.25);
+}
+
+.filter-card .form-check-input:focus {
+  box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.25);
+}
 /* Our Store Ends */
