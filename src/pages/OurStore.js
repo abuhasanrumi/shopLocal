@@ -16,17 +16,17 @@ const OurStore = () => {
                                 <h3 className="filter-title fs-6">Shop By Categories</h3>
                                 <div className='pt-2'>
                                     <ul className='ps-0 fs-xsm text-muted mb-0'>
-                                        <li className='py-2'>Watch</li>
-                                        <li className='py-2'>TV</li>
-                                        <li className='py-2'>Camera</li>
-                                        <li className='py-2'>Laptop</li>
+                                        <li className='py-1'>Watch</li>
+                                        <li className='py-1'>TV</li>
+                                        <li className='py-1'>Camera</li>
+                                        <li className='py-1'>Laptop</li>
                                     </ul>
                                 </div>
                             </div>
                             <div className="filter-card br-shadow mb-4 p-3 bg-white">
                                 <h3 className="filter-title fs-6">Filter By</h3>
                                 <div className="availability py-3">
-                                    <p className="sub-title mb-1">Availability</p>
+                                    <p className="sub-title mb-2">Availability</p>
 
                                     <div>
                                         <div className="form-check">
@@ -40,6 +40,20 @@ const OurStore = () => {
                                             <label className="form-check-label text-muted fs-xsm" htmlFor="">
                                                 Out of Stock (3)
                                             </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="price py-3">
+                                    <p className="sub-title mb-2">Price</p>
+
+                                    <div>
+                                        <div class="form-floating">
+                                            <input type="number" className="form-control" id="floatingFrom" />
+                                            <label htmlFor="floatingFrom">From</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input type="number" className="form-control" id="floatingFrom" />
+                                            <label htmlFor="floatingFrom">From</label>
                                         </div>
                                     </div>
                                 </div>
