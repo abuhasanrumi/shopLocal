@@ -43,17 +43,20 @@ const OurStore = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="price py-3">
+                                <div className="price pb-3">
                                     <p className="sub-title mb-2">Price</p>
 
-                                    <div>
+                                    <div className='d-flex align-items-center gap-10'>
+                                        <span>$</span>
                                         <div class="form-floating">
-                                            <input type="number" className="form-control" id="floatingFrom" />
+                                            <input type="number" className="form-control" id="floatingFrom" placeholder="$5" />
                                             <label htmlFor="floatingFrom">From</label>
                                         </div>
+                                        <span>$</span>
+
                                         <div class="form-floating">
-                                            <input type="number" className="form-control" id="floatingFrom" />
-                                            <label htmlFor="floatingFrom">From</label>
+                                            <input type="number" className="form-control" id="floatingTo" placeholder="$50" />
+                                            <label htmlFor="floatingTo">To</label>
                                         </div>
                                     </div>
                                 </div>
