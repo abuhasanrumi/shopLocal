@@ -320,6 +320,11 @@ footer .input-group-text {
   transition: 0.3s;
 }
 
+.product-card .product-img > img {
+  width: 100%;
+  object-fit: fill;
+}
+
 .product-card .product-img > img:nth-child(2) {
   display: none;
 }

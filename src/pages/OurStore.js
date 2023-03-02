@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactStars from 'react-rating-stars-component'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
+import ProductCard from '../components/ProductUtilities/ProductCard';
+import { isMobile } from 'react-device-detect';
 
 
 const OurStore = () => {
+    const [grid, setGrid] = useState(4)
     return (
         <>
             <Meta title={"Our Store"} />
@@ -12,7 +15,7 @@ const OurStore = () => {
             <div className="store-wrapper home-wrapper-2 py-4 gray-bg">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-3">
+                        <div className="d-none d-lg-block col-lg-3">
                             <div className="filter-card br-shadow mb-4 p-3 bg-white">
                                 <h3 className="filter-title fs-6">Shop By Categories</h3>
                                 <div className='pt-2'>
@@ -49,13 +52,13 @@ const OurStore = () => {
 
                                     <div className='d-flex align-items-center gap-10'>
                                         <span>$</span>
-                                        <div class="form-floating">
+                                        <div className="form-floating">
                                             <input type="number" className="form-control" id="floatingFrom" placeholder="$5" />
                                             <label htmlFor="floatingFrom">From</label>
                                         </div>
                                         <span>$</span>
 
-                                        <div class="form-floating">
+                                        <div className="form-floating">
                                             <input type="number" className="form-control" id="floatingTo" placeholder="$50" />
                                             <label htmlFor="floatingTo">To</label>
                                         </div>
@@ -209,10 +212,10 @@ const OurStore = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-9">
-                            <div className="filter-sort-grid bg-white px-3 py-2 br-shadow">
+                        <div className="col-12 col-lg-9">
+                            <div className="filter-sort-grid bg-white px-3 py-2 br-shadow mb-4">
                                 <div className="d-flex justify-content-between align-items-center">
-                                    <div className="sort d-flex align-items-center gap-10">
+                                    <div className="d-none d-lg-block sort d-flex align-items-center gap-10">
                                         <label htmlFor="sortBy" className='w-100'>Sort By:</label>
                                         <select className='form-control form-select' name="" id="sortBy">
                                             <option value="manual">Featured</option>
@@ -228,26 +231,36 @@ const OurStore = () => {
                                     <div className="view d-flex align-items-center gap-10">
                                         <p className="mb-0 total-products fs-xsm text-secondary">21 products</p>
                                         <div className="grid-imgs d-flex gap-1">
-                                            <div className="single-grid-img d-flex align-items-center justify-content-center p-2">
+                                            <div onClick={() => setGrid(3)} className="single-grid-img d-flex align-items-center justify-content-center p-2">
                                                 <img src="images/gr4.svg" className='img-fluid' alt="" />
                                             </div>
-                                            <div className="single-grid-img d-flex align-items-center justify-content-center p-2">
+                                            <div onClick={() => setGrid(4)} className="single-grid-img d-flex align-items-center justify-content-center p-2">
                                                 <img src="images/gr3.svg" className='img-fluid' alt="" />
                                             </div>
-                                            <div className="single-grid-img d-flex align-items-center justify-content-center p-2">
+                                            <div onClick={() => setGrid(6)} className="single-grid-img d-flex align-items-center justify-content-center p-2">
                                                 <img src="images/gr2.svg" className='img-fluid' alt="" />
                                             </div>
-                                            <div className="single-grid-img d-flex align-items-center justify-content-center p-2">
+                                            <div onClick={() => setGrid(12)} className="single-grid-img d-flex align-items-center justify-content-center p-2">
                                                 <img src="images/gr.svg" className='img-fluid' alt="" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div className="products-list pb-5">
+                                <div className="row g-3">
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                    <ProductCard grid={grid} />
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
         </>
     )
 }

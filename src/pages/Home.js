@@ -278,7 +278,8 @@ const Home = () => {
                 <div className="container-fluid">
                     <div className="product-wrapper">
                         <div className="header fs-lg fw-bold mb-4">Featured Collection</div>
-                        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3">
+                        <div className="row g-3">
+                            {/* <div className="row row-cols-2"> */}
                             <ProductCard />
                             <ProductCard />
                             <ProductCard />
