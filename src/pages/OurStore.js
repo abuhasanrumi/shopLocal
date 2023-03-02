@@ -123,28 +123,28 @@ const OurStore = () => {
                             <div className="filter-card br-shadow mb-4 p-3 bg-white">
                                 <h3 className="filter-title fs-6 mb-3">Product Tag</h3>
                                 <div className="product-tags d-flex flex-wrap align-items-center gap-10">
-                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                    <span className="badge fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
                                         Headphone
                                     </span>
-                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                    <span className="badge fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
                                         Laptop
                                     </span>
-                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                    <span className="badge fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
                                         Mobile
                                     </span>
-                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                    <span className="badge fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
                                         Oppo
                                     </span>
-                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                    <span className="badge fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
                                         Vivo
                                     </span>
-                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                    <span className="badge fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
                                         Speaker
                                     </span>
-                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                    <span className="badge fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
                                         Tablet
                                     </span>
-                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                    <span className="badge fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
                                         Wire
                                     </span>
                                 </div>
@@ -209,7 +209,42 @@ const OurStore = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-9"></div>
+                        <div className="col-9">
+                            <div className="filter-sort-grid bg-white px-3 py-2 br-shadow">
+                                <div className="d-flex justify-content-between align-items-center">
+                                    <div className="sort d-flex align-items-center gap-10">
+                                        <label htmlFor="sortBy" className='w-100'>Sort By:</label>
+                                        <select className='form-control form-select' name="" id="sortBy">
+                                            <option value="manual">Featured</option>
+                                            <option value="best-selling" selected="selected">Best selling</option>
+                                            <option value="title-ascending">Alphabetically, A-Z</option>
+                                            <option value="title-descending">Alphabetically, Z-A</option>
+                                            <option value="price-ascending">Price, low to high</option>
+                                            <option value="price-descending">Price, high to low</option>
+                                            <option value="created-ascending">Date, old to new</option>
+                                            <option value="created-descending">Date, new to old</option>
+                                        </select>
+                                    </div>
+                                    <div className="view d-flex align-items-center gap-10">
+                                        <p className="mb-0 total-products fs-xsm text-secondary">21 products</p>
+                                        <div className="grid-imgs d-flex gap-1">
+                                            <div className="single-grid-img d-flex align-items-center justify-content-center p-2">
+                                                <img src="images/gr4.svg" className='img-fluid' alt="" />
+                                            </div>
+                                            <div className="single-grid-img d-flex align-items-center justify-content-center p-2">
+                                                <img src="images/gr3.svg" className='img-fluid' alt="" />
+                                            </div>
+                                            <div className="single-grid-img d-flex align-items-center justify-content-center p-2">
+                                                <img src="images/gr2.svg" className='img-fluid' alt="" />
+                                            </div>
+                                            <div className="single-grid-img d-flex align-items-center justify-content-center p-2">
+                                                <img src="images/gr.svg" className='img-fluid' alt="" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
