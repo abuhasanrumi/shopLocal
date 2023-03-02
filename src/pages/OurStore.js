@@ -7,7 +7,7 @@ import { isMobile } from 'react-device-detect';
 
 
 const OurStore = () => {
-    const [grid, setGrid] = useState(3)
+    const [grid, setGrid] = useState(isMobile ? 12 : 3)
     return (
         <>
             <Meta title={"Our Store"} />

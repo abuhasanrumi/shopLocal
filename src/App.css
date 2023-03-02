@@ -439,7 +439,7 @@ select#sortBy {
   align-items: center;
 }
 .col-12 > .product-card .product-img > img {
-  min-width: 180px;
+  min-width: 150px;
   width: 270px;
   object-fit: fill;
 }
