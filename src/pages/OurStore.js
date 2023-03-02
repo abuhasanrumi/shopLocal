@@ -7,7 +7,7 @@ import { isMobile } from 'react-device-detect';
 
 
 const OurStore = () => {
-    const [grid, setGrid] = useState(4)
+    const [grid, setGrid] = useState(3)
     return (
         <>
             <Meta title={"Our Store"} />
@@ -215,18 +215,20 @@ const OurStore = () => {
                         <div className="col-12 col-lg-9">
                             <div className="filter-sort-grid bg-white px-3 py-2 br-shadow mb-4">
                                 <div className="d-flex justify-content-between align-items-center">
-                                    <div className="d-none d-lg-block sort d-flex align-items-center gap-10">
-                                        <label htmlFor="sortBy" className='w-100'>Sort By:</label>
-                                        <select className='form-control form-select' name="" id="sortBy">
-                                            <option value="manual">Featured</option>
-                                            <option value="best-selling" selected="selected">Best selling</option>
-                                            <option value="title-ascending">Alphabetically, A-Z</option>
-                                            <option value="title-descending">Alphabetically, Z-A</option>
-                                            <option value="price-ascending">Price, low to high</option>
-                                            <option value="price-descending">Price, high to low</option>
-                                            <option value="created-ascending">Date, old to new</option>
-                                            <option value="created-descending">Date, new to old</option>
-                                        </select>
+                                    <div className='d-none d-lg-block'>
+                                        <div className="sort d-flex align-items-center gap-10">
+                                            <label htmlFor="sortBy" className='w-100'>Sort By:</label>
+                                            <select className='form-control form-select' name="" id="sortBy">
+                                                <option value="manual">Featured</option>
+                                                <option value="best-selling" selected="selected">Best selling</option>
+                                                <option value="title-ascending">Alphabetically, A-Z</option>
+                                                <option value="title-descending">Alphabetically, Z-A</option>
+                                                <option value="price-ascending">Price, low to high</option>
+                                                <option value="price-descending">Price, high to low</option>
+                                                <option value="created-ascending">Date, old to new</option>
+                                                <option value="created-descending">Date, new to old</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div className="view d-flex align-items-center gap-10">
                                         <p className="mb-0 total-products fs-xsm text-secondary">21 products</p>

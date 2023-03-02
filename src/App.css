@@ -303,6 +303,7 @@ footer .input-group-text {
 
 .product-card:hover .action-bar {
   right: 4%;
+  top: 15%;
 }
 .product-title,
 .special-prod-title {
@@ -433,4 +434,23 @@ select#sortBy {
   height: 14px;
   width: 14px;
 }
-/* Our Store Ends */
+.col-12 > .product-card {
+  display: flex;
+  align-items: center;
+}
+.col-12 > .product-card .product-img > img {
+  min-width: 180px;
+  width: 270px;
+  object-fit: fill;
+}
+.col-12 > .product-card .product-details {
+  display: block;
+  padding: 30px 0px !important;
+  padding-left: 15px !important;
+  z-index: 99;
+}
+.col-12 > .product-card .product-details .price {
+  margin: 0;
+}
+
+/* Our Store Ends */ ;
