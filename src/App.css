@@ -108,7 +108,7 @@ a {
 }
 
 .header-upper-text {
-  font-size: 1vw;
+  font-size: calc(10px + 0.2vw);
 }
 
 .header-upper .input-group-text {

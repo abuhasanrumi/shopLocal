@@ -9,15 +9,15 @@ const Header = () => {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-12 col-md-6 d-none d-md-block">
-                            <p className='text-white mb-0 fs-sm'>Free Shipping Over $100 & Free Returns</p>
+                            <p className='text-white mb-0 fs-xsm'>Free Shipping Over $100 & Free Returns</p>
                         </div>
                         <div className="col-12 col-md-6">
-                            <p className='text-center text-md-end text-white mb-0 fs-sm'>Hotline: <a className='text-white' href="tel:+8801537485726">+880 14234 24234</a></p>
+                            <p className='text-center text-md-end text-white mb-0 fs-xsm'>Hotline: <a className='text-white' href="tel:+8801537485726">+880 14234 24234</a></p>
                         </div>
                     </div>
                 </div>
             </header>
-            <header className="header-upper py-4">
+            <header className="header-upper py-3">
                 <div className="container-fluid">
                     <div className="row align-items-center ">
                         <div className="col-3">
@@ -32,7 +32,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="col-5">
-                            <div className="header-upper-links d-flex align-items-center justify-content-end">
+                            <div className="header-upper-links d-flex align-items-center justify-content-end gap-3">
                                 <div className="single-icon px-2">
                                     <Link className='d-flex align-items-center text-white gap-10'>
                                         <img className="img-fluid" src="images/compare.svg" alt="" />
@@ -54,8 +54,8 @@ const Header = () => {
                                 <div className="single-icon px-2">
                                     <Link className='d-flex align-items-center text-white gap-10'>
                                         <img className="img-fluid" src="images/cart.svg" alt="cart" />
-                                        <div className='d-none d-xl-block d-flex flex-column gap-10'>
-                                            <span className="badge bg-white text-dark header-upper-text rounded-pill">0</span>
+                                        <div className='d-none d-xl-block d-flex flex-column gap-10 justify-content-center'>
+                                            <span className="d-block badge bg-white text-dark fs-xsm fw-normal rounded-pill mb-1">0</span>
                                             <p className='mb-0 header-upper-text'>$500</p>
                                         </div>
                                     </Link>
@@ -94,7 +94,7 @@ const Header = () => {
                                     </div>
                                 </div>
                                 <div className='menu-links'>
-                                    <div className="d-flex align-items-center gap-15">
+                                    <div className="d-flex align-items-center gap-5">
                                         <NavLink to="/">Home</NavLink>
                                         <NavLink to="/our-store">Our Store</NavLink>
                                         <NavLink to="/blogs">Blogs</NavLink>
