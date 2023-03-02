@@ -395,4 +395,13 @@ footer .input-group-text {
   background-color: green;
   border-radius: 50%;
 }
+
+.random-product {
+  border-bottom: 1px solid lightgrey;
+}
+
+.random-product:last-child {
+  border-bottom: none;
+  padding-bottom: 0px !important;
+}
 /* Our Store Ends */

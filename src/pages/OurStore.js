@@ -1,4 +1,5 @@
 import React from 'react'
+import ReactStars from 'react-rating-stars-component'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
 
@@ -150,6 +151,62 @@ const OurStore = () => {
                             </div>
                             <div className="filter-card br-shadow mb-4 p-3 bg-white">
                                 <h3 className="filter-title fs-6">Random Products</h3>
+                                <div className="random-products-wrapper">
+                                    <div className="random-product py-3">
+                                        <div className="row">
+                                            <div className="col-4">
+                                                <img src="images/watch.jpg" className='img-fluid' alt="" />
+                                            </div>
+                                            <div className="col-8">
+                                                <h5 className="product-title fs-sm">Kids headphones bulk 10 pack multi colored for students</h5>
+                                                <ReactStars
+                                                    count={5}
+                                                    size={15}
+                                                    activeColor={"#ffc30b"}
+                                                    edit={false}
+                                                    value={3}
+                                                />
+                                                <p className="price fs-6 fw-normal pt-2 mb-0">$100.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="random-product py-3">
+                                        <div className="row">
+                                            <div className="col-4">
+                                                <img src="images/watch.jpg" className='img-fluid' alt="" />
+                                            </div>
+                                            <div className="col-8">
+                                                <h5 className="product-title fs-sm">Kids headphones bulk 10 pack multi colored for students</h5>
+                                                <ReactStars
+                                                    count={5}
+                                                    size={15}
+                                                    activeColor={"#ffc30b"}
+                                                    edit={false}
+                                                    value={3}
+                                                />
+                                                <p className="price fs-6 fw-normal pt-2 mb-0">$100.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="random-product py-3">
+                                        <div className="row">
+                                            <div className="col-4">
+                                                <img src="images/watch.jpg" className='img-fluid' alt="" />
+                                            </div>
+                                            <div className="col-8">
+                                                <h5 className="product-title fs-sm">Kids headphones bulk 10 pack multi colored for students</h5>
+                                                <ReactStars
+                                                    count={5}
+                                                    size={15}
+                                                    activeColor={"#ffc30b"}
+                                                    edit={false}
+                                                    value={3}
+                                                />
+                                                <p className="price fs-6 fw-normal pt-2 mb-0">$100.00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div className="col-9"></div>
