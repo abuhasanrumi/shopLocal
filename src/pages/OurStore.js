@@ -23,7 +23,7 @@ const OurStore = () => {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="filter-card br-shadow mb-4 p-3 bg-white">
+                            <div className="filter-card br-shadow mb-4 p-3 pb-4 bg-white">
                                 <h3 className="filter-title fs-6">Filter By</h3>
                                 <div className="availability py-3">
                                     <p className="sub-title mb-2">Availability</p>
@@ -43,7 +43,7 @@ const OurStore = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="price pb-3">
+                                <div className="price pb-4">
                                     <p className="sub-title mb-2">Price</p>
 
                                     <div className='d-flex align-items-center gap-10'>
@@ -60,9 +60,93 @@ const OurStore = () => {
                                         </div>
                                     </div>
                                 </div>
+                                <div className="colors-wrapper pb-4">
+                                    <p className="sub-title mb-2">Colors</p>
+
+                                    <div>
+                                        <ul className="colors ps-0 d-flex flex-wrap gap-10 mb-0">
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div className="size">
+                                    <p className="sub-title mb-2">Size</p>
+
+                                    <div>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="checkbox" value="" id="" />
+                                            <label className="form-check-label text-muted fs-xsm" htmlFor="">
+                                                S (10)
+                                            </label>
+                                        </div>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="checkbox" value="" id="" />
+                                            <label className="form-check-label text-muted fs-xsm" htmlFor="">
+                                                M (13)
+                                            </label>
+                                        </div>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="checkbox" value="" id="" />
+                                            <label className="form-check-label text-muted fs-xsm" htmlFor="">
+                                                L (10)
+                                            </label>
+                                        </div>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="checkbox" value="" id="" />
+                                            <label className="form-check-label text-muted fs-xsm" htmlFor="">
+                                                XL (10)
+                                            </label>
+                                        </div>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="checkbox" value="" id="" />
+                                            <label className="form-check-label text-muted fs-xsm" htmlFor="">
+                                                XXL (10)
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div className="filter-card br-shadow mb-4 p-3 bg-white">
-                                <h3 className="filter-title fs-6">Product Tag</h3>
+                                <h3 className="filter-title fs-6 mb-3">Product Tag</h3>
+                                <div className="product-tags d-flex flex-wrap align-items-center gap-10">
+                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                        Headphone
+                                    </span>
+                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                        Laptop
+                                    </span>
+                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                        Mobile
+                                    </span>
+                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                        Oppo
+                                    </span>
+                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                        Vivo
+                                    </span>
+                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                        Speaker
+                                    </span>
+                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                        Tablet
+                                    </span>
+                                    <span className="badge bg-light fw-normal text-secondary rounded-3 px-3 py-2 fs-xsm">
+                                        Wire
+                                    </span>
+                                </div>
                             </div>
                             <div className="filter-card br-shadow mb-4 p-3 bg-white">
                                 <h3 className="filter-title fs-6">Random Products</h3>
