@@ -317,7 +317,7 @@ footer .input-group-text {
 }
 .action-bar {
   top: 10%;
-  right: -10%;
+  right: -20%;
   transition: 0.3s;
 }
 
