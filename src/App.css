@@ -453,4 +453,12 @@ select#sortBy {
   margin: 0;
 }
 
-/* Our Store Ends */ ;
+/* Our Store Ends */
+
+/* Contact Page starts  */
+.contact-form-section .form-floating > input,
+.contact-form-section .form-floating > textarea {
+  border: none;
+  background-color: var(--color-f2f2f2);
+}
+/* Contact Page ends  */
