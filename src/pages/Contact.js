@@ -1,6 +1,7 @@
 import React from 'react'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
+import { AiFillHome, AiFillPhone, AiTwotoneMail, AiFillInfoCircle } from "react-icons/ai"
 
 
 const Contact = () => {
@@ -18,7 +19,7 @@ const Contact = () => {
                             <div className="contact-details-wrapper my-4 bg-white br-shadow">
                                 <div className="row">
                                     <div className="col-md-6">
-                                        <div className="contact-form-section p-4">
+                                        <div className="contact-form-section p-5">
                                             <h3 className="contact-title mb-4">Contact</h3>
                                             <form action="">
                                                 <div className="form-floating mb-3">
@@ -42,8 +43,14 @@ const Contact = () => {
                                         </div>
                                     </div>
                                     <div className="col-md-6">
-                                        <div className="contact-details-section p-4">
-                                            <h3 className="contact-title">Get In Touch With Us</h3>
+                                        <div className="contact-details-section p-5">
+                                            <h3 className="contact-title mb-4">Get In Touch With Us</h3>
+                                            <div className="getInTouchDetails">
+                                                <p className="text-muted"><AiFillHome className='me-3' />33 New Montgomery St. Ste 750 San Francisco, CA, USA 94105</p>
+                                                <p className="text-muted"><AiFillPhone className='me-3' />(888) 4344 6000</p>
+                                                <p className="text-muted"><AiTwotoneMail className='me-3' />demo@company.com</p>
+                                                <p className="text-muted"><AiFillInfoCircle className='me-3' />Monday – Friday 10 AM – 8 PM</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
