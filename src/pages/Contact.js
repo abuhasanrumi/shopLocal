@@ -2,6 +2,7 @@ import React from 'react'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
 
+
 const Contact = () => {
     return (
         <>
@@ -42,7 +43,7 @@ const Contact = () => {
                                     </div>
                                     <div className="col-md-6">
                                         <div className="contact-details-section p-4">
-                                            <h3 className="contact-title">Get in touch with us</h3>
+                                            <h3 className="contact-title">Get In Touch With Us</h3>
                                         </div>
                                     </div>
                                 </div>
