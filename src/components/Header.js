@@ -34,25 +34,25 @@ const Header = () => {
                         <div className="col-5">
                             <div className="header-upper-links d-flex align-items-center justify-content-end gap-3">
                                 <div className="single-icon px-2">
-                                    <Link className='d-flex align-items-center text-white gap-10'>
+                                    <Link to="compare-products" className='d-flex align-items-center text-white gap-10'>
                                         <img className="img-fluid" src="images/compare.svg" alt="" />
                                         <p className='d-none d-xl-block mb-0 header-upper-text'>Compare <br /> Products</p>
                                     </Link>
                                 </div>
                                 <div className="single-icon px-2">
-                                    <Link className='d-flex align-items-center text-white gap-10'>
+                                    <Link to="wishlist" className='d-flex align-items-center text-white gap-10'>
                                         <img className="img-fluid" src="images/wishlist.svg" alt="wishlist" />
                                         <p className='d-none d-xl-block mb-0 header-upper-text'>Favourite <br /> Wishlist</p>
                                     </Link>
                                 </div>
                                 <div className="single-icon px-2">
-                                    <Link className='d-flex align-items-center text-white gap-10'>
+                                    <Link to="login" className='d-flex align-items-center text-white gap-10'>
                                         <img className="img-fluid" src="images/user.svg" alt="user" />
                                         <p className='d-none d-xl-block mb-0 header-upper-text'>Login <br /> My Account</p>
                                     </Link>
                                 </div>
                                 <div className="single-icon px-2">
-                                    <Link className='d-flex align-items-center text-white gap-10'>
+                                    <Link to="cart" className='d-flex align-items-center text-white gap-10'>
                                         <img className="img-fluid" src="images/cart.svg" alt="cart" />
                                         <div className='d-none d-xl-block d-flex flex-column gap-10 justify-content-center'>
                                             <span className="d-block badge bg-white text-dark fs-xsm fw-normal rounded-pill mb-1">0</span>
