@@ -512,7 +512,8 @@ select#sortBy {
 /* login page starts  */
 .login-wrapper .login-card form > .form-floating input,
 .forgot-wrapper .forgot-card form > .form-floating input,
-.signup-wrapper .signup-card form > .form-floating input {
+.signup-wrapper .signup-card form > .form-floating input,
+.reset-wrapper .reset-card form > .form-floating input {
   border: none;
   background-color: var(--color-f2f2f2);
 }
