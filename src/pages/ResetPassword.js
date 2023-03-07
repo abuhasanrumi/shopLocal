@@ -27,9 +27,9 @@ const ResetPassword = () => {
                                     <div className="text-danger py-3">
                                         Passwords are not same.
                                     </div>
-
+                                    ``
                                     <div className="reset-form-buttons d-flex justify-content-center py-3 gap-30">
-                                        <button type="submit" className="btn resetButton py-3 py-md-3 px-5 px-md-5 rounded-pill">Submit</button>
+                                        <button type="submit" className="btn resetButton py-3 py-md-3 px-5 px-md-5 rounded-pill">Change Password</button>
                                     </div>
                                 </form>
                             </div>
