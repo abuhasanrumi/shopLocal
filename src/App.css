@@ -510,12 +510,17 @@ select#sortBy {
 /* compare page ends */
 
 /* login page starts  */
-.login-wrapper .login-card form > .form-floating input {
+.login-wrapper .login-card form > .form-floating input,
+.forgot-wrapper .forgot-card form > .form-floating input,
+.signup-wrapper .signup-card form > .form-floating input {
   border: none;
   background-color: var(--color-f2f2f2);
 }
 
-.login-form-buttons > button {
+.login-form-buttons > button,
+.forgot-form-buttons button,
+.signup-form-buttons > button,
+.reset-form-buttons > button {
   font-size: calc(12px + 0.2vw);
   color: white;
   line-height: 18px;
@@ -543,29 +548,36 @@ select#sortBy {
 }
 .login-form-buttons .signupButton:hover {
   background-color: var(--color-232f3e);
-  color: white;
 }
 /* login page ends  */
 
 /* Forgot password page starts */
-.reset-wrapper .reset-card form > .form-floating input {
-  border: none;
-  background-color: var(--color-f2f2f2);
-}
-.reset-form-buttons > button {
-  font-size: calc(12px + 0.2vw);
+
+.forgot-form-buttons .forgotButton {
+  background-color: var(--color-232f3e);
   color: white;
-  line-height: 18px;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-  font-weight: 400;
-  padding: 15px 35px;
-  display: inline-block;
-  box-sizing: border-box;
-  vertical-align: top;
-  overflow: hidden;
+}
+.forgot-form-buttons .forgotButton:hover {
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
 }
 
+.forgot-form-buttons .cancelButton {
+  color: var(--color-131921);
+}
+/* Forgot password page ends */
+
+/* sign up page stars  */
+.signup-form-buttons .signupButton {
+  background-color: var(--color-232f3e);
+}
+.signup-form-buttons .signupButton:hover {
+  background-color: var(--color-febd69);
+  color: var(--color-131921);
+}
+/* sign up page ends  */
+
+/* Reset password page starts */
 .reset-form-buttons .resetButton {
   background-color: var(--color-232f3e);
 }
@@ -573,8 +585,4 @@ select#sortBy {
   background-color: var(--color-febd69);
   color: var(--color-131921);
 }
-
-.reset-form-buttons .cancelButton {
-  color: var(--color-131921);
-}
-/* Forgot password page ends */
+/* Reset password page ends */

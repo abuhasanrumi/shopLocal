@@ -23,10 +23,10 @@ const Login = () => {
                                         <input type="password" class="form-control" id="loginFloatingPass" placeholder="Password" />
                                         <label className='text-muted' for="loginFloatingPass">Password</label>
                                     </div>
-                                    <Link to="forgot-password" className='py-3'><span className="fs-sm text-dark">Forgot your password?</span></Link>
+                                    <Link to="/forgot-password" className='py-3'><span className="fs-sm text-dark">Forgot your password?</span></Link>
                                     <div className="login-form-buttons d-flex justify-content-center py-3 gap-30">
                                         <button type="submit" className="btn loginButton py-3 py-md-3 px-5 px-md-5 rounded-pill">Login</button>
-                                        <button type="submit" className="btn signupButton py-3 py-md-3 px-5 px-md-5 rounded-pill">Sign Up</button>
+                                        <Link to="/signup"><button type="submit" className="btn signupButton py-3 py-md-3 px-5 px-md-5 rounded-pill">Sign Up</button></Link>
                                     </div>
                                 </form>
                             </div>
