@@ -464,7 +464,8 @@ select#sortBy {
 /* Contact Page ends  */
 
 /* compare page starts  */
-.compare-cross {
+.compare-cross,
+.wishlist-cross {
   width: 20px;
   right: 15px;
   top: 15px;
@@ -498,7 +499,8 @@ select#sortBy {
   align-items: center;
 }
 
-.compare-left-title {
+.compare-left-title,
+.wishlist-left-title {
   font-weight: 500;
 }
 
