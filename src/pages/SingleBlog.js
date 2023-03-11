@@ -2,7 +2,9 @@ import React from 'react'
 
 const SingleBlog = () => {
     return (
-        <div>SingleBlog</div>
+        <>
+            <div className="blog-wrapper"></div>
+        </>
     )
 }
 
