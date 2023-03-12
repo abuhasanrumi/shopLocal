@@ -13,7 +13,7 @@ const Blogpost = () => {
                         <p className="card-text fs-xsm text-gray">You're Only As Good As Your Last Collection, Which Is An Enormous Pressure. I Think There Is...</p>
                     </div>
                     <div className="card-footer bg-white mb-3">
-                        <Link><button type="button" className="btn darkButton py-1 py-sm-2 px-3 px-sm-4 rounded-pill">Read More</button></Link>
+                        <Link to="/blogs/:id"><button type="button" className="btn darkButton py-1 py-sm-2 px-3 px-sm-4 rounded-pill">Read More</button></Link>
                     </div>
                 </div>
             </div>

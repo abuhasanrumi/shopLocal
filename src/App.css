@@ -587,3 +587,10 @@ select#sortBy {
   color: var(--color-131921);
 }
 /* Reset password page ends */
+
+/* single blog page starts  */
+.single-blog-img-div {
+  max-height: 300px;
+  overflow-y: hidden;
+}
+/* single blog page ends */
