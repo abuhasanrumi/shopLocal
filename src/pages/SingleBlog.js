@@ -10,10 +10,10 @@ const SingleBlog = () => {
             <BreadCrumb title={"Dynamic Blog Name"} />
             <div className="single-blog-wrapper">
                 <div className="container-fluid">
-                    <div className="row gray-bg">
-                        <div className="col-12 col-lg-8 p-5 d-flex justify-align-center">
+                    <div className="row gray-bg d-flex justify-content-center">
+                        <div className="col-12 col-lg-10 p-5">
                             <div className="single-blog-card">
-                                <h3 className='single-blog-title mb-4'>A Beautiful Sunday Morning Renaissance</h3>
+                                <h3 className='single-blog-title mb-4 text-center'>A Beautiful Sunday Morning Renaissance</h3>
                                 <div className='single-blog-img-div'>
                                     <img className='single-blog-img img-fluid w-100' src="/images/blog-1.jpg" alt="blog" />
                                 </div>
