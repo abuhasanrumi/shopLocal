@@ -1,7 +1,8 @@
 import React from 'react'
-import Blogpost from '../components/Blogpost'
+import { Link } from 'react-router-dom'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
+import { HiOutlineArrowLeft } from "react-icons/hi"
 
 const SingleBlog = () => {
     return (
@@ -13,7 +14,11 @@ const SingleBlog = () => {
                     <div className="row gray-bg d-flex justify-content-center">
                         <div className="col-12 col-lg-10 p-5">
                             <div className="single-blog-card">
-                                <h3 className='single-blog-title mb-4 text-center'>A Beautiful Sunday Morning Renaissance</h3>
+                                <Link to="/blogs" className='text-muted fs-xsm'>
+                                    <HiOutlineArrowLeft /> Go back to Blogs
+                                </Link>
+                                <h3 className='single-blog-title mb-4 mt-3'>A Beautiful Sunday Morning Renaissance</h3>
+
                                 <div className='single-blog-img-div'>
                                     <img className='single-blog-img img-fluid w-100' src="/images/blog-1.jpg" alt="blog" />
                                 </div>
