@@ -7,6 +7,7 @@ const PrivacyPolicy = () => {
         <>
             <Meta title={"Privacy Policy - ShopLocal"} />
             <BreadCrumb title={"Privacy Policy - ShopLocal"} />
+            <div className="privacy-policy-wrapper"></div>
         </>
     )
 }
