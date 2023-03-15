@@ -6,8 +6,8 @@ const ProductCard = ({ grid }) => {
 
     const location = useLocation()
     return (
-        <div className={`${location.pathname == "/our-store" ? `col-${grid} col-md-${grid} col-lg-${grid}` : "col-6 col-md-4 col-lg-3 col-xl-2"}`}>
-            <Link className="product-card bg-white br-shadow position-relative w-100">
+        <div className={`${location.pathname == "/products" ? `col-${grid} col-md-${grid} col-lg-${grid}` : "col-6 col-md-4 col-lg-3 col-xl-2"}`}>
+            <Link to=":id" className="product-card bg-white br-shadow position-relative w-100">
                 <div className="product-img d-flex align-items-center justify-content-center position-relative">
                     <img className='img-fluid rounded' src="images/watch.jpg" alt="" />
                     <img className='img-fluid rounded' src="images/watch-2.jpg" alt="" />
