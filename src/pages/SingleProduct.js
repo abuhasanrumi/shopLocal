@@ -34,21 +34,55 @@ const SingleProduct = () => {
                         <div className="row">
                             <div className="col-12">
                                 <div className="review-section bg-white br-shadow p-4">
-                                    <h5 className='mb-3 fw-normal'>Customer Reviews</h5>
-                                    <div className="average-review d-flex justify-content-between align-items-end">
-                                        <div className='d-flex align-items-center gap-2'>
-                                            <ReactStars
-                                                count={5}
-                                                size={15}
-                                                activeColor={"#ffc30b"}
-                                                edit={false}
-                                                value={5}
-                                            />
-                                            <span className="text-muted fs-xsm">Based on 1 review</span>
+                                    <div className="review-inner-wrapper">
+                                        <h5 className='mb-3 fw-normal'>Customer Reviews</h5>
+                                        <div className="average-review d-flex justify-content-between align-items-end">
+                                            <div className='d-flex align-items-center gap-2'>
+                                                <ReactStars
+                                                    count={5}
+                                                    size={15}
+                                                    activeColor={"#ffc30b"}
+                                                    edit={false}
+                                                    value={5}
+                                                />
+                                                <span className="text-muted fs-xsm">Based on 1 review</span>
+                                            </div>
+                                            {orderedThisProduct && (
+                                                <Link to="" className='text-muted'>Write a review</Link>
+                                            )}
                                         </div>
-                                        {orderedThisProduct && (
-                                            <Link to="" className='text-muted'>Write a review</Link>
-                                        )}
+                                    </div>
+                                    <div className="review-form mt-4">
+                                        <h6 className="text-muted fw-normal mb-3">Write A Review</h6>
+                                        <form action="">
+                                            <div className="form-floating mb-3">
+                                                <input type="text" className="form-control" id="floatingName" placeholder="Name" />
+                                                <label className='text-muted' htmlFor="floatingName">Name</label>
+                                            </div>
+                                            <div className="form-floating mb-3">
+                                                <input type="email" className="form-control" id="floatingEmail" placeholder="Email *" />
+                                                <label className='text-muted' htmlFor="floatingEmail">Email *</label>
+                                            </div>
+                                            <div className="review-stars d-flex gap-10 mb-3">
+                                                <span className='text-muted'>Rating:</span>
+                                                <ReactStars
+                                                    count={5}
+                                                    size={15}
+                                                    activeColor={"#ffc30b"}
+                                                    edit={true}
+                                                    value={5}
+                                                />
+                                            </div>
+                                            <div className="form-floating mb-3">
+                                                <input type="text" className="form-control" id="floatingTitle" placeholder="Title" />
+                                                <label className='text-muted' htmlFor="floatingTitle">Give your review a title</label>
+                                            </div>
+                                            <div className="form-floating mb-3">
+                                                <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{ "height": "150px" }}></textarea>
+                                                <label className='text-muted' htmlFor="floatingTextarea2">Comments</label>
+                                            </div>
+                                            <button type="button" className="btn darkButton py-2 py-sm-2 px-3 px-sm-4 rounded-pill">Submit Review</button>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
