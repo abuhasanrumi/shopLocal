@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
 import ProductCard from '../components/ProductUtilities/ProductCard'
+import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
+import InnerImageZoom from 'react-inner-image-zoom'
 
 const SingleProduct = () => {
     const [orderedThisProduct, setOrderedThisProduct] = useState(true)
@@ -13,10 +15,35 @@ const SingleProduct = () => {
             <BreadCrumb title={"Product Name - ShopLocal"} />
             <div className="single-product-wrapper">
                 <div className="container-fluid gray-bg">
-                    <div className="main-product-wrapper pb-5">
-                        <div className="row">
-                            <div className="col-6"></div>
-                            <div className="col-6"></div>
+                    <div className="main-product-wrapper py-5">
+                        <div className="container-fluid">
+                            <div className="row">
+                                <div className="main-product-inner-wrapper bg-white br-shadow p-4">
+                                    <div className="col-6">
+                                        <div className="main-product-images">
+                                            <div className="row">
+                                                <div className="col-12">
+                                                    <div className="main-product-main-image-wrapper">
+                                                        <InnerImageZoom
+                                                            className='main-product-main-image img-fluid'
+                                                            src="https://ae01.alicdn.com/kf/HTB1HNaceWWs3KVjSZFxq6yWUXXaO/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_640x640.jpg"
+                                                            zoomSrc="https://ae01.alicdn.com/kf/HTB1HNaceWWs3KVjSZFxq6yWUXXaO/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_640x640.jpg"
+                                                            zoomType="hover"
+                                                            zoomPreload={true}
+                                                            fullscreenOnMobile={true}
+                                                            zoomScale={2}
+                                                        />
+                                                    </div>
+                                                </div>
+                                                <div className="col-6">
+                                                    <div className="main-product-secondary-images"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-6"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="description-wrapper pb-5">

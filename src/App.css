@@ -606,4 +606,15 @@ select#sortBy {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 30px;
 }
+
+.main-product-main-image {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+}
+.main-product-main-image > div > img {
+  width: 100%;
+}
+
 /* Single product page ends */
