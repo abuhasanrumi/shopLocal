@@ -35,25 +35,25 @@ const Header = () => {
                             <div className="header-upper-links d-flex align-items-center justify-content-end gap-3">
                                 <div className="single-icon px-2">
                                     <Link to="compare-products" className='d-flex align-items-center text-white gap-10'>
-                                        <img className="img-fluid" src="images/compare.svg" alt="" />
+                                        <img className="img-fluid" src="/images/compare.svg" alt="" />
                                         <p className='d-none d-xl-block mb-0 header-upper-text'>Compare <br /> Products</p>
                                     </Link>
                                 </div>
                                 <div className="single-icon px-2">
                                     <Link to="wishlist" className='d-flex align-items-center text-white gap-10'>
-                                        <img className="img-fluid" src="images/wishlist.svg" alt="wishlist" />
+                                        <img className="img-fluid" src="/images/wishlist.svg" alt="wishlist" />
                                         <p className='d-none d-xl-block mb-0 header-upper-text'>Favourite <br /> Wishlist</p>
                                     </Link>
                                 </div>
                                 <div className="single-icon px-2">
                                     <Link to="login" className='d-flex align-items-center text-white gap-10'>
-                                        <img className="img-fluid" src="images/user.svg" alt="user" />
+                                        <img className="img-fluid" src="/images/user.svg" alt="user" />
                                         <p className='d-none d-xl-block mb-0 header-upper-text'>Login <br /> My Account</p>
                                     </Link>
                                 </div>
                                 <div className="single-icon px-2">
                                     <Link to="cart" className='d-flex align-items-center text-white gap-10'>
-                                        <img className="img-fluid" src="images/cart.svg" alt="cart" />
+                                        <img className="img-fluid" src="/images/cart.svg" alt="cart" />
                                         <div className='d-none d-xl-block d-flex flex-column gap-10 justify-content-center'>
                                             <span className="d-block badge bg-white text-dark fs-xsm fw-normal rounded-pill mb-1">0</span>
                                             <p className='mb-0 header-upper-text'>$500</p>
@@ -83,7 +83,7 @@ const Header = () => {
                                 <div>
                                     <div className="dropdown">
                                         <button className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <img src="images/menu.svg" alt="" />
+                                            <img src="/images/menu.svg" alt="" />
                                             <span className='me-5 d-inline-block'>Shop Categories</span>
                                         </button>
                                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">

@@ -15,14 +15,14 @@ const SingleProduct = () => {
             <BreadCrumb title={"Product Name - ShopLocal"} />
             <div className="single-product-wrapper">
                 <div className="container-fluid gray-bg">
-                    <div className="main-product-wrapper py-5">
+                    <div className="main-product-wrapper pt-4 pb-5">
                         <div className="container-fluid">
                             <div className="row">
                                 <div className="main-product-inner-wrapper bg-white br-shadow p-4">
-                                    <div className="col-6">
+                                    <div className="col-12 col-lg-5">
                                         <div className="main-product-images">
                                             <div className="row">
-                                                <div className="col-12">
+                                                <div className="col-12 mb-3">
                                                     <div className="main-product-main-image-wrapper">
                                                         <InnerImageZoom
                                                             className='main-product-main-image img-fluid'
@@ -35,13 +35,32 @@ const SingleProduct = () => {
                                                         />
                                                     </div>
                                                 </div>
-                                                <div className="col-6">
-                                                    <div className="main-product-secondary-images"></div>
+                                                <div className="col-6 mb-3">
+                                                    <InnerImageZoom
+                                                        className='main-product-main-image img-fluid'
+                                                        src="https://ae01.alicdn.com/kf/HTB1dEt.e8Gw3KVjSZFwq6zQ2FXa3/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_Q90.jpg_.webp"
+                                                        zoomSrc="https://ae01.alicdn.com/kf/HTB1dEt.e8Gw3KVjSZFwq6zQ2FXa3/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_Q90.jpg_.webp"
+                                                        zoomType="hover"
+                                                        zoomPreload={true}
+                                                        fullscreenOnMobile={true}
+                                                        zoomScale={2}
+                                                    />
+                                                </div>
+                                                <div className="col-6 mb-3">
+                                                    <InnerImageZoom
+                                                        className='main-product-main-image img-fluid'
+                                                        src="https://ae01.alicdn.com/kf/HTB19It7e8WD3KVjSZFsq6AqkpXaF/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_640x640.jpg"
+                                                        zoomSrc="https://ae01.alicdn.com/kf/HTB19It7e8WD3KVjSZFsq6AqkpXaF/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_640x640.jpg"
+                                                        zoomType="hover"
+                                                        zoomPreload={true}
+                                                        fullscreenOnMobile={true}
+                                                        zoomScale={2}
+                                                    />
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-6"></div>
+                                    <div className="col-12 col-lg-7"></div>
                                 </div>
                             </div>
                         </div>
