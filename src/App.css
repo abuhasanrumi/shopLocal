@@ -92,6 +92,11 @@ a {
   border-radius: 6px;
   box-shadow: 0 0 10px #0000001a;
 }
+
+.section-title {
+  font-weight: 500;
+  color: #1c1b1b;
+}
 /* Header part starts */
 .header-top-strip {
   border-bottom: 1px solid var(--color-3b4149);
