@@ -55,14 +55,6 @@ const SingleProduct = () => {
                                     <div className="review-form mt-4">
                                         <h6 className="text-muted fw-normal mb-3">Write A Review</h6>
                                         <form action="">
-                                            <div className="form-floating mb-3">
-                                                <input type="text" className="form-control" id="floatingName" placeholder="Name" />
-                                                <label className='text-muted' htmlFor="floatingName">Name</label>
-                                            </div>
-                                            <div className="form-floating mb-3">
-                                                <input type="email" className="form-control" id="floatingEmail" placeholder="Email *" />
-                                                <label className='text-muted' htmlFor="floatingEmail">Email *</label>
-                                            </div>
                                             <div className="review-stars d-flex gap-10 mb-3">
                                                 <span className='text-muted'>Rating:</span>
                                                 <ReactStars
@@ -83,6 +75,24 @@ const SingleProduct = () => {
                                             </div>
                                             <button type="button" className="btn darkButton py-2 py-sm-2 px-3 px-sm-4 rounded-pill">Submit Review</button>
                                         </form>
+                                    </div>
+                                    <div className="show-reviews mt-4">
+                                        <div className="single-review">
+                                            <ReactStars
+                                                count={5}
+                                                size={15}
+                                                activeColor={"#ffc30b"}
+                                                edit={false}
+                                                value={5}
+                                            />
+                                            <h6 className="single-review-title mt-2">Fast Shipping</h6>
+                                            <div className="review-owner-details">
+                                                <i><span className="review-owner-name"><b>momo</b></span> on <span className="review-submit-date"><b>Jun 20, 2022</b></span></i>
+                                                <div className="review-description py-2">
+                                                    <p className="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda dolorum nam quidem delectus doloribus molestiae eaque pariatur cum necessitatibus error placeat consequatur magnam sint quos natus, dolores libero dignissimos commodi quisquam qui expedita, eum excepturi debitis non? Rerum, ex. Sunt mollitia possimus praesentium dolore velit esse rerum ipsam fugiat beatae.</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
