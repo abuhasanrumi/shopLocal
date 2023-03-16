@@ -10,8 +10,8 @@ const OurStore = () => {
     const [grid, setGrid] = useState(isMobile ? 12 : 3)
     return (
         <>
-            <Meta title={"Our Store"} />
-            <BreadCrumb title={"Our Store"} />
+            <Meta title={"Our Products"} />
+            <BreadCrumb title={"Our Products"} />
             <div className="store-wrapper home-wrapper-2 py-4 gray-bg">
                 <div className="container-fluid">
                     <div className="row">

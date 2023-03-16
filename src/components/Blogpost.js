@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Blogpost = () => {
     return (
         <>
-            <div className="col">
+            <div className="col-6 col-md-4 col-lg-3 mb-4">
                 <div className="card bg-white h-100">
                     <img src="images/blog-1.jpg" className="card-img-top" alt="..." />
                     <div className="card-body">

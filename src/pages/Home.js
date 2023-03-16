@@ -6,6 +6,7 @@ import ProductCard from '../components/ProductUtilities/ProductCard';
 import SpecialProducts from '../components/ProductUtilities/SpecialProducts';
 import PopularProductCard from '../components/ProductUtilities/PopularProductCard';
 import FamousCard from '../components/FamousCard';
+import SingleCategory from '../components/SingleCategory';
 
 const Home = () => {
 
@@ -131,110 +132,14 @@ const Home = () => {
                 <div className="container-fluid">
                     <div className="categories bg-white px-4 py-3 br-shadow">
                         <div className="row">
-                            <div className="col-sm-3 py-3 ps-3 single-card">
-                                <div className="card">
-                                    <div className="single-category d-flex justify-content-between align-items-center">
-                                        <div className="category-details">
-                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
-                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
-                                        </div>
-                                        <div className="category-img">
-                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-3 py-3 ps-3 single-card">
-                                <div className="card">
-                                    <div className="single-category d-flex justify-content-between align-items-center">
-                                        <div className="category-details">
-                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
-                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
-                                        </div>
-                                        <div className="category-img">
-                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-3 py-3 ps-3 single-card">
-                                <div className="card">
-                                    <div className="single-category d-flex justify-content-between align-items-center">
-                                        <div className="category-details">
-                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
-                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
-                                        </div>
-                                        <div className="category-img">
-                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-3 py-3 ps-3 single-card">
-                                <div className="card">
-                                    <div className="single-category d-flex justify-content-between align-items-center">
-                                        <div className="category-details">
-                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
-                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
-                                        </div>
-                                        <div className="category-img">
-                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-3 py-3 ps-3 single-card">
-                                <div className="card">
-                                    <div className="single-category d-flex justify-content-between align-items-center">
-                                        <div className="category-details">
-                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
-                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
-                                        </div>
-                                        <div className="category-img">
-                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-3 py-3 ps-3 single-card">
-                                <div className="card">
-                                    <div className="single-category d-flex justify-content-between align-items-center">
-                                        <div className="category-details">
-                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
-                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
-                                        </div>
-                                        <div className="category-img">
-                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-3 py-3 ps-3 single-card">
-                                <div className="card">
-                                    <div className="single-category d-flex justify-content-between align-items-center">
-                                        <div className="category-details">
-                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
-                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
-                                        </div>
-                                        <div className="category-img">
-                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-sm-3 py-3 ps-3 single-card">
-                                <div className="card">
-                                    <div className="single-category d-flex justify-content-between align-items-center">
-                                        <div className="category-details">
-                                            <div className="category-title fs-sm py-1">Computers & Laptop</div>
-                                            <p className="category-quantity mb-0 fs-xsm">8 items</p>
-                                        </div>
-                                        <div className="category-img">
-                                            <img className='img-fluid' src="images/laptop.jpg" alt="" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <SingleCategory />
+                            <SingleCategory />
+                            <SingleCategory />
+                            <SingleCategory />
+                            <SingleCategory />
+                            <SingleCategory />
+                            <SingleCategory />
+                            <SingleCategory />
                         </div>
                     </div>
                 </div>
@@ -245,26 +150,26 @@ const Home = () => {
                         <div className="row">
                             <div className="col-12">
                                 <div className="marquee-inner-wrapper card-wrapper">
-                                    <Marquee className='d-flex' gradient={false} pauseOnHover={true} speed={15}>
-                                        <div className="marquee-img mx-4 img-fluid">
+                                    <Marquee className='d-flex g-2' gradient={false} pauseOnHover={true} speed={15}>
+                                        <div className="marquee-img mx-5 img-fluid">
                                             <img src="images/brand-01.png" alt="" />
                                         </div>
-                                        <div className="marquee-img mx-4 img-fluid">
+                                        <div className="marquee-img mx-5 img-fluid">
                                             <img src="images/brand-02.png" alt="" />
                                         </div>
-                                        <div className="marquee-img mx-4 img-fluid">
+                                        <div className="marquee-img mx-5 img-fluid">
                                             <img src="images/brand-03.png" alt="" />
                                         </div>
-                                        <div className="marquee-img mx-4 img-fluid">
+                                        <div className="marquee-img mx-5 img-fluid">
                                             <img src="images/brand-04.png" alt="" />
                                         </div>
-                                        <div className="marquee-img mx-4 img-fluid">
+                                        <div className="marquee-img mx-5 img-fluid">
                                             <img src="images/brand-05.png" alt="" />
                                         </div>
-                                        <div className="marquee-img mx-4 img-fluid">
+                                        <div className="marquee-img mx-5 img-fluid">
                                             <img src="images/brand-06.png" alt="" />
                                         </div>
-                                        <div className="marquee-img mx-4 img-fluid">
+                                        <div className="marquee-img mx-5 img-fluid">
                                             <img src="images/brand-07.png" alt="" />
                                         </div>
                                     </Marquee>

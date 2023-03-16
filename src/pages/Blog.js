@@ -11,7 +11,7 @@ const Blog = () => {
             <div className="blogs-wrapper gray-bg py-4">
                 <div className="container-fluid">
                     <div className="row">
-                        <div className="col-lg-3">
+                        <div className="col-lg-3 d-none d-lg-block">
                             <div className="filter-card br-shadow mb-4 p-3 bg-white">
                                 <h3 className="filter-title fs-6">Find By Categories</h3>
                                 <div className='pt-2'>
@@ -24,8 +24,8 @@ const Blog = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-9">
-                            <div className="row row-cols-md-2 g-4">
+                        <div className="col-12 col-lg-9">
+                            <div className="row">
                                 <Blogpost />
                                 <Blogpost />
                                 <Blogpost />

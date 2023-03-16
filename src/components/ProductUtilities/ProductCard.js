@@ -7,25 +7,25 @@ const ProductCard = ({ grid }) => {
     const location = useLocation()
     return (
         <div className={`${location.pathname == "/products" ? `col-${grid} col-md-${grid} col-lg-${grid}` : "col-6 col-md-4 col-lg-3 col-xl-2"}`}>
-            <Link to=":id" className="product-card bg-white br-shadow position-relative w-100">
+            <Link to="/products/:id" className="product-card bg-white br-shadow position-relative w-100">
                 <div className="product-img d-flex align-items-center justify-content-center position-relative">
-                    <img className='img-fluid rounded' src="images/watch.jpg" alt="" />
-                    <img className='img-fluid rounded' src="images/watch-2.jpg" alt="" />
+                    <img className='img-fluid rounded' src="/images/watch.jpg" alt="" />
+                    <img className='img-fluid rounded' src="/images/watch-2.jpg" alt="" />
                     <div className="wishlist-icon position-absolute">
                         <Link>
-                            <img src="images/wish.svg" alt="" />
+                            <img src="/images/wish.svg" alt="" />
                         </Link>
                     </div>
                     <div className="action-bar position-absolute ">
                         <div className="d-flex flex-column gap-10">
                             <Link>
-                                <img src="images/prodcompare.svg" alt="" />
+                                <img src="/images/prodcompare.svg" alt="" />
                             </Link>
                             <Link>
-                                <img src="images/view.svg" alt="" />
+                                <img src="/images/view.svg" alt="" />
                             </Link>
                             <Link>
-                                <img src="images/add-cart.svg" alt="" />
+                                <img src="/images/add-cart.svg" alt="" />
                             </Link>
                         </div>
                     </div>
