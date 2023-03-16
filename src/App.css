@@ -97,6 +97,10 @@ a {
   font-weight: 500;
   color: #1c1b1b;
 }
+
+.border-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
 /* Header part starts */
 .header-top-strip {
   border-bottom: 1px solid var(--color-3b4149);

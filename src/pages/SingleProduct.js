@@ -17,40 +17,16 @@ const SingleProduct = () => {
                 <div className="container-fluid gray-bg">
                     <div className="main-product-wrapper pt-4 pb-5">
                         <div className="container-fluid">
-                            <div className="row">
-                                <div className="main-product-inner-wrapper bg-white br-shadow p-4">
-                                    <div className="col-12 col-lg-5">
-                                        <div className="main-product-images">
-                                            <div className="row">
-                                                <div className="col-12 mb-3">
-                                                    <div className="main-product-main-image-wrapper">
-                                                        <InnerImageZoom
-                                                            className='main-product-main-image img-fluid'
-                                                            src="https://ae01.alicdn.com/kf/HTB1HNaceWWs3KVjSZFxq6yWUXXaO/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_640x640.jpg"
-                                                            zoomSrc="https://ae01.alicdn.com/kf/HTB1HNaceWWs3KVjSZFxq6yWUXXaO/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_640x640.jpg"
-                                                            zoomType="hover"
-                                                            zoomPreload={true}
-                                                            fullscreenOnMobile={true}
-                                                            zoomScale={2}
-                                                        />
-                                                    </div>
-                                                </div>
-                                                <div className="col-6 mb-3">
+                            <div className="row bg-white br-shadow">
+                                <div className="col-12 col-md-5 p-4">
+                                    <div className="main-product-images">
+                                        <div className="row">
+                                            <div className="col-12 mb-3">
+                                                <div className="main-product-main-image-wrapper">
                                                     <InnerImageZoom
                                                         className='main-product-main-image img-fluid'
-                                                        src="https://ae01.alicdn.com/kf/HTB1dEt.e8Gw3KVjSZFwq6zQ2FXa3/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_Q90.jpg_.webp"
-                                                        zoomSrc="https://ae01.alicdn.com/kf/HTB1dEt.e8Gw3KVjSZFwq6zQ2FXa3/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_Q90.jpg_.webp"
-                                                        zoomType="hover"
-                                                        zoomPreload={true}
-                                                        fullscreenOnMobile={true}
-                                                        zoomScale={2}
-                                                    />
-                                                </div>
-                                                <div className="col-6 mb-3">
-                                                    <InnerImageZoom
-                                                        className='main-product-main-image img-fluid'
-                                                        src="https://ae01.alicdn.com/kf/HTB19It7e8WD3KVjSZFsq6AqkpXaF/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_640x640.jpg"
-                                                        zoomSrc="https://ae01.alicdn.com/kf/HTB19It7e8WD3KVjSZFsq6AqkpXaF/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_640x640.jpg"
+                                                        src="https://ae01.alicdn.com/kf/HTB1HNaceWWs3KVjSZFxq6yWUXXaO/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_640x640.jpg"
+                                                        zoomSrc="https://ae01.alicdn.com/kf/HTB1HNaceWWs3KVjSZFxq6yWUXXaO/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_640x640.jpg"
                                                         zoomType="hover"
                                                         zoomPreload={true}
                                                         fullscreenOnMobile={true}
@@ -58,9 +34,55 @@ const SingleProduct = () => {
                                                     />
                                                 </div>
                                             </div>
+                                            <div className="col-6 mb-3">
+                                                <InnerImageZoom
+                                                    className='main-product-main-image img-fluid'
+                                                    src="https://ae01.alicdn.com/kf/HTB1dEt.e8Gw3KVjSZFwq6zQ2FXa3/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_Q90.jpg_.webp"
+                                                    zoomSrc="https://ae01.alicdn.com/kf/HTB1dEt.e8Gw3KVjSZFwq6zQ2FXa3/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_Q90.jpg_.webp"
+                                                    zoomType="hover"
+                                                    zoomPreload={true}
+                                                    fullscreenOnMobile={true}
+                                                    zoomScale={2}
+                                                />
+                                            </div>
+                                            <div className="col-6 mb-3">
+                                                <InnerImageZoom
+                                                    className='main-product-main-image img-fluid'
+                                                    src="https://ae01.alicdn.com/kf/HTB19It7e8WD3KVjSZFsq6AqkpXaF/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_640x640.jpg"
+                                                    zoomSrc="https://ae01.alicdn.com/kf/HTB19It7e8WD3KVjSZFsq6AqkpXaF/NATURAL-PARK-Wristwatch-2018-Wrist-Watch-Men-Watches-Top-Brand-Luxury-Famous-Quartz-Watch-For-Male.jpg_640x640.jpg"
+                                                    zoomType="hover"
+                                                    zoomPreload={true}
+                                                    fullscreenOnMobile={true}
+                                                    zoomScale={2}
+                                                />
+                                            </div>
                                         </div>
                                     </div>
-                                    <div className="col-12 col-lg-7"></div>
+                                </div>
+                                <div className="col-12 col-md-7 p-4">
+                                    <div className="main-product-details">
+                                        <div className="pb-2 border-bottom">
+                                            <h5>Samsung Galaxy Tab A SM-T295, 4G Factory Unlocked</h5>
+                                        </div>
+                                        <div className="py-3 border-bottom">
+                                            <h5 className="price mb-3">
+                                                <span className="red-price text-danger fw-bold">$100.00</span> &nbsp; <strike className="fs-xsm text-muted">$200.00</strike>
+                                            </h5>
+                                            <div className='d-flex align-items-center gap-2'>
+                                                <ReactStars
+                                                    count={5}
+                                                    size={15}
+                                                    activeColor={"#ffc30b"}
+                                                    edit={false}
+                                                    value={5}
+                                                />
+                                                <span className="text-muted fs-xsm">Based on 1 review</span>
+                                            </div>
+                                            {orderedThisProduct && (
+                                                <Link to="" className='text-muted mt-3'>Write a review</Link>
+                                            )}
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
