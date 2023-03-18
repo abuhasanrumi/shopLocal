@@ -621,4 +621,15 @@ select#sortBy {
   width: 100%;
 }
 
+.countdown-badge {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 500;
+  background-color: #dc3545;
+}
+
 /* Single product page ends */

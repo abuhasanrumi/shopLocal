@@ -79,8 +79,20 @@ const SingleProduct = () => {
                                                 <span className="text-muted fs-xsm">Based on 1 review</span>
                                             </div>
                                             {orderedThisProduct && (
-                                                <Link to="" className='text-muted mt-3'>Write a review</Link>
+                                                <a href="#review" className='text-muted mt-3'>Write a review</a>
                                             )}
+                                        </div>
+                                        <div className='py-3'>
+                                            <div className="discount-till d-flex align-items-center gap-10">
+                                                <p className="mb-0 fs-xsm">
+                                                    <b>5 </b>days
+                                                </p>
+                                                <div className="d-flex gap-2 align-items-center justify-content-center">
+                                                    <div className="badge countdown-badge p-2">20</div>:
+                                                    <div className="badge countdown-badge p-2">20</div>:
+                                                    <div className="badge countdown-badge p-2">20</div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -99,7 +111,7 @@ const SingleProduct = () => {
                     </div>
                     <div className="product-suggestion-wrapper pb-5">
                         <div className="section-title fs-lg mb-4">Reviews</div>
-                        <div className="row">
+                        <div id="review" className="row">
                             <div className="col-12">
                                 <div className="review-section bg-white br-shadow p-4">
                                     <div className="review-inner-wrapper">
@@ -116,7 +128,7 @@ const SingleProduct = () => {
                                                 <span className="text-muted fs-xsm">Based on 1 review</span>
                                             </div>
                                             {orderedThisProduct && (
-                                                <Link to="" className='text-muted'>Write a review</Link>
+                                                <a href="#review" className='text-muted'>Write a review</a>
                                             )}
                                         </div>
                                     </div>
