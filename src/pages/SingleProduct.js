@@ -94,6 +94,65 @@ const SingleProduct = () => {
                                                 </div>
                                             </div>
                                         </div>
+                                        <div className="main-product-features d-flex gap-2 py-2">
+                                            <div className="main-product-feature-heading">
+                                                <span className="type">Type:</span>
+                                            </div>
+                                            <div className="main-product-feature-text text-muted">
+                                                <span className="type-text">Watch Accessories</span>
+                                            </div>
+                                        </div>
+                                        <div className="main-product-features d-flex gap-2 py-2">
+                                            <div className="main-product-feature-heading">
+                                                <span className="brand">Brand:</span>
+                                            </div>
+                                            <div className="main-product-feature-text text-muted">
+                                                <span className="brand-text">Havells</span>
+                                            </div>
+                                        </div>
+                                        <div className="main-product-features d-flex align-items-top gap-2 py-2">
+                                            <div className="main-product-feature-heading">
+                                                <span className="categories">Categories:</span>
+                                            </div>
+                                            <div className="main-product-feature-text text-muted">
+                                                <ul className="categories-text fs-xsm">
+                                                    <li>accessories</li>
+                                                    <li>mini speakser</li>
+                                                    <li>smart watches</li>
+                                                    <li>television</li>
+                                                    <li>light</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className="main-product-features d-flex align-items-top gap-2 py-2">
+                                            <div className="main-product-feature-heading">
+                                                <span className="tags">Tags:</span>
+                                            </div>
+                                            <div className="main-product-feature-text text-muted">
+                                                <ul className="tags-text fs-xsm">
+                                                    <li>headphones</li>
+                                                    <li>oppo</li>
+                                                    <li>speaker</li>
+                                                    <li>accessories</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div className="main-product-features d-flex gap-2 py-2">
+                                            <div className="main-product-feature-heading">
+                                                <span className="sku">SKU:</span>
+                                            </div>
+                                            <div className="main-product-feature-text text-muted">
+                                                <span className="sku-text">SKU0223</span>
+                                            </div>
+                                        </div>
+                                        <div className="main-product-features d-flex gap-2 py-2">
+                                            <div className="main-product-feature-heading">
+                                                <span className="availability">Availability:</span>
+                                            </div>
+                                            <div className="main-product-feature-text text-muted">
+                                                <span className="availability-text">222 in stock</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

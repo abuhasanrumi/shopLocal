@@ -632,4 +632,24 @@ select#sortBy {
   background-color: #dc3545;
 }
 
+.main-product-feature-heading {
+  font-weight: 600;
+}
+
+.categories-text,
+.tags-text {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  gap: 5px;
+  margin: 0px;
+  flex-wrap: wrap;
+}
+.categories-text li,
+.tags-text li {
+  padding: 3px 12px;
+  border-radius: 25px;
+  background-color: lightgrey;
+}
+
 /* Single product page ends */
