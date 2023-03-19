@@ -65,8 +65,9 @@ const SingleProduct = () => {
                                             <h5>Samsung Galaxy Tab A SM-T295, 4G Factory Unlocked</h5>
                                         </div>
                                         <div className="py-3 border-bottom">
-                                            <h5 className="price mb-3">
-                                                <span className="red-price text-danger fw-bold">$100.00</span> &nbsp; <strike className="fs-xsm text-muted">$200.00</strike>
+                                            <h5 className="price mb-3 d-flex align-items-center gap-3">
+                                                <div className="red-price text-danger fw-bold ">$100.00</div>
+                                                <strike className="fs-xsm text-muted">$200.00</strike>
                                             </h5>
                                             <div className='d-flex align-items-center gap-2'>
                                                 <ReactStars
@@ -152,6 +153,52 @@ const SingleProduct = () => {
                                             <div className="main-product-feature-text text-muted">
                                                 <span className="availability-text">222 in stock</span>
                                             </div>
+                                        </div>
+                                        <div className="main-product-features py-2">
+                                            <div className="main-product-feature-heading">
+                                                <span className="availability">Size:</span>
+                                            </div>
+                                            <div className="main-product-feature-text d-flex gap-10 mt-2 text-muted">
+                                                <div className="size-badge">S</div>
+                                                <div className="size-badge">M</div>
+                                                <div className="size-badge">L</div>
+                                                <div className="size-badge">XL</div>
+                                                <div className="size-badge">XXL</div>
+                                            </div>
+                                        </div>
+                                        <div className="main-product-features py-2">
+                                            <div className="main-product-feature-heading">
+                                                <span className="colors">Colors:</span>
+                                            </div>
+                                            <div className="main-product-feature-text d-flex gap-10 mt-2 text-muted">
+                                                <div className="main-product-features py-2">
+                                                    <ul className="colors ps-0 d-flex flex-wrap gap-2 mb-0">
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                        <li></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="main-product-features d-flex gap-2 py-2 align-items-center">
+                                            <div className="main-product-feature-heading">
+                                                <span className="quantity">Quantity:</span>
+                                            </div>
+                                            <div className="main-product-feature-text text-muted">
+                                                <input
+                                                    type="number"
+                                                    className='form-control'
+                                                    min={1}
+                                                    max={10}
+                                                    style={{ width: "80px" }}
+                                                    placeholder="1"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div className="main-product-buttons d-flex gap-3 py-3">
+                                            <button type="submit" className="btn addToCartBtn  rounded-pill">Add to Cart</button>
+                                            <button type="submit" className="btn buyNowBtn rounded-pill">Buy Now</button>
                                         </div>
                                     </div>
                                 </div>
