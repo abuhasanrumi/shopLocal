@@ -6,6 +6,8 @@ import Meta from '../components/Meta'
 import ProductCard from '../components/ProductUtilities/ProductCard'
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
 import InnerImageZoom from 'react-inner-image-zoom'
+import { TbGitCompare } from "react-icons/tb"
+import { AiOutlineHeart } from "react-icons/ai"
 
 const SingleProduct = () => {
     const [orderedThisProduct, setOrderedThisProduct] = useState(true)
@@ -200,6 +202,10 @@ const SingleProduct = () => {
                                             <button type="submit" className="btn addToCartBtn  rounded-pill">Add to Cart</button>
                                             <button type="submit" className="btn buyNowBtn rounded-pill">Buy Now</button>
                                         </div>
+                                        <div className="addToBtns d-flex gap-5 py-3">
+                                            <Link className='text-dark text-uppercase fs-sm'><AiOutlineHeart /> Add to wishlist</Link>
+                                            <Link className='text-dark text-uppercase fs-sm'><TbGitCompare /> Add to compare</Link>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -287,7 +293,6 @@ const SingleProduct = () => {
                     <div className="product-suggestion-wrapper pb-5">
                         <div className="section-title fs-lg mb-4">You May Also Like</div>
                         <div className="row g-3">
-                            {/* <div className="row row-cols-2"> */}
                             <ProductCard />
                             <ProductCard />
                             <ProductCard />
