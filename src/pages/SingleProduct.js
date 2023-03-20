@@ -7,10 +7,21 @@ import ProductCard from '../components/ProductUtilities/ProductCard'
 import 'react-inner-image-zoom/lib/InnerImageZoom/styles.css'
 import InnerImageZoom from 'react-inner-image-zoom'
 import { TbGitCompare } from "react-icons/tb"
-import { AiOutlineHeart } from "react-icons/ai"
+import { AiOutlineHeart, AiOutlineLink } from "react-icons/ai"
+import { FiTruck } from "react-icons/fi"
+import { FaFlask } from "react-icons/fa"
 
 const SingleProduct = () => {
     const [orderedThisProduct, setOrderedThisProduct] = useState(true)
+    const copyToClipboard = (text) => {
+        console.log('text', text)
+        var textField = document.createElement('textarea')
+        textField.innerText = text
+        document.body.appendChild(textField)
+        textField.select()
+        document.execCommand('copy')
+        textField.remove()
+    }
     return (
         <>
             <Meta title={"Product Name - ShopLocal"} />
@@ -20,7 +31,7 @@ const SingleProduct = () => {
                     <div className="main-product-wrapper pt-4 pb-5">
                         <div className="container-fluid">
                             <div className="row bg-white br-shadow">
-                                <div className="col-12 col-md-5 p-4">
+                                <div className="col-12 col-md-6 p-4">
                                     <div className="main-product-images">
                                         <div className="row">
                                             <div className="col-12 mb-3">
@@ -61,7 +72,7 @@ const SingleProduct = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-12 col-md-7 p-4">
+                                <div className="col-12 col-md-6 p-4">
                                     <div className="main-product-details">
                                         <div className="pb-2 border-bottom">
                                             <h5>Samsung Galaxy Tab A SM-T295, 4G Factory Unlocked</h5>
@@ -202,9 +213,12 @@ const SingleProduct = () => {
                                             <button type="submit" className="btn addToCartBtn  rounded-pill">Add to Cart</button>
                                             <button type="submit" className="btn buyNowBtn rounded-pill">Buy Now</button>
                                         </div>
-                                        <div className="addToBtns d-flex gap-5 py-3">
-                                            <Link className='text-dark text-uppercase fs-sm'><AiOutlineHeart /> Add to wishlist</Link>
-                                            <Link className='text-dark text-uppercase fs-sm'><TbGitCompare /> Add to compare</Link>
+                                        <div className="addToBtns d-flex gap-4 py-3">
+                                            <Link className='text-dark fs-sm'><AiOutlineHeart className='me-2' />Add to wishlist</Link>
+                                            <Link className='text-dark fs-sm'><TbGitCompare className='me-2' />Add to compare</Link>
+                                            <div role="button" onClick={() => {
+                                                copyToClipboard("http://localhost:3000/products/:id")
+                                            }}><AiOutlineLink className='me-2' />Share</div>
                                         </div>
                                     </div>
                                 </div>
@@ -215,9 +229,52 @@ const SingleProduct = () => {
                         <div className="section-title fs-lg mb-4">Descriptions</div>
                         <div className="row g-3">
                             <div className="col-12">
-                                <div className="privacy-policy-texts bg-white p-4 br-shadow">
-                                    <span className='text-muted fs-xsm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eius asperiores est eveniet distinctio! Dignissimos corrupti, perspiciatis voluptatibus iste voluptas assumenda, quos amet doloremque in aperiam tempore odio earum facere soluta. At dolore deserunt, vero aperiam explicabo cupiditate temporibus quaerat ratione ipsam ad! Incidunt at voluptates quis reprehenderit, impedit nulla deserunt eaque cumque cum? Ad qui, inventore ut quo reprehenderit facilis odit corporis suscipit ratione sed sequi quos eligendi rerum, velit delectus at, consectetur vero asperiores eius mollitia ullam? Officiis cumque, quibusdam aspernatur illo sint ipsum praesentium et voluptas vitae labore rerum quo ipsam! Magni sapiente, natus fuga perferendis provident, excepturi et numquam delectus quia doloribus nihil autem aut corrupti. Blanditiis incidunt ipsa odit magni ex molestias magnam, animi quae fugiat, quisquam repellat atque officiis amet? Beatae nobis nostrum eligendi fugiat possimus minima modi mollitia alias quod pariatur? Aliquam molestias omnis ipsam nulla, repellat officia, veritatis nostrum unde assumenda animi tempora qui quam doloribus, mollitia officiis est! Fuga repudiandae iure explicabo, porro accusamus laboriosam id neque omnis tempora ratione consequatur commodi saepe aut ex. Modi illo a molestias commodi dolores corrupti cum. Facere placeat sunt deleniti esse culpa saepe doloribus dolorem aperiam ducimus eligendi eos, dolorum maxime vitae expedita! Saepe.</span>
+                                <div className="bg-white p-4 br-shadow">
+                                    <div className="privacy-policy-texts">
+                                        <span className='text-muted fs-xsm'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eius asperiores est eveniet distinctio! Dignissimos corrupti, perspiciatis voluptatibus iste voluptas assumenda, quos amet doloremque in aperiam tempore odio earum facere soluta. At dolore deserunt, vero aperiam explicabo cupiditate temporibus quaerat ratione ipsam ad! Incidunt at voluptates quis reprehenderit, impedit nulla deserunt eaque cumque cum? Ad qui, inventore ut quo reprehenderit facilis odit corporis suscipit ratione sed sequi quos eligendi rerum, velit delectus at, consectetur vero asperiores eius mollitia ullam? Officiis cumque, quibusdam aspernatur illo sint ipsum praesentium et voluptas vitae labore rerum quo ipsam! Magni sapiente, natus fuga perferendis provident, excepturi et numquam delectus quia doloribus nihil autem aut corrupti. Blanditiis incidunt ipsa odit magni ex molestias magnam, animi quae fugiat, quisquam repellat atque officiis amet? Beatae nobis nostrum eligendi fugiat possimus minima modi mollitia alias quod pariatur? Aliquam molestias omnis ipsam nulla, repellat officia, veritatis nostrum unde assumenda animi tempora qui quam doloribus, mollitia officiis est! Fuga repudiandae iure explicabo, porro accusamus laboriosam id neque omnis tempora ratione consequatur commodi saepe aut ex. Modi illo a molestias commodi dolores corrupti cum. Facere placeat sunt deleniti esse culpa saepe doloribus dolorem aperiam ducimus eligendi eos, dolorum maxime vitae expedita! Saepe.</span>
+                                    </div>
+                                    <div className="main-product-details-accordion mt-4">
+                                        <div class="accordion" id="accordionExample">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingOne">
+                                                    <button class="accordion-button fs-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <FiTruck className='me-2' /> Shipping & Returns
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Free shipping and returns available on all orders! We ship all US domestic orders within 5-10 business days!
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingTwo">
+                                                    <button class="accordion-button collapsed fs-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                        <FaFlask className="me-2" /> Materials
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Running Shoes cushions your stride with soft foam to keep you running in comfort. Lightweight knit material wraps your foot in breathable support, while a minimalist design fits in just about anywhere your day takes you.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header" id="headingThree">
+                                                    <button class="accordion-button collapsed fs-sm" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                        <AiOutlineHeart className='me-2' /> Care Instructions
+                                                    </button>
+                                                </h2>
+                                                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                    <div class="accordion-body">
+                                                        Use a soft damp cloth and a drop of mild soap to remove any haze. Air dry.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>

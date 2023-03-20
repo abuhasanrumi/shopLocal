@@ -705,5 +705,12 @@ select#sortBy {
   background-color: var(--color-232f3e);
   color: white;
 }
+.main-product-details-accordion .accordion-item {
+  border: 1px solid var(--color-f2f2f2);
+}
 
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  color: var(--color-131921);
+}
 /* Single product page ends */
