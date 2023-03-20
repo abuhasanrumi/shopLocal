@@ -1,13 +1,15 @@
 import React from 'react'
+import crossImg from "../images/cross.svg"
+import watchImg from "../images/watch.jpg"
 
 const SingleCompare = () => {
     return (
         <div className="col-6 col-md-3 col-xl-2 mb-4">
             <div className="comapre-card-full">
                 <div className="compare-card-top position-relative p-3bg-white rounded mb-3">
-                    <img src="images/cross.svg" alt="" className="img-fluid position-absolute compare-cross" />
+                    <img src={crossImg} alt="" className="img-fluid position-absolute compare-cross" />
                     <div className="compare-card-img bg-white">
-                        <img src="images/watch.jpg" className='img-fluid rounded' alt="" />
+                        <img src={watchImg} className='img-fluid rounded' alt="" />
                     </div>
                 </div>
                 <div className="compare-card-bottom p-3 bg-white rounded">

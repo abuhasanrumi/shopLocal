@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactStars from 'react-rating-stars-component'
 import { Link } from 'react-router-dom'
+import watchImg from "../images/watch.jpg"
+import wishImg from "../images/wish.svg"
 
 const SpecialProducts = () => {
     return (
@@ -8,10 +10,10 @@ const SpecialProducts = () => {
             <div className="special-product-card br-shadow bg-white position-relative">
                 <div className="d-flex justify-content-between">
                     <div className="special-product-imgs w-100 position-relative">
-                        <img className='img-fluid rounded' src="images/watch.jpg" alt="" />
+                        <img className='img-fluid rounded' src={watchImg} alt="" />
                         <div className="wishlist-icon position-absolute">
                             <Link>
-                                <img src="images/wish.svg" alt="" />
+                                <img src={wishImg} alt="" />
                             </Link>
                         </div>
                     </div>

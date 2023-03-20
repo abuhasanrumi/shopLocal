@@ -1,17 +1,21 @@
 import React from 'react'
 import ReactStars from 'react-rating-stars-component'
 import { Link } from 'react-router-dom'
+import watchImg from "../images/watch.jpg"
+import watch2Img from "../images/watch-2.jpg"
+import wishImg from "../images/wish.svg"
+
 
 const PopularProductCard = () => {
     return (
         <div className="col">
             <Link className="product-card bg-white br-shadow position-relative">
                 <div className="product-img d-flex align-items-center position-relative">
-                    <img className='img-fluid rounded' src="images/watch.jpg" alt="" />
-                    <img className='img-fluid rounded' src="images/watch-2.jpg" alt="" />
+                    <img className='img-fluid rounded' src={watchImg} alt="" />
+                    <img className='img-fluid rounded' src={watch2Img} alt="" />
                     <div className="wishlist-icon position-absolute">
                         <Link>
-                            <img src="images/wish.svg" alt="" />
+                            <img src={wishImg} alt="" />
                         </Link>
                     </div>
                 </div>

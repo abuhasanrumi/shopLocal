@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import blogImg1 from "../images/blog-1.jpg"
 
 const Blogpost = () => {
     return (
         <>
             <div className="col-6 col-md-4 col-lg-3 mb-4">
                 <div className="card bg-white h-100">
-                    <img src="images/blog-1.jpg" className="card-img-top" alt="..." />
+                    <img src={blogImg1} className="card-img-top" alt="..." />
                     <div className="card-body">
                         <p className="blog-date text-gray fs-xsm">11 JUNE, 2022</p>
                         <h5 className="fs-5">A Beautiful Morning...</h5>

@@ -1,4 +1,5 @@
 import React from 'react'
+import laptopImg from "../images/laptop.jpg"
 
 const SingleCategory = () => {
     return (
@@ -10,7 +11,7 @@ const SingleCategory = () => {
                         <p className="category-quantity mb-0 fs-xsm">8 items</p>
                     </div>
                     <div className="category-img">
-                        <img className='img-fluid' src="images/laptop.jpg" alt="" />
+                        <img className='img-fluid' src={laptopImg} alt="" />
                     </div>
                 </div>
             </div>

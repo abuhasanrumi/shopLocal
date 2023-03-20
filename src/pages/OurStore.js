@@ -4,7 +4,11 @@ import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
 import ProductCard from '../components/ProductUtilities/ProductCard';
 import { isMobile } from 'react-device-detect';
-
+import watch from "../images/watch.jpg"
+import gr1 from "../images/gr.svg"
+import gr2 from "../images/gr2.svg"
+import gr3 from "../images/gr3.svg"
+import gr4 from "../images/gr4.svg"
 
 const OurStore = () => {
     const [grid, setGrid] = useState(isMobile ? 12 : 3)
@@ -158,7 +162,7 @@ const OurStore = () => {
                                     <div className="random-product py-3">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src="images/watch.jpg" className='img-fluid' alt="" />
+                                                <img src={watch} className='img-fluid' alt="" />
                                             </div>
                                             <div className="col-8">
                                                 <h5 className="product-title fs-sm">Kids headphones bulk 10 pack multi colored for students</h5>
@@ -176,7 +180,7 @@ const OurStore = () => {
                                     <div className="random-product py-3">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src="images/watch.jpg" className='img-fluid' alt="" />
+                                                <img src={watch} className='img-fluid' alt="" />
                                             </div>
                                             <div className="col-8">
                                                 <h5 className="product-title fs-sm">Kids headphones bulk 10 pack multi colored for students</h5>
@@ -194,7 +198,7 @@ const OurStore = () => {
                                     <div className="random-product py-3">
                                         <div className="row">
                                             <div className="col-4">
-                                                <img src="images/watch.jpg" className='img-fluid' alt="" />
+                                                <img src={watch} className='img-fluid' alt="" />
                                             </div>
                                             <div className="col-8">
                                                 <h5 className="product-title fs-sm">Kids headphones bulk 10 pack multi colored for students</h5>
@@ -234,16 +238,16 @@ const OurStore = () => {
                                         <p className="mb-0 total-products fs-xsm text-secondary">21 products</p>
                                         <div className="grid-imgs d-flex gap-1">
                                             <div onClick={() => setGrid(3)} className="single-grid-img d-flex align-items-center justify-content-center p-2">
-                                                <img src="images/gr4.svg" className='img-fluid' alt="" />
+                                                <img src={gr4} className='img-fluid' alt="" />
                                             </div>
                                             <div onClick={() => setGrid(4)} className="single-grid-img d-flex align-items-center justify-content-center p-2">
-                                                <img src="images/gr3.svg" className='img-fluid' alt="" />
+                                                <img src={gr3} className='img-fluid' alt="" />
                                             </div>
                                             <div onClick={() => setGrid(6)} className="single-grid-img d-flex align-items-center justify-content-center p-2">
-                                                <img src="images/gr2.svg" className='img-fluid' alt="" />
+                                                <img src={gr2} className='img-fluid' alt="" />
                                             </div>
                                             <div onClick={() => setGrid(12)} className="single-grid-img d-flex align-items-center justify-content-center p-2">
-                                                <img src="images/gr.svg" className='img-fluid' alt="" />
+                                                <img src={gr1} className='img-fluid' alt="" />
                                             </div>
                                         </div>
                                     </div>

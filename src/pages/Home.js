@@ -7,6 +7,23 @@ import SpecialProducts from '../components/ProductUtilities/SpecialProducts';
 import PopularProductCard from '../components/ProductUtilities/PopularProductCard';
 import FamousCard from '../components/FamousCard';
 import SingleCategory from '../components/SingleCategory';
+import mainBanner1 from "../images/main-banner-1.jpg"
+import catBanner1 from "../images/catbanner-01.jpg"
+import catBanner2 from "../images/catbanner-02.jpg"
+import catBanner3 from "../images/catbanner-03.jpg"
+import catBanner4 from "../images/catbanner-04.jpg"
+import serviceImg1 from "../images/service.png"
+import serviceImg2 from "../images/service-02.png"
+import serviceImg3 from "../images/service-03.png"
+import serviceImg4 from "../images/service-04.png"
+import serviceImg5 from "../images/service-05.png"
+import brandImg1 from "../images/brand-01.png"
+import brandImg2 from "../images/brand-02.png"
+import brandImg3 from "../images/brand-03.png"
+import brandImg4 from "../images/brand-04.png"
+import brandImg5 from "../images/brand-05.png"
+import brandImg6 from "../images/brand-06.png"
+import brandImg7 from "../images/brand-07.png"
 
 const Home = () => {
 
@@ -17,7 +34,7 @@ const Home = () => {
                     <div className="row">
                         <div className="col-12 col-lg-6">
                             <div className="main-banner position-relative mb-4">
-                                <img src="images/main-banner-1.jpg" className="img-fluid rounded-3 w-100" alt="main banner" />
+                                <img src={mainBanner1} className="img-fluid rounded-3 w-100" alt="main banner" />
                                 <div className="main-banner-content position-absolute">
                                     <span className='main-banner-span fs-xsm'>SUPERCHARGED FOR PROS.</span>
                                     <h4 className='main-banner-title fs-xl py-md-3'>iPad S13+ Pro.</h4>
@@ -30,7 +47,7 @@ const Home = () => {
                             <div className="small-banner-wrapper row">
                                 <div className="col-6 col-md-3 col-lg-6 mb-4">
                                     <div className="small-banner position-relative">
-                                        <img src="images/catbanner-01.jpg" className="img-fluid rounded-3 w-100" alt="small banner" />
+                                        <img src={catBanner1} className="img-fluid rounded-3 w-100" alt="small banner" />
                                         <div className="small-banner-content position-absolute">
                                             <span className='small-banner-span fs-xsm'>BEST DEALS</span>
                                             <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
@@ -40,7 +57,7 @@ const Home = () => {
                                 </div>
                                 <div className="col-6 col-md-3 col-lg-6 mb-4">
                                     <div className="small-banner position-relative">
-                                        <img src="images/catbanner-02.jpg" className="img-fluid rounded-3 w-100" alt="small banner" />
+                                        <img src={catBanner2} className="img-fluid rounded-3 w-100" alt="small banner" />
                                         <div className="small-banner-content position-absolute">
                                             <span className='small-banner-span fs-xsm'>BEST DEALS</span>
                                             <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
@@ -50,7 +67,7 @@ const Home = () => {
                                 </div>
                                 <div className="col-6 col-md-3 col-lg-6 mb-4">
                                     <div className="small-banner position-relative">
-                                        <img src="images/catbanner-03.jpg" className="img-fluid rounded-3 w-100" alt="small banner" />
+                                        <img src={catBanner3} className="img-fluid rounded-3 w-100" alt="small banner" />
                                         <div className="small-banner-content position-absolute">
                                             <span className='small-banner-span fs-xsm'>BEST DEALS</span>
                                             <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
@@ -60,7 +77,7 @@ const Home = () => {
                                 </div>
                                 <div className="col-6 col-md-3 col-lg-6 mb-4">
                                     <div className="small-banner position-relative">
-                                        <img src="images/catbanner-04.jpg" className="img-fluid rounded-3 w-100" alt="small banner" />
+                                        <img src={catBanner4} className="img-fluid rounded-3 w-100" alt="small banner" />
                                         <div className="small-banner-content position-absolute">
                                             <span className='small-banner-span fs-xsm'>BEST DEALS</span>
                                             <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
@@ -80,7 +97,7 @@ const Home = () => {
                             <div className="services d-flex align-items-center justify-content-around justify-md-content-around py-3">
                                 <div className="single-service">
                                     <div className="d-flex align-items-center justify-content-between">
-                                        <img src="images/service.png" alt="" className="service-img p-3" />
+                                        <img src={serviceImg1} alt="" className="service-img p-3" />
                                         <div className="service-details gap-15">
                                             <div className="service-title fs-md py-1">Free Shipping</div>
                                             <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
@@ -89,7 +106,7 @@ const Home = () => {
                                 </div>
                                 <div className="single-service">
                                     <div className="d-flex align-items-center justify-content-between">
-                                        <img src="images/service-02.png" alt="" className="service-img p-3" />
+                                        <img src={serviceImg2} alt="" className="service-img p-3" />
                                         <div className="service-details gap-15">
                                             <div className="service-title fs-md py-1">Free Shipping</div>
                                             <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
@@ -98,7 +115,7 @@ const Home = () => {
                                 </div>
                                 <div className="single-service d-none d-md-block">
                                     <div className="d-flex align-items-center justify-content-between">
-                                        <img src="images/service-03.png" alt="" className="service-img p-3" />
+                                        <img src={serviceImg3} alt="" className="service-img p-3" />
                                         <div className="service-details gap-15">
                                             <div className="service-title fs-md py-1">Free Shipping</div>
                                             <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
@@ -107,7 +124,7 @@ const Home = () => {
                                 </div>
                                 <div className="single-service d-none d-xl-block">
                                     <div className="d-flex align-items-center justify-content-between">
-                                        <img src="images/service-04.png" alt="" className="service-img p-3" />
+                                        <img src={serviceImg4} alt="" className="service-img p-3" />
                                         <div className="service-details gap-15">
                                             <div className="service-title fs-md py-1">Free Shipping</div>
                                             <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
@@ -116,7 +133,7 @@ const Home = () => {
                                 </div>
                                 <div className="single-service d-none d-xxl-block">
                                     <div className="d-flex align-items-center justify-content-between">
-                                        <img src="images/service-05.png" alt="" className="service-img p-3" />
+                                        <img src={serviceImg5} alt="" className="service-img p-3" />
                                         <div className="service-details gap-15">
                                             <div className="service-title fs-md py-1">Free Shipping</div>
                                             <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
@@ -152,25 +169,25 @@ const Home = () => {
                                 <div className="marquee-inner-wrapper card-wrapper">
                                     <Marquee className='d-flex g-2' gradient={false} pauseOnHover={true} speed={15}>
                                         <div className="marquee-img mx-5 img-fluid">
-                                            <img src="images/brand-01.png" alt="" />
+                                            <img src={brandImg1} alt="" />
                                         </div>
                                         <div className="marquee-img mx-5 img-fluid">
-                                            <img src="images/brand-02.png" alt="" />
+                                            <img src={brandImg2} alt="" />
                                         </div>
                                         <div className="marquee-img mx-5 img-fluid">
-                                            <img src="images/brand-03.png" alt="" />
+                                            <img src={brandImg3} alt="" />
                                         </div>
                                         <div className="marquee-img mx-5 img-fluid">
-                                            <img src="images/brand-04.png" alt="" />
+                                            <img src={brandImg4} alt="" />
                                         </div>
                                         <div className="marquee-img mx-5 img-fluid">
-                                            <img src="images/brand-05.png" alt="" />
+                                            <img src={brandImg5} alt="" />
                                         </div>
                                         <div className="marquee-img mx-5 img-fluid">
-                                            <img src="images/brand-06.png" alt="" />
+                                            <img src={brandImg6} alt="" />
                                         </div>
                                         <div className="marquee-img mx-5 img-fluid">
-                                            <img src="images/brand-07.png" alt="" />
+                                            <img src={brandImg7} alt="" />
                                         </div>
                                     </Marquee>
                                 </div>
