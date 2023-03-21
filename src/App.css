@@ -725,20 +725,12 @@ select#sortBy {
   text-transform: uppercase;
 }
 
-.cart-col-1 {
-}
-.cart-col-2 {
-  display: flex;
-  justify-content: end;
-}
-.cart-col-3 {
-  display: flex;
-  justify-content: end;
-}
+.cart-col-2,
+.cart-col-3,
 .cart-col-4 {
-  display: flex;
   justify-content: end;
 }
+
 .cart-data > div > .cart-col-1 > img {
   /* width: 15%; */
   /* margin-right: 5%; */

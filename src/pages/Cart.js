@@ -16,9 +16,9 @@ const Cart = () => {
                             <div className="cart-header py-3 text-muted gap-10 border-bottom">
                                 <div className="row">
                                     <div className="col-8 col-lg-6 cart-col-1">Product</div>
-                                    <div className="col-4 col-lg-2 cart-col-2">Price</div>
-                                    <div className="col-lg-2 d-none d-lg-block cart-col-3">Quantity</div>
-                                    <div className="col-lg-2 d-none d-lg-block cart-col-4">Total</div>
+                                    <div className="col-4 col-lg-2 cart-col-2 text-end">Price</div>
+                                    <div className="col-lg-2 d-none d-lg-flex cart-col-3">Quantity</div>
+                                    <div className="col-lg-2 d-none d-lg-flex cart-col-4">Total</div>
                                 </div>
                             </div>
                             <div className="cart-data-wrapper text-muted">
@@ -26,10 +26,10 @@ const Cart = () => {
                                     <div className="row align-items-center">
                                         <div className="col-8 col-lg-6 cart-col-1">
                                             <div className="row">
-                                                <div className="col-4">
+                                                <div className="col-4 col-lg-2">
                                                     <img src={watchImg} alt="" className="img-fluid" />
                                                 </div>
-                                                <div className="col-8 cart-data-product">
+                                                <div className="col-8 col-lg-10 cart-data-product">
                                                     <p className='cart-data-product-title text-dark'>APPLE Watch Series 2 – 42 mm Stainless Steel Case</p>
                                                     <p className='cart-data-product-size'>Size: M</p>
                                                     <p className='cart-data-product-color'>Color: Red</p>
@@ -37,24 +37,29 @@ const Cart = () => {
                                             </div>
                                         </div>
                                         <div className="col-4 col-lg-2 cart-col-2">
-                                            <h6 className='cart-data-product-price text-dark'>$100.00</h6>
+                                            <h6 className='cart-data-product-price text-dark mb-0 text-end'>$100.00</h6>
                                         </div>
-                                        <div className="col-lg-2 d-none d-lg-block cart-col-3">
-                                            <div className="cart-data-quantity-wrapper d-flex gap-3 py-2 align-items-center">
-                                                <input
-                                                    type="number"
-                                                    className='form-control'
-                                                    min={1}
-                                                    max={10}
-                                                    style={{ width: "65px" }}
-                                                    placeholder="1"
-                                                />
+                                        <div className="col-10 offset-2 col-lg-2 d-lg-flex cart-col-3">
+                                            <div className="cart-data-quantity-wrapper d-flex gap-3 py-2 align-items-center justify-content-between">
+                                                <div className='d-flex align-items-center gap-10'>
+                                                    <span>Quantity: </span>
+                                                    <input
+                                                        type="number"
+                                                        className='form-control'
+                                                        min={1}
+                                                        max={10}
+                                                        style={{ width: "65px" }}
+                                                        placeholder="1"
+                                                    />
+                                                </div>
                                                 <div className="card-data-remove">
                                                     <BsTrash className='card-data-remove-btn' />
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-lg-2 d-none d-lg-block cart-col-4">asdsad</div>
+                                        <div className="col-lg-2 d-none d-lg-flex cart-col-4">
+                                            <h6 className='cart-data-product-price text-dark mb-0'>$100.00</h6>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
