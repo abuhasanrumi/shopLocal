@@ -13,15 +13,6 @@ import { FaFlask } from "react-icons/fa"
 
 const SingleProduct = () => {
     const [orderedThisProduct, setOrderedThisProduct] = useState(true)
-    const copyToClipboard = (text) => {
-        console.log('text', text)
-        var textField = document.createElement('textarea')
-        textField.innerText = text
-        document.body.appendChild(textField)
-        textField.select()
-        document.execCommand('copy')
-        textField.remove()
-    }
     return (
         <>
             <Meta title={"Product Name - ShopLocal"} />
@@ -217,7 +208,7 @@ const SingleProduct = () => {
                                             <Link className='text-dark fs-sm'><AiOutlineHeart className='me-2' />Add to wishlist</Link>
                                             <Link className='text-dark fs-sm'><TbGitCompare className='me-2' />Add to compare</Link>
                                             <div role="button" onClick={() => {
-                                                copyToClipboard("http://localhost:3000/products/:id")
+                                                navigator.clipboard.writeText('Copy this text to clipboard')
                                             }}><AiOutlineLink className='me-2' />Share</div>
                                         </div>
                                     </div>

@@ -714,3 +714,40 @@ select#sortBy {
   color: var(--color-131921);
 }
 /* Single product page ends */
+
+/* Cart page starts  */
+.cart-header > span {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.cart-col-1 {
+  width: 50%;
+}
+.cart-col-2 {
+  width: 10%;
+  display: flex;
+  justify-content: end;
+}
+.cart-col-3 {
+  width: 20%;
+  display: flex;
+  justify-content: end;
+}
+.cart-col-4 {
+  width: 15%;
+  display: flex;
+  justify-content: end;
+}
+.cart-data > .cart-col-1 > img {
+  width: 15%;
+  margin-right: 5%;
+}
+.cart-data-product-title {
+  font-weight: 600;
+}
+.cart-data-product > p {
+  margin-bottom: 0;
+  padding: 5px 0;
+}
+/* Cart page ends */

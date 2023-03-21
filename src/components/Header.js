@@ -57,7 +57,7 @@ const Header = () => {
                                     </Link>
                                 </div>
                                 <div className="single-icon px-2">
-                                    <Link to="cart" className='d-flex align-items-center text-white gap-10'>
+                                    <Link to="/cart" className='d-flex align-items-center text-white gap-10'>
                                         <img className="img-fluid" src={cartImg} alt="cart" />
                                         <div className='d-none d-xl-block d-flex flex-column gap-10 justify-content-center'>
                                             <span className="d-block badge bg-white text-dark fs-xsm fw-normal rounded-pill mb-1">0</span>
