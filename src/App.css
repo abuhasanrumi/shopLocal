@@ -731,10 +731,6 @@ select#sortBy {
   justify-content: end;
 }
 
-.cart-data > div > .cart-col-1 > img {
-  /* width: 15%; */
-  /* margin-right: 5%; */
-}
 .cart-data-product-title {
   font-weight: 600;
 }
