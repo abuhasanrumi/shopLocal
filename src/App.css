@@ -738,7 +738,7 @@ select#sortBy {
 .cart-data-product-title {
   font-weight: 600;
 }
-.cart-data-product > p {
+.cart-product-data > p {
   margin-bottom: 0;
   padding: 5px 0;
 }
