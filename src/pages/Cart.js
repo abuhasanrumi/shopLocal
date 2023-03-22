@@ -39,7 +39,7 @@ const Cart = () => {
                                         <div className="col-4 col-lg-2 cart-col-2">
                                             <h6 className='cart-data-product-price text-dark mb-0 text-end'>$100.00</h6>
                                         </div>
-                                        <div className="col-10 offset-2 col-lg-2 d-lg-flex cart-col-3">
+                                        <div className="col-10 col-lg-2 d-lg-flex cart-col-3">
                                             <div className="cart-data-quantity-wrapper d-flex gap-3 py-2 align-items-center justify-content-between">
                                                 <div className='d-flex align-items-center gap-10'>
                                                     <span>Quantity: </span>
