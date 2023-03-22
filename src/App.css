@@ -751,4 +751,28 @@ select#sortBy {
   cursor: pointer;
 }
 
+.continue-shopping-btn,
+.checkout-btn {
+  font-size: calc(12px + 0.2vw);
+  color: white;
+  line-height: 18px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  padding: 15px 30px !important;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  overflow: hidden;
+  background-color: var(--color-232f3e);
+  color: white;
+}
+
+.cart-bottom-area .form-group > textarea {
+  background-color: var(--color-f2f2f2);
+}
+
+.checkout-btn {
+  padding: 15px 140px !important;
+}
+
 /* Cart page ends */

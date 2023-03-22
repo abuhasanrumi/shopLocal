@@ -6,8 +6,8 @@ import SingleCartProduct from '../components/SingleCartProduct';
 const Cart = () => {
     return (
         <>
-            <Meta title={"Cart - ShopLocal"} />
-            <BreadCrumb title={"Cart - ShopLocal"} />
+            <Meta title={"Your Shopiing Cart - ShopLocal"} />
+            <BreadCrumb title={"Your Shopiing Cart - ShopLocal"} />
             <div className="cart-wrapper gray-bg py-5">
                 <div className="container-fluid">
                     <div className="row">
@@ -39,6 +39,32 @@ const Cart = () => {
                                 <div className="cart-data pb-3">
                                     <SingleCartProduct />
                                     <SingleCartProduct />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-12">
+                            <div className="continue-shopping-btn-cart">
+                                <button type="submit" className="btn continue-shopping-btn rounded-pill">Continue Shopping</button>
+                            </div>
+                        </div>
+                        <div className="cart-bottom-area mt-4">
+                            <div className="row align-items-center">
+                                <div className="col-12 col-md-6">
+                                    <div className="col-md-6">
+                                        <div class="form-group">
+                                            <label className='py-2 fs-xsm text-muted' for="exampleFormControlTextarea1">Order special instructions</label>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="col-12 col-md-6">
+                                    <div className="cart-total-box d-flex flex-column align-items-center align-items-md-end justify-content-end py-4">
+                                        <h5 className="text-muted">Subtotal: $100.00</h5>
+                                        <div className='text-muted'>Taxes and shipping calculated at checkout</div>
+                                        <div className="checkout-btn-cart mt-4">
+                                            <button type="submit" className="btn checkout-btn rounded-pill">Check Out</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
