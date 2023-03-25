@@ -2,6 +2,7 @@ import React from 'react'
 import Meta from '../components/Meta';
 import BreadCrumb from '../components/BreadCrumb';
 import SingleCartProduct from '../components/SingleCartProduct';
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
     return (
@@ -61,9 +62,9 @@ const Cart = () => {
                                     <div className="cart-total-box d-flex flex-column align-items-center align-items-md-end justify-content-end py-4">
                                         <h5 className="text-muted">Subtotal: $100.00</h5>
                                         <div className='text-muted'>Taxes and shipping calculated at checkout</div>
-                                        <div className="checkout-btn-cart mt-4">
+                                        <Link to="/checkout" className="checkout-btn-cart mt-4">
                                             <button type="submit" className="btn checkout-btn rounded-pill">Check Out</button>
-                                        </div>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>
