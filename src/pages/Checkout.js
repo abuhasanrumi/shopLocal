@@ -86,7 +86,8 @@ const Checkout = () => {
                             <div className="checklist-right-data px-lg-5">
                                 <div className="checkout-right-products pb-4 border-bottom">
                                     <div className="single-cart-product d-flex align-items-center mb-3">
-                                        <div className="single-cart-image w-25">
+                                        <div className="single-cart-image w-25 position-relative">
+                                            <span className="badge position-absolute">1</span>
                                             <img className='img-fluid' src={watchImg} alt="" />
                                         </div>
                                         <div className="single-cart-product-details ps-4">
@@ -98,19 +99,8 @@ const Checkout = () => {
                                         </div>
                                     </div>
                                     <div className="single-cart-product d-flex align-items-center mb-3">
-                                        <div className="single-cart-image w-25">
-                                            <img className='img-fluid' src={watchImg} alt="" />
-                                        </div>
-                                        <div className="single-cart-product-details ps-4">
-                                            <h6 className="single-cart-product-title fw-normal fs-sm">APPLE Watch Series 2 – 42 mm Stainless Steel Case</h6>
-                                            <span className='fs-xsm text-muted'>M / #E33935</span>
-                                        </div>
-                                        <div className="single-cart-product-price">
-                                            <h6 className='fw-normal'>$100.00</h6>
-                                        </div>
-                                    </div>
-                                    <div className="single-cart-product d-flex align-items-center mb-3">
-                                        <div className="single-cart-image w-25">
+                                        <div className="single-cart-image w-25 position-relative">
+                                            <span className="badge position-absolute">1</span>
                                             <img className='img-fluid' src={watchImg} alt="" />
                                         </div>
                                         <div className="single-cart-product-details ps-4">
