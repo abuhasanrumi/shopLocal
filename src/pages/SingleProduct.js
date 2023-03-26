@@ -18,7 +18,7 @@ const SingleProduct = () => {
         <>
             <Meta title={"Product Name - ShopLocal"} />
             <BreadCrumb title={"Product Name - ShopLocal"} />
-            <Container class1="single-product-wrapper">
+            <Container class1="single-product-wrapper gray-bg">
                 <div className="main-product-wrapper pt-4 pb-5">
                     <div className="container-fluid">
                         <div className="row bg-white br-shadow">
