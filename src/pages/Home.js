@@ -12,11 +12,6 @@ import catBanner1 from "../images/catbanner-01.jpg"
 import catBanner2 from "../images/catbanner-02.jpg"
 import catBanner3 from "../images/catbanner-03.jpg"
 import catBanner4 from "../images/catbanner-04.jpg"
-import serviceImg1 from "../images/service.png"
-import serviceImg2 from "../images/service-02.png"
-import serviceImg3 from "../images/service-03.png"
-import serviceImg4 from "../images/service-04.png"
-import serviceImg5 from "../images/service-05.png"
 import brandImg1 from "../images/brand-01.png"
 import brandImg2 from "../images/brand-02.png"
 import brandImg3 from "../images/brand-03.png"
@@ -25,6 +20,7 @@ import brandImg5 from "../images/brand-05.png"
 import brandImg6 from "../images/brand-06.png"
 import brandImg7 from "../images/brand-07.png"
 import Container from '../components/Container';
+import { services } from '../utilities/ServiceData';
 
 const Home = () => {
 
@@ -93,152 +89,77 @@ const Home = () => {
                 <div className="row d-flex justify-content-between align-items-center">
                     <div className="col-12">
                         <div className="services d-flex align-items-center justify-content-around justify-md-content-around py-3">
-                            <div className="single-service">
-                                <div className="d-flex align-items-center justify-content-between">
-                                    <img src={serviceImg1} alt="" className="service-img p-3" />
-                                    <div className="service-details gap-15">
-                                        <div className="service-title fs-md py-1">Free Shipping</div>
-                                        <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
+                            {
+                                services?.map((service, j) => {
+                                    return (
+                                        <div className="single-service">
+                                            <div className="d-flex align-items-center justify-content-between">
+                                                <img src={service.image} alt="" className="service-img p-3" />
+                                                <div className="service-details gap-15">
+                                                    <div className="service-title fs-md py-1">{service.title}</div>
+                                                    <p className="service-des mb-0 fs-xsm">{service.tagline}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                                })
+                            }
+                        </div>
+                    </div>
+                </div>
+            </Container>
+            <Container class1={"py-3 gray-bg"}>
+                <div className="categories bg-white px-4 py-3 br-shadow">
+                    <div className="row">
+                        <SingleCategory />
+                        <SingleCategory />
+                        <SingleCategory />
+                        <SingleCategory />
+                        <SingleCategory />
+                        <SingleCategory />
+                        <SingleCategory />
+                        <SingleCategory />
+                    </div>
+                </div>
+            </Container>
+            <Container class1={"py-3 gray-bg"}>
+                <div className="marquee-wrapper bg-white br-shadow">
+                    <div className="row">
+                        <div className="col-12">
+                            <div className="marquee-inner-wrapper card-wrapper">
+                                <Marquee className='d-flex g-2' gradient={false} pauseOnHover={true} speed={15}>
+                                    <div className="marquee-img mx-5 img-fluid">
+                                        <img src={brandImg1} alt="" />
                                     </div>
-                                </div>
-                            </div>
-                            <div className="single-service">
-                                <div className="d-flex align-items-center justify-content-between">
-                                    <img src={serviceImg2} alt="" className="service-img p-3" />
-                                    <div className="service-details gap-15">
-                                        <div className="service-title fs-md py-1">Free Shipping</div>
-                                        <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
+                                    <div className="marquee-img mx-5 img-fluid">
+                                        <img src={brandImg2} alt="" />
                                     </div>
-                                </div>
-                            </div>
-                            <div className="single-service d-none d-md-block">
-                                <div className="d-flex align-items-center justify-content-between">
-                                    <img src={serviceImg3} alt="" className="service-img p-3" />
-                                    <div className="service-details gap-15">
-                                        <div className="service-title fs-md py-1">Free Shipping</div>
-                                        <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
+                                    <div className="marquee-img mx-5 img-fluid">
+                                        <img src={brandImg3} alt="" />
                                     </div>
-                                </div>
-                            </div>
-                            <div className="single-service d-none d-xl-block">
-                                <div className="d-flex align-items-center justify-content-between">
-                                    <img src={serviceImg4} alt="" className="service-img p-3" />
-                                    <div className="service-details gap-15">
-                                        <div className="service-title fs-md py-1">Free Shipping</div>
-                                        <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
+                                    <div className="marquee-img mx-5 img-fluid">
+                                        <img src={brandImg4} alt="" />
                                     </div>
-                                </div>
-                            </div>
-                            <div className="single-service d-none d-xxl-block">
-                                <div className="d-flex align-items-center justify-content-between">
-                                    <img src={serviceImg5} alt="" className="service-img p-3" />
-                                    <div className="service-details gap-15">
-                                        <div className="service-title fs-md py-1">Free Shipping</div>
-                                        <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
+                                    <div className="marquee-img mx-5 img-fluid">
+                                        <img src={brandImg5} alt="" />
                                     </div>
-                                </div>
+                                    <div className="marquee-img mx-5 img-fluid">
+                                        <img src={brandImg6} alt="" />
+                                    </div>
+                                    <div className="marquee-img mx-5 img-fluid">
+                                        <img src={brandImg7} alt="" />
+                                    </div>
+                                </Marquee>
                             </div>
                         </div>
                     </div>
                 </div>
             </Container>
-            <section className="home-wrapper-3 py-3 gray-bg">
-                <div className="container-fluid">
-                    <div className="categories bg-white px-4 py-3 br-shadow">
-                        <div className="row">
-                            <SingleCategory />
-                            <SingleCategory />
-                            <SingleCategory />
-                            <SingleCategory />
-                            <SingleCategory />
-                            <SingleCategory />
-                            <SingleCategory />
-                            <SingleCategory />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="home-wrapper-4 py-3 gray-bg">
-                <div className="container-fluid">
-                    <div className="marquee-wrapper bg-white br-shadow">
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="marquee-inner-wrapper card-wrapper">
-                                    <Marquee className='d-flex g-2' gradient={false} pauseOnHover={true} speed={15}>
-                                        <div className="marquee-img mx-5 img-fluid">
-                                            <img src={brandImg1} alt="" />
-                                        </div>
-                                        <div className="marquee-img mx-5 img-fluid">
-                                            <img src={brandImg2} alt="" />
-                                        </div>
-                                        <div className="marquee-img mx-5 img-fluid">
-                                            <img src={brandImg3} alt="" />
-                                        </div>
-                                        <div className="marquee-img mx-5 img-fluid">
-                                            <img src={brandImg4} alt="" />
-                                        </div>
-                                        <div className="marquee-img mx-5 img-fluid">
-                                            <img src={brandImg5} alt="" />
-                                        </div>
-                                        <div className="marquee-img mx-5 img-fluid">
-                                            <img src={brandImg6} alt="" />
-                                        </div>
-                                        <div className="marquee-img mx-5 img-fluid">
-                                            <img src={brandImg7} alt="" />
-                                        </div>
-                                    </Marquee>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="home-wrapper-5 py-5 gray-bg">
-                <div className="container-fluid">
-                    <div className="product-wrapper">
-                        <div className="section-title fs-lg mb-4">Featured Collection</div>
-                        <div className="row g-3">
-                            {/* <div className="row row-cols-2"> */}
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                            <ProductCard />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="home-wrapper-6 py-3 gray-bg">
-                <div className="container-fluid">
-                    <div className="famous-wrapper">
-                        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
-                            <FamousCard color={"dark"} />
-                            <FamousCard color={"white"} />
-                            <FamousCard color={"white"} />
-                            <FamousCard color={"white"} />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="home-wrapper-6 py-4 gray-bg">
-                <div className="container-fluid">
-                    <div className="product-details-wrapper">
-                        <div className="section-title fs-lg mb-4">Special Products</div>
-                        <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
-                            <SpecialProducts />
-                            <SpecialProducts />
-                            <SpecialProducts />
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section className="home-wrapper-7 py-4 gray-bg">
-                <div className="container-fluid">
-                    <div className="popular-product-wrapper">
-                        <div className="section-title fs-lg mb-4">Our Featured Products</div>
-                    </div>
-                    <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3">
+            <Container class1={"py-3 gray-bg"}>
+                <div className="product-wrapper">
+                    <div className="section-title fs-lg mb-4">Featured Collection</div>
+                    <div className="row g-3">
+                        {/* <div className="row row-cols-2"> */}
                         <ProductCard />
                         <ProductCard />
                         <ProductCard />
@@ -247,20 +168,51 @@ const Home = () => {
                         <ProductCard />
                     </div>
                 </div>
-            </section>
-            <section className="home-wrapper-8 py-4 gray-bg">
-                <div className="container-fluid">
-                    <div className="blog-wrapper">
-                        <div className="section-title fs-lg mb-4">Blog Section</div>
-                        <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
-                            <Blogpost />
-                            <Blogpost />
-                            <Blogpost />
-                            <Blogpost />
-                        </div>
+            </Container>
+            <Container class1={"py-3 gray-bg"}>
+                <div className="famous-wrapper">
+                    <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+                        <FamousCard color={"dark"} />
+                        <FamousCard color={"white"} />
+                        <FamousCard color={"white"} />
+                        <FamousCard color={"white"} />
                     </div>
                 </div>
-            </section>
+            </Container>
+            <Container class1={"py-3 gray-bg"}>
+                <div className="product-details-wrapper">
+                    <div className="section-title fs-lg mb-4">Special Products</div>
+                    <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+                        <SpecialProducts />
+                        <SpecialProducts />
+                        <SpecialProducts />
+                    </div>
+                </div>
+            </Container>
+            <Container class1={"py-3 gray-bg"}>
+                <div className="popular-product-wrapper">
+                    <div className="section-title fs-lg mb-4">Our Featured Products</div>
+                </div>
+                <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3">
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                </div>
+            </Container>
+            <Container class1={"py-3 gray-bg"}>
+                <div className="blog-wrapper">
+                    <div className="section-title fs-lg mb-4">Blog Section</div>
+                    <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+                        <Blogpost />
+                        <Blogpost />
+                        <Blogpost />
+                        <Blogpost />
+                    </div>
+                </div>
+            </Container>
         </>
     )
 }
