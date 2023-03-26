@@ -222,9 +222,9 @@ const OurStore = () => {
                                 <div className='d-none d-lg-block'>
                                     <div className="sort d-flex align-items-center gap-10">
                                         <label htmlFor="sortBy" className='w-100'>Sort By:</label>
-                                        <select className='form-control form-select' name="" id="sortBy">
+                                        <select className='form-control form-select' defaultValue={'best-selling'} name="" id="sortBy">
                                             <option value="manual">Featured</option>
-                                            <option value="best-selling" selected="selected">Best selling</option>
+                                            <option value="best-selling">Best selling</option>
                                             <option value="title-ascending">Alphabetically, A-Z</option>
                                             <option value="title-descending">Alphabetically, Z-A</option>
                                             <option value="price-ascending">Price, low to high</option>
