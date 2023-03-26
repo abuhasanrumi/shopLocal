@@ -776,3 +776,22 @@ select#sortBy {
 }
 
 /* Cart page ends */
+
+/* Checkout page starts  */
+.single-cart-image {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.single-cart-image img {
+  border-radius: 5px;
+}
+
+.single-cart-product-title {
+  line-height: 24px;
+}
+
+.single-cart-product:last-child {
+  margin-bottom: 0;
+}
+/* Checkout page ends */

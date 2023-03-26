@@ -1,6 +1,7 @@
 import React from 'react'
 import { BsArrowLeft } from "react-icons/bs"
 import { Link } from 'react-router-dom'
+import watchImg from "../images/watch.jpg"
 
 const Checkout = () => {
     return (
@@ -8,12 +9,12 @@ const Checkout = () => {
             <div className="checkout-wrapper py-5">
                 <div className="container-xxl">
                     <div className="row">
-                        <div className="col-7">
-                            <div className="checkout-left-data pe-5">
+                        <div className="col-12 col-lg-7">
+                            <div className="checkout-left-data pe-lg-5">
                                 <h3 className="checkout-title fw-light">Checkout</h3>
                                 <nav aria-label="breadcrumb">
                                     <ol className="breadcrumb fs-xsm">
-                                        <li className="breadcrumb-item">Cart</li>
+                                        <li className="breadcrumb-item"><Link className='text-dark' to="/cart">Cart</Link></li>
                                         <li className="breadcrumb-item active" aria-current="page">Information</li>
                                         <li className="breadcrumb-item" aria-current="page">Shipping</li>
                                         <li className="breadcrumb-item" aria-current="page">Payment</li>
@@ -81,7 +82,66 @@ const Checkout = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-5"></div>
+                        <div className="col-12 col-lg-5">
+                            <div className="checklist-right-data px-lg-5">
+                                <div className="checkout-right-products pb-4 border-bottom">
+                                    <div className="single-cart-product d-flex align-items-center mb-3">
+                                        <div className="single-cart-image w-25">
+                                            <img className='img-fluid' src={watchImg} alt="" />
+                                        </div>
+                                        <div className="single-cart-product-details ps-4">
+                                            <h6 className="single-cart-product-title fw-normal fs-sm">APPLE Watch Series 2 – 42 mm Stainless Steel Case</h6>
+                                            <span className='fs-xsm text-muted'>M / #E33935</span>
+                                        </div>
+                                        <div className="single-cart-product-price">
+                                            <h6 className='fw-normal'>$100.00</h6>
+                                        </div>
+                                    </div>
+                                    <div className="single-cart-product d-flex align-items-center mb-3">
+                                        <div className="single-cart-image w-25">
+                                            <img className='img-fluid' src={watchImg} alt="" />
+                                        </div>
+                                        <div className="single-cart-product-details ps-4">
+                                            <h6 className="single-cart-product-title fw-normal fs-sm">APPLE Watch Series 2 – 42 mm Stainless Steel Case</h6>
+                                            <span className='fs-xsm text-muted'>M / #E33935</span>
+                                        </div>
+                                        <div className="single-cart-product-price">
+                                            <h6 className='fw-normal'>$100.00</h6>
+                                        </div>
+                                    </div>
+                                    <div className="single-cart-product d-flex align-items-center mb-3">
+                                        <div className="single-cart-image w-25">
+                                            <img className='img-fluid' src={watchImg} alt="" />
+                                        </div>
+                                        <div className="single-cart-product-details ps-4">
+                                            <h6 className="single-cart-product-title fw-normal fs-sm">APPLE Watch Series 2 – 42 mm Stainless Steel Case</h6>
+                                            <span className='fs-xsm text-muted'>M / #E33935</span>
+                                        </div>
+                                        <div className="single-cart-product-price">
+                                            <h6 className='fw-normal'>$100.00</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="checkout-right-cost-section py-4 border-bottom">
+                                    <div className="d-flex justify-content-between align-items-center py-2">
+                                        <p className="mb-0 fs-sm">Subtotal</p>
+                                        <p className="mb-0 fs-sm">$100.00</p>
+                                    </div>
+                                    <div className="d-flex justify-content-between align-items-center py-2">
+                                        <p className="mb-0 fs-sm">Shipping</p>
+                                        <p className="mb-0 fs-xsm text-muted">Calculated at next step</p>
+                                    </div>
+                                    <div className="d-flex justify-content-between align-items-center py-2">
+                                        <p className="mb-0 fs-sm">Estimated Taxes</p>
+                                        <p className="mb-0 fs-sm">$18.00</p>
+                                    </div>
+                                </div>
+                                <div className="checkout-right-total d-flex align-items-center justify-content-between py-4">
+                                    <div className="fs-md">Total</div>
+                                    <div className="fs-lg">$100.00</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
