@@ -8,26 +8,19 @@ const Checkout = () => {
         <>
             <div className="checkout-wrapper py-5">
                 <div className="container-xxl">
-                    <div className="row">
+                    <h3 className="checkout-title fw-light">Checkout</h3>
+                    <nav aria-label="breadcrumb">
+                        <ol className="breadcrumb fs-xsm">
+                            <li className="breadcrumb-item"><Link className='text-dark' to="/cart">Cart</Link></li>
+                            <li className="breadcrumb-item active" aria-current="page">Information</li>
+                            <li className="breadcrumb-item" aria-current="page">Shipping</li>
+                            <li className="breadcrumb-item" aria-current="page">Payment</li>
+                        </ol>
+                    </nav>
+                    <div className="row flex-column-reverse flex-lg-row mt-5">
                         <div className="col-12 col-lg-7">
                             <div className="checkout-left-data pe-lg-5">
-                                <h3 className="checkout-title fw-light">Checkout</h3>
-                                <nav aria-label="breadcrumb">
-                                    <ol className="breadcrumb fs-xsm">
-                                        <li className="breadcrumb-item"><Link className='text-dark' to="/cart">Cart</Link></li>
-                                        <li className="breadcrumb-item active" aria-current="page">Information</li>
-                                        <li className="breadcrumb-item" aria-current="page">Shipping</li>
-                                        <li className="breadcrumb-item" aria-current="page">Payment</li>
-                                    </ol>
-                                </nav>
-                                <div className="border-bottom py-4">
-                                    <h5 className="fw-light">Contact Information</h5>
-                                    <div className="checkout-account-details fs-sm fw-light text-muted">
-                                        Abu Hasan Rumi (shutter.rumi1@gmail.com)
-                                    </div>
-                                </div>
-
-                                <div className="checkout-form mt-5">
+                                <div className="checkout-form">
                                     <h5 className="fw-light mb-3">Shipping Information</h5>
                                     <form action="" className='d-flex gap-15 flex-wrap justify-content-between'>
                                         <div className='form-floating w-100'>
@@ -90,24 +83,11 @@ const Checkout = () => {
                                             <span className="badge position-absolute">1</span>
                                             <img className='img-fluid' src={watchImg} alt="" />
                                         </div>
-                                        <div className="single-cart-product-details ps-4">
+                                        <div className="single-cart-product-details ps-4 w-50">
                                             <h6 className="single-cart-product-title fw-normal fs-sm">APPLE Watch Series 2 – 42 mm Stainless Steel Case</h6>
                                             <span className='fs-xsm text-muted'>M / #E33935</span>
                                         </div>
-                                        <div className="single-cart-product-price">
-                                            <h6 className='fw-normal'>$100.00</h6>
-                                        </div>
-                                    </div>
-                                    <div className="single-cart-product d-flex align-items-center mb-3">
-                                        <div className="single-cart-image w-25 position-relative">
-                                            <span className="badge position-absolute">1</span>
-                                            <img className='img-fluid' src={watchImg} alt="" />
-                                        </div>
-                                        <div className="single-cart-product-details ps-4">
-                                            <h6 className="single-cart-product-title fw-normal fs-sm">APPLE Watch Series 2 – 42 mm Stainless Steel Case</h6>
-                                            <span className='fs-xsm text-muted'>M / #E33935</span>
-                                        </div>
-                                        <div className="single-cart-product-price">
+                                        <div className="single-cart-product-price w-25 d-flex justify-content-end">
                                             <h6 className='fw-normal'>$100.00</h6>
                                         </div>
                                     </div>
