@@ -35,24 +35,24 @@ const Checkout = () => {
                                             </select>
                                             <label htmlFor="selectCountry">Country/Region</label>
                                         </div>
-                                        <div class="form-floating flex-grow-1">
-                                            <input type="text" class="form-control fs-sm text-muted" id="floatingInput" placeholder="Last Name" />
+                                        <div className="form-floating flex-grow-1">
+                                            <input type="text" className="form-control fs-sm text-muted" id="floatingInput" placeholder="Last Name" />
                                             <label for="floatingInput fw-light fs-sm text-muted">First Name</label>
                                         </div>
-                                        <div class="form-floating flex-grow-1">
-                                            <input type="text" class="form-control fs-sm text-muted" id="floatingInput" placeholder="Last Name" />
+                                        <div className="form-floating flex-grow-1">
+                                            <input type="text" className="form-control fs-sm text-muted" id="floatingInput" placeholder="Last Name" />
                                             <label for="floatingInput fw-light fs-sm text-muted">Last Name</label>
                                         </div>
-                                        <div class="form-floating w-100">
-                                            <input type="text" class="form-control fs-sm text-muted" id="floatingInput" placeholder="address" />
+                                        <div className="form-floating w-100">
+                                            <input type="text" className="form-control fs-sm text-muted" id="floatingInput" placeholder="address" />
                                             <label for="floatingInput fw-light fs-sm text-muted">Address</label>
                                         </div>
-                                        <div class="form-floating w-100">
-                                            <input type="text" class="form-control fs-sm text-muted" id="floatingInput" placeholder="apartment" />
+                                        <div className="form-floating w-100">
+                                            <input type="text" className="form-control fs-sm text-muted" id="floatingInput" placeholder="apartment" />
                                             <label for="floatingInput fw-light fs-sm text-muted">Apartment</label>
                                         </div>
-                                        <div class="form-floating flex-grow-1">
-                                            <input type="text" class="form-control fs-sm text-muted" id="floatingInput" placeholder="apartment" />
+                                        <div className="form-floating flex-grow-1">
+                                            <input type="text" className="form-control fs-sm text-muted" id="floatingInput" placeholder="apartment" />
                                             <label for="floatingInput fw-light fs-sm text-muted">City</label>
                                         </div>
                                         <div className='form-floating flex-grow-1'>
@@ -61,8 +61,8 @@ const Checkout = () => {
                                             </select>
                                             <label htmlFor="selectCountry">State</label>
                                         </div>
-                                        <div class="form-floating flex-grow-1">
-                                            <input type="text" class="form-control fs-sm text-muted" id="floatingInput" placeholder="apartment" />
+                                        <div className="form-floating flex-grow-1">
+                                            <input type="text" className="form-control fs-sm text-muted" id="floatingInput" placeholder="apartment" />
                                             <label for="floatingInput fw-light fs-sm text-muted">Zip Code</label>
                                         </div>
                                         <div className="w-100 py-3">

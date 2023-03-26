@@ -24,127 +24,124 @@ import brandImg4 from "../images/brand-04.png"
 import brandImg5 from "../images/brand-05.png"
 import brandImg6 from "../images/brand-06.png"
 import brandImg7 from "../images/brand-07.png"
+import Container from '../components/Container';
 
 const Home = () => {
 
     return (
         <>
-            <section className="home-wrapper-1 py-3">
-                <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-12 col-lg-6">
-                            <div className="main-banner position-relative mb-4">
-                                <img src={mainBanner1} className="img-fluid rounded-3 w-100" alt="main banner" />
-                                <div className="main-banner-content position-absolute">
-                                    <span className='main-banner-span fs-xsm'>SUPERCHARGED FOR PROS.</span>
-                                    <h4 className='main-banner-title fs-xl py-md-3'>iPad S13+ Pro.</h4>
-                                    <p className='main-banner-details fs-sm'>From $999.00 or $41.62/mo.<br></br>for 24 mo. Footnote*</p>
-                                    <Link><button type="button" className="btn darkButton py-1 py-sm-2 px-3 px-sm-4 rounded-pill">Buy Now</button></Link>
-                                </div>
+            <Container class1={"py-3"}>
+                <div className="row">
+                    <div className="col-12 col-lg-6">
+                        <div className="main-banner position-relative mb-4">
+                            <img src={mainBanner1} className="img-fluid rounded-3 w-100" alt="main banner" />
+                            <div className="main-banner-content position-absolute">
+                                <span className='main-banner-span fs-xsm'>SUPERCHARGED FOR PROS.</span>
+                                <h4 className='main-banner-title fs-xl py-md-3'>iPad S13+ Pro.</h4>
+                                <p className='main-banner-details fs-sm'>From $999.00 or $41.62/mo.<br></br>for 24 mo. Footnote*</p>
+                                <Link><button type="button" className="btn darkButton py-1 py-sm-2 px-3 px-sm-4 rounded-pill">Buy Now</button></Link>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-6">
-                            <div className="small-banner-wrapper row">
-                                <div className="col-6 col-md-3 col-lg-6 mb-4">
-                                    <div className="small-banner position-relative">
-                                        <img src={catBanner1} className="img-fluid rounded-3 w-100" alt="small banner" />
-                                        <div className="small-banner-content position-absolute">
-                                            <span className='small-banner-span fs-xsm'>BEST DEALS</span>
-                                            <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
-                                            <p className='small-banner-details d-none d-sm-block d-md-none d-lg-block'>From $999.00 <br></br>or $41.62/mo.</p>
-                                        </div>
+                    </div>
+                    <div className="col-12 col-lg-6">
+                        <div className="small-banner-wrapper row">
+                            <div className="col-6 col-md-3 col-lg-6 mb-4">
+                                <div className="small-banner position-relative">
+                                    <img src={catBanner1} className="img-fluid rounded-3 w-100" alt="small banner" />
+                                    <div className="small-banner-content position-absolute">
+                                        <span className='small-banner-span fs-xsm'>BEST DEALS</span>
+                                        <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
+                                        <p className='small-banner-details d-none d-sm-block d-md-none d-lg-block'>From $999.00 <br></br>or $41.62/mo.</p>
                                     </div>
                                 </div>
-                                <div className="col-6 col-md-3 col-lg-6 mb-4">
-                                    <div className="small-banner position-relative">
-                                        <img src={catBanner2} className="img-fluid rounded-3 w-100" alt="small banner" />
-                                        <div className="small-banner-content position-absolute">
-                                            <span className='small-banner-span fs-xsm'>BEST DEALS</span>
-                                            <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
-                                            <p className='small-banner-details d-none d-sm-block d-md-none d-lg-block'>From $999.00 <br></br>or $41.62/mo.</p>
-                                        </div>
+                            </div>
+                            <div className="col-6 col-md-3 col-lg-6 mb-4">
+                                <div className="small-banner position-relative">
+                                    <img src={catBanner2} className="img-fluid rounded-3 w-100" alt="small banner" />
+                                    <div className="small-banner-content position-absolute">
+                                        <span className='small-banner-span fs-xsm'>BEST DEALS</span>
+                                        <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
+                                        <p className='small-banner-details d-none d-sm-block d-md-none d-lg-block'>From $999.00 <br></br>or $41.62/mo.</p>
                                     </div>
                                 </div>
-                                <div className="col-6 col-md-3 col-lg-6 mb-4">
-                                    <div className="small-banner position-relative">
-                                        <img src={catBanner3} className="img-fluid rounded-3 w-100" alt="small banner" />
-                                        <div className="small-banner-content position-absolute">
-                                            <span className='small-banner-span fs-xsm'>BEST DEALS</span>
-                                            <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
-                                            <p className='small-banner-details d-none d-sm-block d-md-none d-lg-block'>From $999.00 <br></br>or $41.62/mo.</p>
-                                        </div>
+                            </div>
+                            <div className="col-6 col-md-3 col-lg-6 mb-4">
+                                <div className="small-banner position-relative">
+                                    <img src={catBanner3} className="img-fluid rounded-3 w-100" alt="small banner" />
+                                    <div className="small-banner-content position-absolute">
+                                        <span className='small-banner-span fs-xsm'>BEST DEALS</span>
+                                        <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
+                                        <p className='small-banner-details d-none d-sm-block d-md-none d-lg-block'>From $999.00 <br></br>or $41.62/mo.</p>
                                     </div>
                                 </div>
-                                <div className="col-6 col-md-3 col-lg-6 mb-4">
-                                    <div className="small-banner position-relative">
-                                        <img src={catBanner4} className="img-fluid rounded-3 w-100" alt="small banner" />
-                                        <div className="small-banner-content position-absolute">
-                                            <span className='small-banner-span fs-xsm'>BEST DEALS</span>
-                                            <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
-                                            <p className='small-banner-details d-none d-sm-block d-md-none d-lg-block'>From $999.00 <br></br>or $41.62/mo.</p>
-                                        </div>
+                            </div>
+                            <div className="col-6 col-md-3 col-lg-6 mb-4">
+                                <div className="small-banner position-relative">
+                                    <img src={catBanner4} className="img-fluid rounded-3 w-100" alt="small banner" />
+                                    <div className="small-banner-content position-absolute">
+                                        <span className='small-banner-span fs-xsm'>BEST DEALS</span>
+                                        <h4 className='small-banner-title py-sm-2 fs-md'>Laptops Max</h4>
+                                        <p className='small-banner-details d-none d-sm-block d-md-none d-lg-block'>From $999.00 <br></br>or $41.62/mo.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <section className="home-wrapper-2 py-4 gray-bg">
-                <div className="container-fluid">
-                    <div className="row d-flex justify-content-between align-items-center">
-                        <div className="col-12">
-                            <div className="services d-flex align-items-center justify-content-around justify-md-content-around py-3">
-                                <div className="single-service">
-                                    <div className="d-flex align-items-center justify-content-between">
-                                        <img src={serviceImg1} alt="" className="service-img p-3" />
-                                        <div className="service-details gap-15">
-                                            <div className="service-title fs-md py-1">Free Shipping</div>
-                                            <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
-                                        </div>
+            </Container>
+            <Container class1={"py-4 gray-bg"}>
+                <div className="row d-flex justify-content-between align-items-center">
+                    <div className="col-12">
+                        <div className="services d-flex align-items-center justify-content-around justify-md-content-around py-3">
+                            <div className="single-service">
+                                <div className="d-flex align-items-center justify-content-between">
+                                    <img src={serviceImg1} alt="" className="service-img p-3" />
+                                    <div className="service-details gap-15">
+                                        <div className="service-title fs-md py-1">Free Shipping</div>
+                                        <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
                                     </div>
                                 </div>
-                                <div className="single-service">
-                                    <div className="d-flex align-items-center justify-content-between">
-                                        <img src={serviceImg2} alt="" className="service-img p-3" />
-                                        <div className="service-details gap-15">
-                                            <div className="service-title fs-md py-1">Free Shipping</div>
-                                            <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
-                                        </div>
+                            </div>
+                            <div className="single-service">
+                                <div className="d-flex align-items-center justify-content-between">
+                                    <img src={serviceImg2} alt="" className="service-img p-3" />
+                                    <div className="service-details gap-15">
+                                        <div className="service-title fs-md py-1">Free Shipping</div>
+                                        <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
                                     </div>
                                 </div>
-                                <div className="single-service d-none d-md-block">
-                                    <div className="d-flex align-items-center justify-content-between">
-                                        <img src={serviceImg3} alt="" className="service-img p-3" />
-                                        <div className="service-details gap-15">
-                                            <div className="service-title fs-md py-1">Free Shipping</div>
-                                            <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
-                                        </div>
+                            </div>
+                            <div className="single-service d-none d-md-block">
+                                <div className="d-flex align-items-center justify-content-between">
+                                    <img src={serviceImg3} alt="" className="service-img p-3" />
+                                    <div className="service-details gap-15">
+                                        <div className="service-title fs-md py-1">Free Shipping</div>
+                                        <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
                                     </div>
                                 </div>
-                                <div className="single-service d-none d-xl-block">
-                                    <div className="d-flex align-items-center justify-content-between">
-                                        <img src={serviceImg4} alt="" className="service-img p-3" />
-                                        <div className="service-details gap-15">
-                                            <div className="service-title fs-md py-1">Free Shipping</div>
-                                            <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
-                                        </div>
+                            </div>
+                            <div className="single-service d-none d-xl-block">
+                                <div className="d-flex align-items-center justify-content-between">
+                                    <img src={serviceImg4} alt="" className="service-img p-3" />
+                                    <div className="service-details gap-15">
+                                        <div className="service-title fs-md py-1">Free Shipping</div>
+                                        <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
                                     </div>
                                 </div>
-                                <div className="single-service d-none d-xxl-block">
-                                    <div className="d-flex align-items-center justify-content-between">
-                                        <img src={serviceImg5} alt="" className="service-img p-3" />
-                                        <div className="service-details gap-15">
-                                            <div className="service-title fs-md py-1">Free Shipping</div>
-                                            <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
-                                        </div>
+                            </div>
+                            <div className="single-service d-none d-xxl-block">
+                                <div className="d-flex align-items-center justify-content-between">
+                                    <img src={serviceImg5} alt="" className="service-img p-3" />
+                                    <div className="service-details gap-15">
+                                        <div className="service-title fs-md py-1">Free Shipping</div>
+                                        <p className="service-des mb-0 fs-xsm">From all orders over $100</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </Container>
             <section className="home-wrapper-3 py-3 gray-bg">
                 <div className="container-fluid">
                     <div className="categories bg-white px-4 py-3 br-shadow">
@@ -224,7 +221,7 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="home-wrapper-6 py-5 gray-bg">
+            <section className="home-wrapper-6 py-4 gray-bg">
                 <div className="container-fluid">
                     <div className="product-details-wrapper">
                         <div className="section-title fs-lg mb-4">Special Products</div>
@@ -236,22 +233,22 @@ const Home = () => {
                     </div>
                 </div>
             </section>
-            <section className="home-wrapper-7 py-5 gray-bg">
+            <section className="home-wrapper-7 py-4 gray-bg">
                 <div className="container-fluid">
                     <div className="popular-product-wrapper">
                         <div className="section-title fs-lg mb-4">Our Featured Products</div>
                     </div>
                     <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3">
-                        <PopularProductCard />
-                        <PopularProductCard />
-                        <PopularProductCard />
-                        <PopularProductCard />
-                        <PopularProductCard />
-                        <PopularProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
+                        <ProductCard />
                     </div>
                 </div>
             </section>
-            <section className="home-wrapper-8 py-5 gray-bg">
+            <section className="home-wrapper-8 py-4 gray-bg">
                 <div className="container-fluid">
                     <div className="blog-wrapper">
                         <div className="section-title fs-lg mb-4">Blog Section</div>

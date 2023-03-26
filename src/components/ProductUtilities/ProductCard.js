@@ -18,21 +18,21 @@ const ProductCard = ({ grid }) => {
                     <img className='img-fluid rounded' src={watch} alt="" />
                     <img className='img-fluid rounded' src={watch2} alt="" />
                     <div className="wishlist-icon position-absolute">
-                        <Link>
+                        <button className='border-0 bg-transparent'>
                             <img src={wish} alt="" />
-                        </Link>
+                        </button>
                     </div>
                     <div className="action-bar position-absolute ">
                         <div className="d-flex flex-column gap-10">
-                            <Link>
+                            <button className='border-0 bg-transparent'>
                                 <img src={prodCompare} alt="" />
-                            </Link>
-                            <Link>
+                            </button>
+                            <button className='border-0 bg-transparent'>
                                 <img src={view} alt="" />
-                            </Link>
-                            <Link>
+                            </button>
+                            <button className='border-0 bg-transparent'>
                                 <img src={addCart} alt="" />
-                            </Link>
+                            </button>
                         </div>
                     </div>
                 </div>
