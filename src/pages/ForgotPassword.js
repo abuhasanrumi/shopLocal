@@ -3,6 +3,7 @@ import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
 import { Link } from 'react-router-dom';
 import Container from '../components/Container';
+import CustomInput from '../components/CustomInput';
 
 
 const ForgotPassword = () => {
@@ -17,10 +18,7 @@ const ForgotPassword = () => {
                             <h5 className='text-muted mb-4 text-center'>Reset Your Password</h5>
                             <div className='text-muted text-center mb-4 '>We will send you an email to reset your password</div>
                             <form action="#">
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="forgotFloatingEmail" placeholder="name@example.com" />
-                                    <label className='text-muted' for="forgotFloatingEmail">Email address</label>
-                                </div>
+                                <CustomInput type="email" placeholder="Email Address" id="forgotFloatingEmail" />
 
                                 <div className="text-danger py-3">
                                     No account found with that email.

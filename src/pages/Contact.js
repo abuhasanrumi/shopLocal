@@ -3,6 +3,7 @@ import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
 import { AiFillHome, AiFillPhone, AiTwotoneMail, AiFillInfoCircle } from "react-icons/ai"
 import Container from '../components/Container'
+import CustomInput from '../components/CustomInput'
 
 
 const Contact = () => {
@@ -22,18 +23,9 @@ const Contact = () => {
                                     <div className="contact-form-section p-5">
                                         <h3 className="contact-title mb-4">Contact</h3>
                                         <form action="">
-                                            <div className="form-floating mb-3">
-                                                <input type="text" className="form-control" id="floatingName" placeholder="Name" />
-                                                <label className='text-muted' htmlFor="floatingName">Name</label>
-                                            </div>
-                                            <div className="form-floating mb-3">
-                                                <input type="email" className="form-control" id="floatingEmail" placeholder="Email *" />
-                                                <label className='text-muted' htmlFor="floatingEmail">Email *</label>
-                                            </div>
-                                            <div className="form-floating mb-3">
-                                                <input type="tel" className="form-control" id="floatingPhone" placeholder="Phone Number" />
-                                                <label className='text-muted' htmlFor="floatingPhone">Phone Number</label>
-                                            </div>
+                                            <CustomInput type="text" placeholder="Name" id="floatingName" />
+                                            <CustomInput type="email" placeholder="Email *" id="floatingEmail" />
+                                            <CustomInput type="tel" placeholder="Phone Number" id="floatingPhone" />
                                             <div className="form-floating mb-3">
                                                 <textarea className="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style={{ "height": "150px" }}></textarea>
                                                 <label className='text-muted' htmlFor="floatingTextarea2">Comments</label>

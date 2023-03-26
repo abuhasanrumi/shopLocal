@@ -3,6 +3,7 @@ import Meta from '../components/Meta';
 import BreadCrumb from '../components/BreadCrumb';
 import { Link } from 'react-router-dom';
 import Container from '../components/Container';
+import CustomInput from '../components/CustomInput';
 
 const Login = () => {
     return (
@@ -15,14 +16,8 @@ const Login = () => {
                         <div className="login-card bg-white p-5 br-shadow">
                             <h5 className='text-muted mb-4 text-center'>Login</h5>
                             <form action="#">
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="loginFloatingEmail" placeholder="name@example.com" />
-                                    <label className='text-muted' for="loginFloatingEmail">Email address</label>
-                                </div>
-                                <div class="form-floating">
-                                    <input type="password" class="form-control" id="loginFloatingPass" placeholder="Password" />
-                                    <label className='text-muted' for="loginFloatingPass">Password</label>
-                                </div>
+                                <CustomInput type="email" placeholder="Email Address" id="loginFloatingEmail" />
+                                <CustomInput type="password" placeholder="Password" id="loginFloatingPass" />
                                 <Link to="/forgot-password" className='py-3'><span className="fs-sm text-dark">Forgot your password?</span></Link>
                                 <div className="login-form-buttons d-flex justify-content-center py-3 gap-30">
                                     <button type="submit" className="btn loginButton py-3 py-md-3 px-5 px-md-5 rounded-pill">Login</button>

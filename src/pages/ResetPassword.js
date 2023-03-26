@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import BreadCrumb from '../components/BreadCrumb'
 import Container from '../components/Container'
+import CustomInput from '../components/CustomInput'
 import Meta from '../components/Meta'
 
 const ResetPassword = () => {
@@ -15,19 +16,12 @@ const ResetPassword = () => {
                         <div className="reset-card bg-white p-5 br-shadow">
                             <h5 className='text-muted mb-4 text-center'>Confirm Changing Password</h5>
                             <form action="#">
-                                <div class="form-floating mb-3">
-                                    <input type="password" class="form-control" id="resetFloatingPass1" placeholder="Password" />
-                                    <label className='text-muted' for="resetFloatingPass1">New Password</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="password" class="form-control" id="resetFloatingPass2" placeholder="Password" />
-                                    <label className='text-muted' for="resetFloatingPass2">Confirm Password</label>
-                                </div>
+                                <CustomInput type="password" placeholder="Password" id="resetFloatingPass1" />
+                                <CustomInput type="password" placeholder="Confirm Password" id="resetFloatingPass2" />
 
                                 <div className="text-danger py-3">
                                     Passwords are not same.
                                 </div>
-                                ``
                                 <div className="reset-form-buttons d-flex justify-content-center py-3 gap-30">
                                     <button type="submit" className="btn resetButton py-3 py-md-3 px-5 px-md-5 rounded-pill">Change Password</button>
                                 </div>
