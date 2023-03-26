@@ -90,9 +90,9 @@ const Home = () => {
                     <div className="col-12">
                         <div className="services d-flex align-items-center justify-content-around justify-md-content-around py-3">
                             {
-                                services?.map((service, j) => {
+                                services?.map((service, index) => {
                                     return (
-                                        <div className="single-service">
+                                        <div className="single-service" key={index}>
                                             <div className="d-flex align-items-center justify-content-between">
                                                 <img src={service.image} alt="" className="service-img p-3" />
                                                 <div className="service-details gap-15">
