@@ -23,9 +23,12 @@ import Container from '../components/Container';
 import { services } from '../utilities/ServiceData';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+// import required modules
+import { Grid, Pagination } from "swiper";
 // Import Swiper styles
 import 'swiper/css';
-import { Pagination } from 'swiper';
+import "swiper/css/grid";
+import "swiper/css/pagination";
 
 const Home = () => {
 
@@ -90,18 +93,17 @@ const Home = () => {
                     </div>
                 </div>
             </Container>
-            <Container class1={"py-4 gray-bg"}>
+            <Container class1={"py-3 gray-bg"}>
                 <div className="row d-flex justify-content-between align-items-center">
                     <div className="col-12">
 
                         <div className="services d-flex align-items-center py-3">
                             <Swiper
                                 slidesPerView={1}
-                                spaceBetween={40}
+                                spaceBetween={10}
                                 pagination={{
                                     clickable: true,
                                 }}
-                                modules={[Pagination]}
                                 className="mySwiper"
                                 breakpoints={{
                                     // when window width is >= 640px
@@ -114,7 +116,8 @@ const Home = () => {
                                         width: 768,
                                         slidesPerView: 3,
                                     },
-                                }}>
+                                }}
+                            >
                                 {
                                     services?.map((service, index) => {
                                         return (
@@ -135,18 +138,51 @@ const Home = () => {
                     </div>
                 </div>
             </Container >
-            <Container class1={"py-3 gray-bg"}>
+            <Container class1={"pt-md-3 pb-3 gray-bg"}>
                 <div className="categories bg-white px-4 py-3 br-shadow">
-                    <div className="row">
-                        <SingleCategory />
-                        <SingleCategory />
-                        <SingleCategory />
-                        <SingleCategory />
-                        <SingleCategory />
-                        <SingleCategory />
-                        <SingleCategory />
-                        <SingleCategory />
-                    </div>
+                    <Swiper
+                        slidesPerView={2}
+                        grid={{
+                            rows: 2,
+                            fill: "row",
+                        }}
+                        spaceBetween={30}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        modules={[Grid]}
+                        className="mySwiper"
+                        breakpoints={{
+                            // when window width is >= 768px
+                            768: {
+                                width: 768,
+                                slidesPerView: 2,
+                                spaceBetween: 10
+                            },
+                            // when window width is >= 1080px
+                            1080: {
+                                width: 1080,
+                                slidesPerView: 3,
+                            },
+                        }}
+                    >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                        <SwiperSlide> <SingleCategory /> </SwiperSlide >
+                    </Swiper>
                 </div>
             </Container>
             <Container class1={"py-3 gray-bg"}>
