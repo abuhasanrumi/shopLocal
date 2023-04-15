@@ -6,12 +6,12 @@ export const services = [
     },
     {
         image: "images/service-02.png",
-        title: "Free Shipping",
+        title: "Free Kisuta",
         tagline: "From all orders over $100"
     },
     {
         image: "images/service-03.png",
-        title: "Free Shipping",
+        title: "Free sapping",
         tagline: "From all orders over $100"
     },
     {

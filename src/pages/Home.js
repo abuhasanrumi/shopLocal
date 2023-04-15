@@ -21,6 +21,11 @@ import brandImg6 from "../images/brand-06.png"
 import brandImg7 from "../images/brand-07.png"
 import Container from '../components/Container';
 import { services } from '../utilities/ServiceData';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import { Pagination } from 'swiper';
 
 const Home = () => {
 
@@ -88,26 +93,48 @@ const Home = () => {
             <Container class1={"py-4 gray-bg"}>
                 <div className="row d-flex justify-content-between align-items-center">
                     <div className="col-12">
-                        <div className="services d-flex align-items-center justify-content-around justify-md-content-around py-3">
-                            {
-                                services?.map((service, index) => {
-                                    return (
-                                        <div className="single-service" key={index}>
-                                            <div className="d-flex align-items-center justify-content-between">
-                                                <img src={service.image} alt="" className="service-img p-3" />
-                                                <div className="service-details gap-15">
-                                                    <div className="service-title fs-md py-1">{service.title}</div>
-                                                    <p className="service-des mb-0 fs-xsm">{service.tagline}</p>
+
+                        <div className="services d-flex align-items-center py-3">
+                            <Swiper
+                                slidesPerView={1}
+                                spaceBetween={40}
+                                pagination={{
+                                    clickable: true,
+                                }}
+                                modules={[Pagination]}
+                                className="mySwiper"
+                                breakpoints={{
+                                    // when window width is >= 640px
+                                    640: {
+                                        width: 640,
+                                        slidesPerView: 2,
+                                    },
+                                    // when window width is >= 768px
+                                    768: {
+                                        width: 768,
+                                        slidesPerView: 3,
+                                    },
+                                }}>
+                                {
+                                    services?.map((service, index) => {
+                                        return (
+                                            <SwiperSlide className="single-service d-flex gap-5 justify-content-center" key={index}>
+                                                <div className="d-flex align-items-center justify-content-between">
+                                                    <img src={service.image} alt="" className="service-img p-3" />
+                                                    <div className="service-details gap-15">
+                                                        <div className="service-title fs-md py-1">{service.title}</div>
+                                                        <p className="service-des mb-0 fs-xsm">{service.tagline}</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    )
-                                })
-                            }
+                                            </SwiperSlide>
+                                        )
+                                    })
+                                }
+                            </Swiper>
                         </div>
                     </div>
                 </div>
-            </Container>
+            </Container >
             <Container class1={"py-3 gray-bg"}>
                 <div className="categories bg-white px-4 py-3 br-shadow">
                     <div className="row">
