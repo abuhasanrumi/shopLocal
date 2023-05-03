@@ -4,7 +4,6 @@ import Marquee from "react-fast-marquee";
 import Blogpost from '../components/Blogpost';
 import ProductCard from '../components/ProductUtilities/ProductCard';
 import SpecialProducts from '../components/ProductUtilities/SpecialProducts';
-import PopularProductCard from '../components/ProductUtilities/PopularProductCard';
 import FamousCard from '../components/FamousCard';
 import SingleCategory from '../components/SingleCategory';
 import mainBanner1 from "../images/main-banner-1.jpg"
@@ -24,7 +23,7 @@ import { services } from '../utilities/ServiceData';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
-import { Grid, Pagination } from "swiper";
+import { Grid } from "swiper";
 // Import Swiper styles
 import 'swiper/css';
 import "swiper/css/grid";
