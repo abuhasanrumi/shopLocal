@@ -252,19 +252,6 @@ const Home = () => {
                 </div>
             </Container>
             <Container class1={"py-3 gray-bg"}>
-                <div className="popular-product-wrapper">
-                    <div className="section-title fs-lg mb-4">Our Featured Products</div>
-                </div>
-                <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3">
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                    <ProductCard />
-                </div>
-            </Container>
-            <Container class1={"py-3 gray-bg"}>
                 <div className="blog-wrapper">
                     <div className="section-title fs-lg mb-4">Blog Section</div>
                     <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
