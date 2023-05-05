@@ -253,7 +253,7 @@ const Home = () => {
             </Container>
             <Container class1={"py-3 gray-bg"}>
                 <div className="blog-wrapper">
-                    <div className="section-title fs-lg mb-4">Blog Section</div>
+                    <div className="section-title fs-lg mb-4">Blogs </div>
                     <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
                         <Blogpost />
                         <Blogpost />
